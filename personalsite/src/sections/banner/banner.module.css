@@ -35,3 +35,23 @@
 	top: 50px;
 	left: 50px;
 }
+
+@media screen and (orientation: portrait) {
+	img.bannerImg {
+		height: 100vh;
+		position: absolute;
+		/* top: 50px; */
+		left: -250px;
+		/* z-index: 0; */
+	}
+	h1 {
+		height: 100vh;
+		/* width: 100vh; */
+	}
+}
+
+@media screen and (orientation: landscape) {
+	img.bannerImg {
+		max-height: 90%;
+	}
+}
