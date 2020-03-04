@@ -12,10 +12,12 @@ import styles from './banner.module.css';
 // }
 
 const banner = (
-	<section className={styles.section}>
+	// <React.Fragment>
+	<div className={styles.bannerContainer}>
 		<h1 className={styles.h1}>Joe Tustin</h1>
 		<img className={styles.bannerImg} src={joeBanner} />
-	</section>
+	</div>
+	// {/* </React.Fragment> */}
 );
 
 // class Banner extends React.Component {
