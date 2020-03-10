@@ -39,20 +39,19 @@ h1 {
 	/* overflow-y: scroll; */
 	/* scroll-snap-type: y proximity; */
 	overflow-y: scroll;
-
-	/* border: 2px solid var(--gs0); */
-	border-radius: 8px;
+	/* border-radius: 8px; */
 	height: 100vh;
 }
 
 .container div {
 	scroll-snap-align: start;
-
 	height: 100vh;
-	display: flex;
+	font-size: 4rem;
+
+	/* display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 4rem;
+	font-size: 4rem; */
 }
 .container div:nth-child(1) {
 	background: hotpink;

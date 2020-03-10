@@ -7,10 +7,8 @@ import banner from './sections/banner/banner';
 function App() {
 	return (
 		<div class="container">
-			<div>1</div>
-
-			{/* <div>{banner}</div>   */}
 			{banner}
+			<div>1</div>
 			<div>3</div>
 			<div>4</div>
 		</div>

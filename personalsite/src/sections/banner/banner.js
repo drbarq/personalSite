@@ -5,7 +5,7 @@ import styles from './banner.module.css';
 
 const banner = (
 	<div className={styles.bannerContainer}>
-		<h1 className={styles.h1}>Joe Tustin</h1>
+		<h3 className={styles.h3}>Joe Tustin</h3>
 		<img className={styles.bannerImg} src={joeBanner} />
 	</div>
 );
