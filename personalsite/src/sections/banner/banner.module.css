@@ -9,12 +9,12 @@
 }
 
 .h3 {
-	text-align: center;
+	/* text-align: center; */
 	position: absolute;
 	color: #a04040;
-	left: 40%;
-	top: 30%;
-	transform: translate(-50%, -50%);
+	left: 10%;
+	top: 0%;
+	/* transform: translate(-50%, -50%); */
 }
 
 .bannerImg {

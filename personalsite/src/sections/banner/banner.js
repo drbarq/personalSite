@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import joeBanner from '../../images/joeBanner.jpg';
 
 import styles from './banner.module.css';

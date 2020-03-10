@@ -1,13 +1,14 @@
 import React from 'react';
-import joeBanner from './images/joeBanner.jpg';
 import './App.css';
 
 import banner from './sections/banner/banner';
+import about from './sections/about/about';
 
 function App() {
 	return (
 		<div class="container">
 			{banner}
+			{about}
 			<div>1</div>
 			<div>3</div>
 			<div>4</div>
