@@ -7,12 +7,12 @@ const backstory = (
 		<div className={styles.textDiv}>
 			<div className={styles.schoolTextDiv}>
 				<div className={styles.schoolLine1}>
-					<h6>University of Pennsylvania</h6>
+					<h7>University of Pennsylvania</h7>
 					<p>Sept 2006 - Dec 2010</p>
 				</div>
-				{/* <div className={styles.schoolLine2}>
-					<h8>B.S. Finance</h8>
-				</div> */}
+				<div className={styles.schoolLine2}>
+					<h6>B.S. Finance</h6>
+				</div>
 			</div>
 		</div>
 	</div>
