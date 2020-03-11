@@ -5,7 +5,7 @@ import banner from './sections/banner/banner';
 import about from './sections/about/about';
 import backstory from './sections/backstory/backstory';
 
-import aboutTEST from './Test/about/aboutTEST';
+// import aboutTEST from './Test/about/aboutTEST';
 
 function App() {
 	return (
