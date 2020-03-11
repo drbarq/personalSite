@@ -1,10 +1,14 @@
-.container {
+* {
 	box-sizing: border-box;
+}
+
+.app {
 	scroll-snap-type: y mandatory;
 	overflow-y: scroll;
-	height: 100vh;
+	/* height: 100vh; */
+	display: flex;
+	flex-direction: column;
 	/* fonts */
 	/* font-family: 'Inter', sans-serif; */
-	font-family: 'Roboto', sans-serif;
-	/* font-family: 'Sen', sans-serif; */
+	/* font-family: 'Roboto', sans-serif; */
 }

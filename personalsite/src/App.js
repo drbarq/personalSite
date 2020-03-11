@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import styles from './App.module.css';
 
 import banner from './sections/banner/banner';
 import about from './sections/about/about';
@@ -9,14 +9,14 @@ import aboutTEST from './Test/about/aboutTEST';
 
 function App() {
 	return (
-		<div class="container">
+		<div class={styles.app}>
 			{banner}
 			{about}
 			{/* {aboutTEST} */}
 			{backstory}
-			<div>1</div>
-			<div>3</div>
-			<div>4</div>
+			{/* <div>1</div> */}
+			{/* <div>3</div> */}
+			{/* <div>4</div> */}
 		</div>
 	);
 }

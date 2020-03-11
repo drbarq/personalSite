@@ -11,12 +11,17 @@
 
 	display: flex;
 	flex-direction: column;
+
+	background-color: #152e4e;
+	padding: 3rem 1.5rem 3rem 1.5rem;
+
+	font-family: 'Avenir Next';
+	color: #fff;
 }
 
 .educationContainer {
-	height: 100vh;
 	background-color: #152e4e;
-	padding: 3rem 1.5rem 3rem 1.5rem;
+	padding: 1.75rem 1.5rem 1rem 1.5rem;
 	display: flex;
 	flex-direction: column;
 	font-family: 'Avenir Next';
@@ -29,7 +34,7 @@
 	text-align: left;
 	color: #27aee8;
 	font-size: 1.3em;
-	padding: 0 0 0.5em 0;
+	/* padding: 0 0 0.5em 0; */
 }
 
 .educationTitle {
@@ -41,13 +46,14 @@
 	line-height: 1em;
 	font-weight: 900;
 	font-style: italic;
-	padding: 0 0 0.5em 0;
+	/* padding: 0 0 0.5em 0; */
 }
 
 .lineOne {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	padding-top: 1rem;
 }
 
 .educationSubline {
@@ -72,13 +78,43 @@
 	justify-content: space-between;
 	padding-bottom: 0.5rem;
 	padding-left: 0.5rem;
+	/* padding-bottom: 1rem; */
 	border-bottom: 1px solid #2a3c57;
 }
 
-.educationtTitle {
+.degree {
 	font-weight: 500;
 	color: #6b7f9c;
 	font-size: 0.85em;
 	padding-top: 0.5em;
 	font-size: 0.75em;
+}
+
+.experienceContainer {
+	background-color: #152e4e;
+	padding: 0 1.5rem 1.75rem 1.5rem;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Avenir Next';
+	color: #fff;
+}
+
+.experienceTitle {
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 1.75rem;
+	text-transform: uppercase;
+	color: #ffffff;
+	z-index: 1;
+	line-height: 1em;
+	font-weight: 900;
+	font-style: italic;
+	/* padding: 0 0 0.5em 0; */
+}
+
+.experienceSubline {
+	font-family: 'Avenir Next';
+	font-weight: 700;
+	opacity: 0.8;
+	font-size: 1em;
+	font-size: 0.85em;
 }
