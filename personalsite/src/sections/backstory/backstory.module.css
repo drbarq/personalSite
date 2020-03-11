@@ -1,12 +1,13 @@
 .backstoryContainer {
 	height: 100vh;
+
+	padding: 3em 0 0 0;
 	scroll-snap-align: start;
 	font-size: 2rem;
 	position: relative;
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
+	flex-direction: column;
+	justify-content: flex-start;
 }
 
 .h3 {
@@ -23,6 +24,7 @@ p {
 }
 
 .textDiv {
+	/* width: 100vh; */
 	display: flex;
 	flex-direction: column;
 	/* align-items: center; */
@@ -62,4 +64,10 @@ p {
 	width: 80vh;
 	padding-right: 0.5rem;
 	margin-top: 0rem;
+}
+
+.header {
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 1.3rem;
 }
