@@ -11,8 +11,8 @@ function App() {
 	return (
 		<div class="container">
 			{banner}
-			{/* {about} */}
-			{aboutTEST}
+			{about}
+			{/* {aboutTEST} */}
 			{backstory}
 			<div>1</div>
 			<div>3</div>
@@ -20,30 +20,5 @@ function App() {
 		</div>
 	);
 }
-// function App() {
-// 	return (
-// 		<div className="container">
-// 			{/* <section>
-// 				<h1>Section One</h1>
-// 				<img src={joeBanner} />
-// 			</section> */}
-// 			{/* <section>{console.log(banner)}</section> */}
-// 			{banner}
-
-// 			<section>
-// 				<h1>Section Two</h1>
-// 			</section>
-// 			<section>
-// 				<h1>Section Three</h1>
-// 			</section>
-// 			<section>
-// 				<h1>Section Four</h1>
-// 			</section>
-// 			<section>
-// 				<h1>Section Five</h1>
-// 			</section>
-// 		</div>
-// 	);
-// }
 
 export default App;

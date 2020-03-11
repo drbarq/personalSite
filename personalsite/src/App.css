@@ -8,28 +8,3 @@
 	font-family: 'Roboto', sans-serif;
 	/* font-family: 'Sen', sans-serif; */
 }
-
-.container div {
-	/* scroll-snap-align: start; */
-	/* height: 100vh; */
-	/* font-size: 2rem; */
-
-	/* display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 4rem; */
-}
-/* .container div:nth-child(1) {
-	background: hotpink;
-	color: white;
-}
-/* .container div:nth-child(2) {
-	background: azure;
-} */
-/* .container div:nth-child(3) {
-	background: blanchedalmond;
-}
-.container div:nth-child(4) {
-	background: lightcoral;
-	color: white;
-}  */

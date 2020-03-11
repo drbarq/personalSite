@@ -1,72 +1,84 @@
+@media (min-width: 38em) {
+	html {
+		font-size: 20px;
+	}
+}
+
 .backstoryContainer {
 	height: 100vh;
-	padding: 3rem 3rem 0 3rem;
+	max-width: 50rem;
 	scroll-snap-align: start;
-	font-size: 2rem;
-	/* position: relative; */
+
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
 }
 
-.h3 {
-	position: absolute;
-	color: #a04040;
-	left: 10%;
-	top: 0%;
-	/* transform: translate(-50%, -50%); */
-}
-
-p {
-	font-size: small;
-}
-
-.textDiv {
-	/* width: 100vh; */
+.educationContainer {
+	height: 100vh;
+	background-color: #152e4e;
+	padding: 3rem 1.5rem 3rem 1.5rem;
 	display: flex;
 	flex-direction: column;
-	/* align-items: center; */
-	/* justify-content: center; */
-	/* overflow: hidden; */
-	max-width: 85vh;
+	font-family: 'Avenir Next';
+	color: #fff;
 }
 
-/* .schoolTextDiv {
-	font-size: 3rem;
-	color: green;
-} */
-
-.schoolTextDiv {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
-	/* width: 85vh; */
-}
-
-.schoolLine1 {
-	display: flex;
-	flex-direction: row;
-	align-items: baseline;
-	justify-content: space-between;
-	width: 85vh;
-}
-
-.schoolLine2 {
-	display: flex;
-	flex-direction: row;
-	padding: none;
-	align-items: baseline;
-	justify-content: space-between;
-	width: 80vh;
-	padding-right: 0.5rem;
-	margin-top: 0rem;
-}
-
-.header {
-	/* text-transform: uppercase; */
+.titleLine {
+	font-family: 'BenchNine', sans-serif;
+	text-transform: uppercase;
 	text-align: left;
-	font-size: 2.3rem;
-	font-variant: small-caps;
+	color: #27aee8;
+	font-size: 1.3em;
+	padding: 0 0 0.5em 0;
+}
+
+.educationTitle {
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 1.75rem;
+	text-transform: uppercase;
+	color: #ffffff;
+	z-index: 1;
+	line-height: 1em;
+	font-weight: 900;
+	font-style: italic;
+	padding: 0 0 0.5em 0;
+}
+
+.lineOne {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.educationSubline {
+	font-family: 'Avenir Next';
+	font-weight: 700;
+	opacity: 0.8;
+	font-size: 1em;
+	font-size: 0.85em;
+}
+
+.educationDate {
+	font-size: 0.7em;
+	font-weight: 600;
+	color: #485a75;
+	align-self: baseline;
+	padding-top: 8px;
+}
+
+.lineTwo {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-bottom: 0.5rem;
+	padding-left: 0.5rem;
+	border-bottom: 1px solid #2a3c57;
+}
+
+.educationtTitle {
+	font-weight: 500;
+	color: #6b7f9c;
+	font-size: 0.85em;
+	padding-top: 0.5em;
+	font-size: 0.75em;
 }
