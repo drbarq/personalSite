@@ -1,11 +1,13 @@
-@media (min-width: 38em) {
+/* @media (min-width: 38em) {
 	html {
 		font-size: 20px;
 	}
-}
+} */
 
 .backstoryContainer {
 	height: 100vh;
+	/* width: 100vh; */
+	width: 100%;
 	max-width: 50rem;
 	scroll-snap-align: start;
 
@@ -88,6 +90,7 @@
 	font-size: 0.85em;
 	padding-top: 0.5em;
 	font-size: 0.75em;
+	max-width: 55%;
 }
 
 .experienceContainer {

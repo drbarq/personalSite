@@ -14,7 +14,7 @@ const backstory = (
 			</div>
 			<div className={styles.lineTwo}>
 				<div className={styles.degree}>B.S. Finance</div>
-				<button>Click here for more info</button>
+				{/* <button>Click here for more info</button> */}
 			</div>
 		</div>
 
@@ -28,7 +28,7 @@ const backstory = (
 				<div className={styles.degree}>
 					Premier Client Group - Enterprise: Account Manager II
 				</div>
-				<button>Click here for more info</button>
+				{/* <button>Click here for more info</button> */}
 			</div>
 
 			<div className={styles.lineOne}>
@@ -37,7 +37,7 @@ const backstory = (
 			</div>
 			<div className={styles.lineTwo}>
 				<div className={styles.degree}>Senior Account Executive</div>
-				<button>Click here for more info</button>
+				{/* <button>Click here for more info</button> */}
 			</div>
 		</div>
 	</div>

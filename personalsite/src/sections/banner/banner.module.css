@@ -1,13 +1,13 @@
 .bannerContainer {
+	/* properties for snap scrolling */
 	height: 100vh;
+	width: 100%;
+
+	scroll-snap-align: start;
+	/* properties for flex */
 	display: flex;
 	flex-direction: column;
-	/* scroll-snap-type: y mandatory;
-	overflow-y: scroll; */
-	/* max-width: 50rem; */
-	scroll-snap-align: start;
-	/* position: relative; */
-	/* align-items: center; */
+	align-items: center;
 	justify-content: center;
 	overflow: hidden;
 }
@@ -22,5 +22,7 @@
 }
 
 .bannerImg {
-	/* height: 100vh; */
+	display: flex;
+	flex-direction: column;
+	background-size: cover;
 }
