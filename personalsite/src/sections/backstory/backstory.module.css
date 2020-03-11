@@ -1,17 +1,15 @@
 .backstoryContainer {
 	height: 100vh;
-
-	padding: 3em 0 0 0;
+	padding: 3rem 3rem 0 3rem;
 	scroll-snap-align: start;
 	font-size: 2rem;
-	position: relative;
+	/* position: relative; */
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 }
 
 .h3 {
-	/* text-align: center; */
 	position: absolute;
 	color: #a04040;
 	left: 10%;
@@ -67,7 +65,8 @@ p {
 }
 
 .header {
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	text-align: left;
-	font-size: 1.3rem;
+	font-size: 2.3rem;
+	font-variant: small-caps;
 }

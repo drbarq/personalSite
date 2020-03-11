@@ -3,7 +3,7 @@ import styles from './backstory.module.css';
 
 const backstory = (
 	<div className={styles.backstoryContainer}>
-		<div className={styles.header}>Back Story</div>
+		<div className={styles.header}>Backstory</div>
 		{/* <h3 className={styles.h3}>Back Story</h3> */}
 		<div className={styles.textDiv}>
 			<div className={styles.schoolTextDiv}>
