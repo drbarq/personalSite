@@ -12,6 +12,28 @@ const mapStyles = {
 	height: '50%'
 };
 
+export class MapContainer extends Component {
+	render() {
+		// console.log(this.props);
+		return (
+			// <div>
+			<Map
+				// className={styles.gMapContainer}
+				google={this.props.google}
+				zoom={10}
+				// style={mapStyles}
+				// style={styles.gMapContainer}
+				initialCenter={{ lat: 47.444, lng: -122.176 }}
+			/>
+			// </div>
+		);
+	}
+}
+
+export default GoogleApiWrapper({
+	apiKey: config.gMapsApi
+})(MapContainer);
+
 // export class MapContainer extends Component {
 // 	render() {
 // 		return (
@@ -27,21 +49,3 @@ const mapStyles = {
 // 		);
 // 	}
 // }
-export class MapContainer extends Component {
-	render() {
-		// console.log(this.props);
-		return (
-			<Map
-				// className={styles.gMapContainer}
-				google={this.props.google}
-				zoom={8}
-				style={mapStyles}
-				initialCenter={{ lat: 47.444, lng: -122.176 }}
-			/>
-		);
-	}
-}
-
-export default GoogleApiWrapper({
-	apiKey: config.gMapsApi
-})(MapContainer);
