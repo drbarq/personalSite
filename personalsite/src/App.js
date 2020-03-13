@@ -11,7 +11,7 @@ function App() {
 	return (
 		<div class={styles.app}>
 			{banner}
-			{/* {about} */}
+			{about}
 			{/* {aboutTEST} */}
 			{backstory}
 			{/* <div>1</div> */}
