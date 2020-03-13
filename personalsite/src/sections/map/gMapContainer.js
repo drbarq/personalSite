@@ -33,7 +33,7 @@ export class MapContainer extends Component {
 	};
 
 	render() {
-		// console.log(gMapData[0].LATITUDE);
+		console.log(polylineData[0].lat);
 		return (
 			<Map
 				google={this.props.google}
@@ -41,7 +41,7 @@ export class MapContainer extends Component {
 				initialCenter={{ lat: 0, lng: 0 }}
 			>
 				<Polyline
-					paths={polylineData}
+					path={polylineData}
 					strokeColor="#0000FF"
 					strokeOpacity={0.8}
 					strokeWeight={2}
