@@ -1,11 +1,5 @@
-/* @media (min-width: 38em) {
-	html {
-		font-size: 20px;
-	}
-} */
-
-.backstoryContainer {
-	height: 100vh;
+.sectionHeaderContainer {
+	/* height: 100vh; */
 	/* width: 100vh; */
 	width: 100%;
 	max-width: 50rem;
@@ -15,8 +9,6 @@
 	flex-direction: column;
 
 	background-color: #152e4e;
-	padding: 3rem 1.5rem 3rem 1.5rem;
-
 	font-family: 'Avenir Next';
 	color: #fff;
 }
@@ -30,7 +22,7 @@
 	color: #fff;
 }
 
-.titleLine {
+.titleOne {
 	font-family: 'BenchNine', sans-serif;
 	text-transform: uppercase;
 	text-align: left;
@@ -38,9 +30,11 @@
 	font-size: 1.3em;
 }
 
-.educationTitle {
+.titleTwo {
+	padding: 1rem 1.5rem 1rem 1.5rem;
+
 	font-family: 'Libre Franklin', sans-serif;
-	font-size: 1.75rem;
+	font-size: 2.5rem;
 	text-transform: uppercase;
 	color: #ffffff;
 	z-index: 1;

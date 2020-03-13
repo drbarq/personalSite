@@ -12,6 +12,12 @@ body {
 	width: 100%;
 }
 
+@media (min-width: 38em) {
+	html {
+		font-size: 20px;
+	}
+}
+
 .app {
 	/* flex container for the entire app */
 	/* width: 100vh; */

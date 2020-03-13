@@ -1,9 +1,12 @@
 import React from 'react';
 import styles from './backstory.module.css';
+import SectionHeader from '../components/sectionHeader./sectionHeader';
 
 const backstory = (
 	<div className={styles.backstoryContainer}>
-		<div className={styles.titleLine}>What I did in the past</div>
+		<div className={styles.titleLine}>
+			Once upon a time: Previous Experience
+		</div>
 		<div className={styles.educationContainer}>
 			<div className={styles.educationTitle}>Education</div>
 			<div className={styles.lineOne}>

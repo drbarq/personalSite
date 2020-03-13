@@ -1,13 +1,11 @@
 import React from 'react';
 import styles from './sectionHeader.module.css';
 
-function SectionHeader() {
+function SectionHeader({ titleOne, titleTwo }) {
 	return (
-		<div className={styles.backstoryContainer}>
-			<div className={styles.titleLine}>About</div>
-			<div className={styles.educationContainer}>
-				<div className={styles.educationTitle}>Education</div>
-			</div>
+		<div className={styles.sectionHeaderContainer}>
+			<div className={styles.titleOne}>{titleOne}</div>
+			<div className={styles.titleTwo}>{titleTwo}</div>
 		</div>
 	);
 }
