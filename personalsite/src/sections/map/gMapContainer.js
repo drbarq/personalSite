@@ -14,18 +14,12 @@ const mapStyles = {
 
 export class MapContainer extends Component {
 	render() {
-		// console.log(this.props);
 		return (
-			// <div>
 			<Map
-				// className={styles.gMapContainer}
 				google={this.props.google}
-				zoom={10}
-				// style={mapStyles}
-				// style={styles.gMapContainer}
-				initialCenter={{ lat: 47.444, lng: -122.176 }}
+				zoom={2}
+				initialCenter={{ lat: 0, lng: 0 }}
 			/>
-			// </div>
 		);
 	}
 }

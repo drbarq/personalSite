@@ -17,14 +17,6 @@
 .gMapContainer {
 	flex-grow: 1;
 	height: 100vh;
-	top: 0;
+	/* top: 0; */
 	position: sticky;
 }
-
-/* display: flex; */
-/* flex-direction: column; */
-/* align-items: center; */
-/* justify-content: center; */
-/* height: 50%; */
-/* width: 50%; */
-/* z-index: 1; */
