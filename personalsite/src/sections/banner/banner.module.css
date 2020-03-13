@@ -12,15 +12,6 @@
 	overflow: hidden;
 }
 
-.h3 {
-	/* text-align: center; */
-	/* position: absolute; */
-	/* color: #a04040; */
-	/* left: 10%; */
-	/* top: 0%; */
-	/* transform: translate(-50%, -50%); */
-}
-
 .bannerImg {
 	display: flex;
 	flex-direction: column;
