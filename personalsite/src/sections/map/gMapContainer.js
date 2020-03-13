@@ -13,6 +13,22 @@ const mapStyles = {
 };
 
 export class MapContainer extends Component {
+	// displayMarkers = () => {
+	// 	return this.state.stores.map((store, index) => {
+	// 		return (
+	// 			<Marker
+	// 				key={index}
+	// 				id={index}
+	// 				position={{
+	// 					lat: store.latitude,
+	// 					lng: store.longitude
+	// 				}}
+	// 				onClick={() => console.log('You clicked me!')}
+	// 			/>
+	// 		);
+	// 	});
+	// };
+
 	render() {
 		return (
 			<Map
