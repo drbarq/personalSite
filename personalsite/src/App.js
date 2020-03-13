@@ -4,6 +4,7 @@ import styles from './App.module.css';
 import banner from './sections/banner/banner';
 import about from './sections/about/about';
 import backstory from './sections/backstory/backstory';
+import map from './sections/map/map';
 
 // import aboutTEST from './Test/about/aboutTEST';
 
@@ -14,6 +15,7 @@ function App() {
 			{about()}
 			{/* {aboutTEST} */}
 			{backstory}
+			{map()}
 			{/* <div>1</div> */}
 			{/* <div>3</div> */}
 			{/* <div>4</div> */}

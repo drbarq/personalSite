@@ -14,15 +14,25 @@
 	color: #fff;
 }
 
-.aboutText {
+/* .aboutText {
 	font-size: 3rem;
 	color: green;
-}
+} */
 
 .textContainer {
-	/* display: flex;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
-	max-width: 65vh; */
+	display: flex;
+	flex-direction: column;
+	padding: 1rem 2rem 0 2rem;
+	background-color: white;
+	border-radius: 15px;
+	/* align-items: center; */
+	/* justify-content: center; */
+	/* overflow: hidden; */
+	/* max-width: 65vh; */
+}
+
+.textContainer p {
+	color: #152e4e;
+
+	/* padding: 1rem 2rem 0 2rem; */
 }
