@@ -4,7 +4,7 @@ import styles from './sectionHeader.module.css';
 function SectionHeader() {
 	return (
 		<div className={styles.backstoryContainer}>
-			<div className={styles.titleLine}>What I did in the past</div>
+			<div className={styles.titleLine}>About</div>
 			<div className={styles.educationContainer}>
 				<div className={styles.educationTitle}>Education</div>
 			</div>
@@ -12,4 +12,4 @@ function SectionHeader() {
 	);
 }
 
-export defualt SectionHeader
+export default SectionHeader;

@@ -4,9 +4,14 @@ import styles from './about.module.css';
 import SectionHeader from '../components/sectionHeader./sectionHeader';
 
 function about() {
-	return <SectionHeader> </SectionHeader>;
+	return (
+		<div className={styles.aboutContainer}>
+			<SectionHeader />
+		</div>
+	);
 }
 
+export default about;
 // = (
 // 	<div className={styles.aboutContainer}>
 // 		<h3 className={styles.h3}>About</h3>
@@ -30,5 +35,3 @@ function about() {
 // 		</div>
 // 	</div>
 // );
-
-export default about;
