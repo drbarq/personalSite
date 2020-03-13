@@ -10,7 +10,7 @@ import map from './sections/map/map';
 
 function App() {
 	return (
-		<div class={styles.app}>
+		<div className={styles.app}>
 			{banner}
 			{about()}
 			{/* {aboutTEST} */}
