@@ -4,8 +4,6 @@ import styles from './about.module.css';
 import SectionHeader from '../components/sectionHeader./sectionHeader';
 
 function about() {
-	console.log(process.env.REACT_APP_GOOGLE_MAP_API);
-	console.log('hello');
 	return (
 		<div className={styles.aboutContainer}>
 			<SectionHeader
