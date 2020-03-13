@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
-import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
+import {
+	Map,
+	InfoWindow,
+	Marker,
+	Polyline,
+	GoogleApiWrapper
+} from 'google-maps-react';
 import styles from './map.module.css';
 
 import gMapData from '../../Data/gMapData';
+import polylineData from '../../Data/polylineData';
 
 const config = {
 	gMapsApi: process.env.REACT_APP_GOOGLE_MAP_API
@@ -33,7 +40,13 @@ export class MapContainer extends Component {
 				zoom={2}
 				initialCenter={{ lat: 0, lng: 0 }}
 			>
-				{this.displayMarkers()}
+				<Polyline
+					paths={polylineData}
+					strokeColor="#0000FF"
+					strokeOpacity={0.8}
+					strokeWeight={2}
+				/>
+				{/* {this.displayMarkers()} */}
 			</Map>
 		);
 	}
