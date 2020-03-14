@@ -20,6 +20,7 @@
 	padding: 1rem 2rem 1rem 2rem;
 	background-color: white;
 	border-radius: 15px;
+	overflow: hidden;
 	/* align-items: center; */
 	/* justify-content: center; */
 	/* overflow: hidden; */
@@ -28,6 +29,6 @@
 
 .textContainer p {
 	color: #152e4e;
-
+	font-size: 1rem;
 	/* padding: 1rem 2rem 0 2rem; */
 }
