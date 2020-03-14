@@ -8,8 +8,8 @@ function map() {
 	return (
 		<div className={styles.mapContainer}>
 			<SectionHeader
-				titleOne={`Where in the world was Joe SanDiego`}
-				titleTwo={'Ayyyyy Lit ass maps'}
+				titleOne={`in Oct '17 I went out to see the world`}
+				titleTwo={'neat places'}
 			/>
 			<div className={styles.gMapContainer}>
 				<MapContainer />
