@@ -39,10 +39,10 @@ body {
 }
 
 .app {
-	/* scroll-snap-type: y mandatory;
+	scroll-snap-type: y mandatory;
 	scroll-snap-points-y: repeat(100vh);
 	overflow-y: scroll;
-	-webkit-overflow-scrolling: touch; */
+	-webkit-overflow-scrolling: touch;
 	height: 100vh;
 	/* flex container for the entire app */
 	/* width: 100%; */
