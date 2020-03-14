@@ -37,7 +37,7 @@ export class MapContainer extends Component {
 		return (
 			<Map
 				google={this.props.google}
-				zoom={2}
+				zoom={1}
 				initialCenter={{ lat: 0, lng: 0 }}
 			>
 				<Polyline
