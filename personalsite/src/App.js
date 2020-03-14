@@ -14,7 +14,7 @@ function App() {
 			<div className={styles.appFlex}>
 				{banner}
 				{about()}
-				{backstory}
+				{backstory()}
 				{map()}
 
 				{/* {aboutTEST} */}

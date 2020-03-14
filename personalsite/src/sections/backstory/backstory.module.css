@@ -40,13 +40,14 @@
 
 .educationTitle {
 	font-family: 'Libre Franklin', sans-serif;
-	font-size: 1.75rem;
+	/* font-size: 1rem; */
 	text-transform: uppercase;
+	text-align: end;
 	color: #ffffff;
 	z-index: 1;
 	line-height: 1em;
-	font-weight: 900;
-	font-style: italic;
+	font-weight: 700;
+	/* font-style: italic; */
 }
 
 .lineOne {
@@ -101,13 +102,14 @@
 
 .experienceTitle {
 	font-family: 'Libre Franklin', sans-serif;
-	font-size: 1.75rem;
+	font-size: 1rem;
 	text-transform: uppercase;
+	text-align: end;
 	color: #ffffff;
 	z-index: 1;
 	line-height: 1em;
-	font-weight: 900;
-	font-style: italic;
+	font-weight: 700;
+	/* font-style: italic; */
 	/* padding: 0 0 0.5em 0; */
 }
 
