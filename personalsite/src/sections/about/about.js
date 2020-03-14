@@ -12,25 +12,29 @@ function about() {
 			/>
 			<div className={styles.textContainer}>
 				<p>
-					Hi! My name is Joe and I am a software developer currently living in
-					Denver, CO.
+					Hi! My name is Joe and I am a software developer based in Denver,CO.
 				</p>
 				<p>
 					I am passionate about technology and love the creative opportunites
-					SWE provides.
+					software development provides.
 				</p>
 				<p>My path to SWE is unique and invite you to explore my story</p>
-				<p>
-					Below you will find the timeline of events leading me to this point.
-				</p>
-				{/* <p style={{ paddingBottom: '1rem' }}> */}
-				<p>
-					Highlights include My Sales Career, 1.5 year motorcycle trip around
-					the world, and starting a business
-				</p>
 			</div>
 		</div>
 	);
 }
 
 export default about;
+
+{
+	/* <p>
+Below you will find the timeline of events leading me to this point.
+</p>
+{/* <p style={{ paddingBottom: '1rem' }}> */
+}
+{
+	/* <p>
+Highlights include My Sales Career, 1.5 year motorcycle trip around
+the world, and starting a business
+</p>  */
+}
