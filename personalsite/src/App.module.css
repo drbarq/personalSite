@@ -16,12 +16,12 @@
 /* scroll-snap-type: y mandatory; */
 /* } */
 
-html {
+/* html {
 	scroll-snap-type: y mandatory;
 	scroll-snap-points-y: repeat(100vh);
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
-}
+} */
 
 html,
 body {
