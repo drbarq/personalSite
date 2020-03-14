@@ -13,9 +13,11 @@ function App() {
 		<div className={styles.app}>
 			{banner}
 			{about()}
-			{/* {aboutTEST} */}
 			{backstory}
 			{map()}
+
+			{/* {aboutTEST} */}
+
 			{/* <div>1</div> */}
 			{/* <div>3</div> */}
 			{/* <div>4</div> */}
