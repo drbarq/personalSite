@@ -1,41 +1,17 @@
-* {
-	box-sizing: border-box;
-}
-
-/* html { */
-/* scroll-snap-type: y mandatory; */
-/* scroll-snap-points-y: repeat(100vh); */
-/* overflow: scroll; */
-/* overflow-x: hidden; */
-/* overflow-y: scroll; */
-/* -webkit-overflow-scrolling: touch; */
-
-/* height: 100vh; */
-/* scroll-snap-type: mandatory; */
-
-/* scroll-snap-type: y mandatory; */
-/* } */
-
-/* html {
-	scroll-snap-type: y mandatory;
-	scroll-snap-points-y: repeat(100vh);
-	overflow-y: scroll;
-	-webkit-overflow-scrolling: touch;
-} */
-
-html,
-body {
-	height: 100vh;
-	/* width: 100vh; */
-
-	width: 100%;
-	/* overflow: hidden; */
-}
-
 @media (min-width: 38em) {
 	html {
 		font-size: 20px;
 	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100vh;
+	width: 100%;
 }
 
 .app {
@@ -44,17 +20,6 @@ body {
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
 	height: 100vh;
-	/* flex container for the entire app */
-	/* width: 100%; */
-	/* min-width: 80%; */
-
-	/* align-items: center; */
-
-	/* overflow: scroll; */
-	/* height: 100vh; */
-	/* scroll-snap-type: mandatory; */
-	/* scroll-snap-points-y: repeat(100vh); */
-	/* scroll-snap-type: y mandatory; */
 }
 
 .appFlex {

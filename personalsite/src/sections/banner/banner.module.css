@@ -19,13 +19,3 @@
 	/* flex-direction: column; */
 	/* background-size: cover; */
 }
-
-.gradient {
-	background-image: linear-gradient(
-		to right,
-		red,
-		#f06d06,
-		rgb(255, 255, 0),
-		green
-	);
-}
