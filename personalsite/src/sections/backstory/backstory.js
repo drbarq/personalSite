@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 
-import { Collapse, Button, CardBody, Card } from 'reactstrap';
+import {
+	Collapse,
+	Button,
+	CardBody,
+	Card,
+	UncontrolledCollapse
+} from 'reactstrap';
 import styles from './backstory.module.css';
 import SectionHeader from '../components/sectionHeader./sectionHeader';
 
@@ -73,7 +79,10 @@ const Example = props => {
 
 const experienceContainer = (
 	<div className={styles.experienceContainer}>
-		<div className={styles.experienceTitle}>Experience</div>
+		<div className={styles.subtitleContainer}>
+			<div className={styles.experienceTitle}>Experience</div>
+		</div>
+
 		<div className={styles.lineOne}>
 			<div className={styles.experienceSubline}>AT&T</div>
 			<div className={styles.educationDate}>April 2011 - Feb 2016</div>
@@ -123,19 +132,25 @@ const experienceContainerComp = (
 
 const eductionContainer = (
 	<div className={styles.educationContainer}>
-		<div className={styles.educationTitle}>Education</div>
-		<div className={styles.lineOne}>
-			<div className={styles.educationSubline}>University of Pennsylvania</div>
-			<div className={styles.educationDate}>Sept 2006 - Dec 2010</div>
+		<div className={styles.subtitleContainer}>
+			<div className={styles.educationTitle}>Education</div>
 		</div>
-		<div className={styles.lineTwo}>
-			<div className={styles.degree}>B.S. Finance</div>
-			{/* <button>Click here for more info</button> */}
+		<div className={styles.subtextContainer}>
+			<div className={styles.lineOne}>
+				<div className={styles.educationSubline}>
+					University of Pennsylvania
+				</div>
+				<div className={styles.educationDate}>Sept 2006 - Dec 2010</div>
+			</div>
+			<div className={styles.lineTwo}>
+				<div className={styles.degree}>B.S. Finance</div>
+				{/* <button>Click here for more info</button> */}
+			</div>
 		</div>
 	</div>
 );
 
-const backstory = () => {
+const Backstory = props => {
 	return (
 		<div className={styles.backstoryContainer}>
 			<SectionHeader titleOne={`Once upon a time:`} />
@@ -145,4 +160,4 @@ const backstory = () => {
 	);
 };
 
-export default backstory;
+export default Backstory;
