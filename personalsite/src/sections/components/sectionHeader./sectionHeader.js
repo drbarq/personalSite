@@ -5,7 +5,7 @@ function SectionHeader({ titleOne, titleTwo }) {
 	return (
 		<div className={styles.sectionHeaderContainer}>
 			<div className={styles.titleOne}>{titleOne}</div>
-			<div className={styles.titleTwo}>{titleTwo}</div>
+			{titleTwo ? <div className={styles.titleTwo}>{titleTwo}</div> : null}
 		</div>
 	);
 }

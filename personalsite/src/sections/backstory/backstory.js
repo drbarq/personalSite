@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+import { Collapse, Button, CardBody, Card } from 'reactstrap';
 import styles from './backstory.module.css';
 import SectionHeader from '../components/sectionHeader./sectionHeader';
 
@@ -46,9 +48,32 @@ import SectionHeader from '../components/sectionHeader./sectionHeader';
 // 	</div>
 // );
 
+const Example = props => {
+	const [isOpen, setIsOpen] = useState(false);
+
+	const toggle = () => setIsOpen(!isOpen);
+
+	return (
+		<div>
+			<Button color="primary" onClick={toggle} style={{ marginBottom: '1rem' }}>
+				Toggle
+			</Button>
+			<Collapse isOpen={isOpen}>
+				<Card>
+					<CardBody>
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+						terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
+						labore wes anderson cred nesciunt sapiente ea proident.
+					</CardBody>
+				</Card>
+			</Collapse>
+		</div>
+	);
+};
+
 const experienceContainer = (
 	<div className={styles.experienceContainer}>
-		<div className={styles.experienceTitle}>Sales Experience</div>
+		<div className={styles.experienceTitle}>Experience</div>
 		<div className={styles.lineOne}>
 			<div className={styles.experienceSubline}>AT&T</div>
 			<div className={styles.educationDate}>April 2011 - Feb 2016</div>
@@ -73,7 +98,7 @@ const experienceContainer = (
 
 const experienceContainerComp = (
 	<div className={styles.experienceContainer}>
-		<div className={styles.experienceTitle}>Sales Experience</div>
+		<div className={styles.experienceTitle}>Experience</div>
 		<div className={styles.lineOne}>
 			<div className={styles.experienceSubline}>AT&T</div>
 			<div className={styles.educationDate}>April 2011 - Feb 2016</div>
@@ -110,14 +135,14 @@ const eductionContainer = (
 	</div>
 );
 
-function backstory() {
+const backstory = () => {
 	return (
 		<div className={styles.backstoryContainer}>
-			<SectionHeader titleOne={`Once upon a time:`} titleTwo={`Experience`} />
+			<SectionHeader titleOne={`Once upon a time:`} />
 			{eductionContainer}
 			{experienceContainer}
 		</div>
 	);
-}
+};
 
 export default backstory;
