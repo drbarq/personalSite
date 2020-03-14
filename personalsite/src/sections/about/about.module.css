@@ -31,4 +31,6 @@
 
 .textContainer p {
 	color: #152e4e;
+	margin: 0;
+	margin-bottom: 0.5rem;
 }
