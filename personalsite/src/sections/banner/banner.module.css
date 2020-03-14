@@ -15,9 +15,9 @@
 }
 
 .bannerImg {
-	display: flex;
-	flex-direction: column;
-	background-size: cover;
+	/* display: flex; */
+	/* flex-direction: column; */
+	/* background-size: cover; */
 }
 
 .gradient {

@@ -11,16 +11,18 @@ import map from './sections/map/map';
 function App() {
 	return (
 		<div className={styles.app}>
-			{banner}
-			{about()}
-			{backstory}
-			{map()}
+			<div className={styles.appFlex}>
+				{banner}
+				{about()}
+				{backstory}
+				{map()}
 
-			{/* {aboutTEST} */}
+				{/* {aboutTEST} */}
 
-			{/* <div>1</div> */}
-			{/* <div>3</div> */}
-			{/* <div>4</div> */}
+				{/* <div>1</div> */}
+				{/* <div>3</div> */}
+				{/* <div>4</div> */}
+			</div>
 		</div>
 	);
 }
