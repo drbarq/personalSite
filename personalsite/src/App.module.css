@@ -52,7 +52,6 @@ body {
 	/* scroll-snap-type: y mandatory; */
 }
 
-/* .appFlex { */
 .appFlex {
 	display: flex;
 	flex-direction: column;
