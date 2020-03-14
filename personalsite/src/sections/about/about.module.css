@@ -3,7 +3,7 @@
 	width: 100%;
 	max-width: 50rem;
 	scroll-snap-align: start;
-	position: relative;
+	/* position: relative; */
 	display: flex;
 	flex-direction: column;
 
@@ -17,6 +17,7 @@
 .textContainer {
 	display: flex;
 	flex-direction: column;
+	max-width: 85%;
 	padding: 1rem 2rem 1rem 2rem;
 	background-color: white;
 	border-radius: 15px;
@@ -28,7 +29,9 @@
 }
 
 .textContainer p {
+	/* display: flex;
+	flex-direction: column; */
 	color: #152e4e;
-	font-size: 1rem;
+	/* font-size: 1rem; */
 	/* padding: 1rem 2rem 0 2rem; */
 }

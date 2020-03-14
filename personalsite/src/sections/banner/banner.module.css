@@ -1,4 +1,6 @@
 .bannerContainer {
+	background-color: #152e4e;
+
 	/* properties for snap scrolling */
 	height: 100vh;
 	width: 100%;
@@ -15,7 +17,7 @@
 }
 
 .bannerImg {
-	/* display: flex; */
-	/* flex-direction: column; */
-	/* background-size: cover; */
+	/* display: flex;
+	flex-direction: column;
+	background-size: cover; */
 }
