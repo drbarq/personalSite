@@ -23,7 +23,7 @@ function about() {
 				<p>
 					Below you will find the timeline of events leading me to this point.
 				</p>
-				<p style={{ paddingbottom: '1rem' }}>
+				<p style={{ paddingBottom: '1rem' }}>
 					Highlights include My Sales Career, 1.5 year motorcycle trip around
 					the world, and starting a business
 				</p>
