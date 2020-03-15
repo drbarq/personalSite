@@ -49,6 +49,9 @@ const useStyles = makeStyles(theme => ({
 		alignSelf: 'flex-start',
 		padding: '1.5rem 1.5rem 3rem 1.5rem',
 		width: '100%'
+		// [theme.breakpoints.up('md')]: {
+		// 	backgroundColor: 'red'
+		// }
 	},
 	tabs: {
 		borderRight: `1px solid ${theme.palette.divider}`
@@ -71,10 +74,11 @@ export default function VerticalTabs() {
 				titleOne={'then I went to school'}
 				titleTwo={'Flatiron School Projects'}
 			/>
-			<div className={classes.root}>
+			{/* <div className={classes.root}> */}
+			<div className={styles.root}>
 				<Tabs
 					orientation="vertical"
-					// variant="scrollable"
+					variant="scrollable"
 					value={value}
 					onChange={handleChange}
 					// aria-label="Vertical tabs example"

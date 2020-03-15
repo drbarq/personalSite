@@ -22,7 +22,9 @@ const useStyles = makeStyles({
 	root: {
 		width: '100%',
 		height: '100%',
-		boxShadow: 'none'
+		boxShadow: 'none',
+		display: 'flex',
+		flexDirection: 'column'
 		// padding: '0px'
 	},
 	bullet: {
