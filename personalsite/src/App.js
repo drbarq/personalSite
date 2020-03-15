@@ -5,7 +5,9 @@ import Banner from './sections/banner/banner';
 import About from './sections/about/about';
 import Backstory from './sections/backstory/backstory';
 import Map from './sections/map/map';
-import Projects from './sections/projects/projects';
+import ProjectsContainer from './sections/projects/projectsContainer';
+
+import TabsRSWC from './sections/test/tabsRSWC';
 
 // import aboutTEST from './Test/about/aboutTEST';
 
@@ -17,15 +19,11 @@ function App() {
 				<About />
 				<Backstory />
 				<Map />
-
-				{/* {aboutTEST} */}
-
-				{/* <div>1</div> */}
-				{/* <div>3</div> */}
-				{/* <div>4</div> */}
+				<ProjectsContainer />
 			</div>
-			<Projects />
 		</div>
+		// <Projects />
+		// <TabsRSWC />
 	);
 }
 

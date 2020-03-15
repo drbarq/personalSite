@@ -31,7 +31,7 @@ const Projects = props => {
 							toggle('1');
 						}}
 					>
-						Tab1
+						Lost-Found
 					</NavLink>
 				</NavItem>
 				<NavItem>
@@ -41,12 +41,33 @@ const Projects = props => {
 							toggle('2');
 						}}
 					>
-						Moar Tabs
+						Scooter Sleuth
+					</NavLink>
+				</NavItem>
+				<NavItem>
+					<NavLink
+						className={classnames({ active: activeTab === '3' })}
+						onClick={() => {
+							toggle('3');
+						}}
+					>
+						Scooter Sleuth v2
+					</NavLink>
+				</NavItem>
+				<NavItem>
+					<NavLink
+						className={classnames({ active: activeTab === '4' })}
+						onClick={() => {
+							toggle('4');
+						}}
+					>
+						Millennial Translation Service
 					</NavLink>
 				</NavItem>
 			</Nav>
 			<TabContent activeTab={activeTab}>
 				<TabPane tabId="1">
+					<h1>YOYOYOY</h1>
 					<Row>
 						<Col sm="12">
 							<h4>Tab 1 Contents</h4>
