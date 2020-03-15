@@ -24,8 +24,7 @@ const Projects = props => {
 
 	return (
 		<div>
-			{/* <Nav tabs className={styles.navBarTabs}> */}
-			<Nav tabs>
+			<Nav tabs className={styles.navBarTabs}>
 				<NavItem>
 					<NavLink
 						className={classnames({ active: activeTab === '1' })}
