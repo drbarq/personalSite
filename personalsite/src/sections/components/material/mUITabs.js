@@ -12,6 +12,10 @@ import SimpleCard from './card';
 import SectionHeader from '../../../sections/components/sectionHeader/sectionHeader';
 import styles from './mUITabs.module.css';
 
+import LFCard from '../cards/lfCard';
+import ScooterCard from '../cards/scooterCard';
+import ScooterTwoCard from '../cards/scooterTwoCard';
+
 function TabPanel(props) {
 	const { children, value, index, ...other } = props;
 
@@ -91,13 +95,13 @@ export default function VerticalTabs() {
 				</Tabs>
 				<div className={styles.tabPanels}>
 					<TabPanel value={value} index={0}>
-						<SimpleCard />
+						<LFCard />
 					</TabPanel>
 					<TabPanel value={value} index={1}>
-						Item Two
+						<ScooterCard />
 					</TabPanel>
 					<TabPanel value={value} index={2}>
-						Item Three
+						<ScooterTwoCard />
 					</TabPanel>
 					<TabPanel value={value} index={3}>
 						Item Four
