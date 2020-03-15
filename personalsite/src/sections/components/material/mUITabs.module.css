@@ -1,0 +1,17 @@
+.sectionContainer {
+	height: 100vh;
+	/* width: 100vh; */
+	width: 100%;
+	max-width: 50rem;
+	scroll-snap-align: start;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	background-color: #152e4e;
+	padding: 3rem 1.5rem 3rem 1.5rem;
+
+	font-family: 'Avenir Next';
+	color: #fff;
+}

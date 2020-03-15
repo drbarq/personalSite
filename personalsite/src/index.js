@@ -11,15 +11,15 @@ const theme = createMuiTheme({
 	palette: {
 		primary: red,
 		secondary: {
-			main: amber.A400,
-			light: amber[200],
-			dark: amber[700]
+			main: '#27aee8'
+			// light: amber[200],
+			// dark: amber[700]
 		}
 		// type: 'dark'
 	}
 });
 
-console.log(theme);
+console.log(theme.palette.divider);
 ReactDOM.render(
 	<MuiThemeProvider theme={theme}>
 		<App />

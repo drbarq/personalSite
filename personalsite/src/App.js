@@ -14,16 +14,16 @@ import VerticalTabs from './sections/components/material/mUITabs';
 
 function App() {
 	return (
-		// <div className={styles.app}>
-		// 	<div className={styles.appFlex}>
-		// 		<Banner />
-		// 		<About />
-		// 		<Backstory />
-		// 		<Map />
-		// 		<ProjectsContainer />
-		// 	</div>
-		// </div>
-		<VerticalTabs />
+		<div className={styles.app}>
+			<div className={styles.appFlex}>
+				<Banner />
+				<About />
+				<Backstory />
+				<Map />
+				{/* <ProjectsContainer /> */}
+				<VerticalTabs />
+			</div>
+		</div>
 
 		// <Projects />
 		// <TabsRSWC />
