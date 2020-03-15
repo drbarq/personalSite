@@ -24,7 +24,7 @@ const theme = createMuiTheme({
 		fontFamily: 'Avenir Next'
 	}
 });
-
+console.log(theme);
 // console.log(theme.palette.divider);
 ReactDOM.render(
 	<MuiThemeProvider theme={theme}>

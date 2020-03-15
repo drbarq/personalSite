@@ -6,6 +6,10 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
+import YouTubeIcon from '@material-ui/icons/YouTube';
+
+import styles from './card.module.css';
+
 const useStyles = makeStyles({
 	root: {
 		width: '100%',
@@ -20,17 +24,23 @@ const useStyles = makeStyles({
 	},
 	title: {
 		// fontSize: 14
-		textTransform: 'uppercase'
+		fontVariant: 'small-caps',
+		letterSpacing: '2px'
+		// textTransform: 'small-caps'
 	},
 	pos: {
 		marginBottom: 12
 	},
 	text: {
 		paddingLeft: '.5rem',
-		paddingBottom: '.5rem'
+		paddingBottom: '.5rem',
+		fontSize: 'small'
 	},
 	cardContent: {
 		padding: '0px'
+	},
+	icons: {
+		fontSize: '4rem'
 	}
 });
 
@@ -70,6 +80,15 @@ export default function SimpleCard() {
 				<Typography className={classes.title} color="textSecondary">
 					links:
 				</Typography>
+				<div className={styles.linksContainer}>
+					<div className={styles.linkLabel}>
+						<YouTubeIcon className={classes.icons} />
+						<Typography className={classes.text} variant="body2" component="p">
+							YouTube
+						</Typography>
+					</div>
+				</div>
+
 				<Typography variant="body2" component="p">
 					well meaning and kindly.
 					<br />
