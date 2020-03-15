@@ -10,8 +10,8 @@ const useStyles = makeStyles({
 	root: {
 		width: '100%',
 		height: '100%',
-		boxShadow: 'none',
-		padding: '0px'
+		boxShadow: 'none'
+		// padding: '0px'
 	},
 	bullet: {
 		display: 'inline-block',
@@ -19,7 +19,8 @@ const useStyles = makeStyles({
 		transform: 'scale(0.8)'
 	},
 	title: {
-		fontSize: 14
+		// fontSize: 14
+		textTransform: 'uppercase'
 	},
 	pos: {
 		marginBottom: 12
@@ -61,12 +62,13 @@ export default function SimpleCard() {
 				>
 					skills:
 				</Typography>
-				<Typography variant="h5" component="h6">
+				{/* <Typography variant="h5" component="h6"> */}
+				<Typography className={classes.text} variant="body2" component="p">
 					React {bull} Ruby on Rails {bull} firebase {bull} SQL {bull} QR Codes{' '}
 					{bull} Flex {bull} Twilio {bull} SMS {bull} Heroku
 				</Typography>
-				<Typography className={classes.pos} color="textSecondary">
-					adjective
+				<Typography className={classes.title} color="textSecondary">
+					links:
 				</Typography>
 				<Typography variant="body2" component="p">
 					well meaning and kindly.
