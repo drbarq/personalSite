@@ -16,10 +16,13 @@ const theme = createMuiTheme({
 			// dark: amber[700]
 		}
 		// type: 'dark'
+	},
+	typography: {
+		fontFamily: 'Avenir Next'
 	}
 });
 
-console.log(theme.palette.divider);
+// console.log(theme.palette.divider);
 ReactDOM.render(
 	<MuiThemeProvider theme={theme}>
 		<App />
