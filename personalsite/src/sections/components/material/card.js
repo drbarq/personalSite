@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import lfLogo from '../../../images/lflogo.svg';
 
 import {
 	faVimeoSquare,
@@ -46,10 +47,12 @@ const useStyles = makeStyles({
 		padding: '0px'
 	},
 	icons: {
-		fontSize: '3.5rem'
+		fontSize: '3.5rem',
+		alignSelf: 'center'
 	},
 	link: {
-		fontSize: 'small'
+		fontSize: 'small',
+		alignSelf: 'center'
 		// paddingLeft: '.5rem'
 	}
 });
@@ -61,6 +64,10 @@ export default function SimpleCard() {
 	return (
 		<Card className={classes.root}>
 			<CardContent className={classes.cardContent}>
+				<div className={styles.bannerImg}>
+					<img src={lfLogo} />
+				</div>
+
 				<Typography
 					className={classes.title}
 					color="textSecondary"
@@ -82,7 +89,6 @@ export default function SimpleCard() {
 				>
 					skills:
 				</Typography>
-				{/* <Typography variant="h5" component="h6"> */}
 				<Typography className={classes.text} variant="body2" component="p">
 					React {bull} Ruby on Rails {bull} firebase {bull} SQL {bull} QR Codes{' '}
 					{bull} Flex {bull} Twilio {bull} SMS {bull} Heroku
@@ -91,8 +97,8 @@ export default function SimpleCard() {
 					links:
 				</Typography>
 				<div className={styles.linksContainer}>
-					<div className={styles.linkLabel}>
-						<a href="https://vimeo.com/351468041" target="_blank">
+					<a href="https://vimeo.com/351468041" target="_blank">
+						<div className={styles.linkLabel}>
 							<FontAwesomeIcon icon={faVimeoV} className={classes.icons} />
 							<Typography
 								className={classes.link}
@@ -101,13 +107,14 @@ export default function SimpleCard() {
 							>
 								Video Demo
 							</Typography>
-						</a>
-					</div>
-					<div className={styles.linkLabel}>
-						<a
-							href="https://github.com/drbarq/lost-and-found-frontEnd"
-							target="_blank"
-						>
+						</div>
+					</a>
+
+					<a
+						href="https://github.com/drbarq/lost-and-found-frontEnd"
+						target="_blank"
+					>
+						<div className={styles.linkLabel}>
 							<FontAwesomeIcon icon={faGithub} className={classes.icons} />
 							<Typography
 								className={classes.link}
@@ -116,13 +123,14 @@ export default function SimpleCard() {
 							>
 								FrontEnd
 							</Typography>
-						</a>
-					</div>
-					<div className={styles.linkLabel}>
-						<a
-							href="https://github.com/drbarq/lost-and-found-backEnd-api"
-							target="_blank"
-						>
+						</div>
+					</a>
+
+					<a
+						href="https://github.com/drbarq/lost-and-found-backEnd-api"
+						target="_blank"
+					>
+						<div className={styles.linkLabel}>
 							<FontAwesomeIcon icon={faGithub} className={classes.icons} />
 							<Typography
 								className={classes.link}
@@ -131,8 +139,8 @@ export default function SimpleCard() {
 							>
 								BackEnd
 							</Typography>
-						</a>
-					</div>
+						</div>
+					</a>
 				</div>
 
 				{/* <Typography variant="body2" component="p">

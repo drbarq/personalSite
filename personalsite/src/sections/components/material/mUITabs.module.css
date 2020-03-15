@@ -12,11 +12,12 @@
 	background-color: #152e4e;
 	padding: 3rem 1.5rem 3rem 1.5rem;
 	color: #fff;
+	overflow: scroll;
 }
 
 .tabPanels {
 	width: 100%;
-	height: 100%;
+	/* height: 100%; */
 	background-color: white;
 	border-radius: 5px;
 	display: flex;
