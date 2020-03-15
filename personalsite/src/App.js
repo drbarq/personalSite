@@ -8,20 +8,23 @@ import Map from './sections/map/map';
 import ProjectsContainer from './sections/projects/projectsContainer';
 
 import TabsRSWC from './sections/test/tabsRSWC';
+import VerticalTabs from './sections/components/material/mUITabs';
 
 // import aboutTEST from './Test/about/aboutTEST';
 
 function App() {
 	return (
-		<div className={styles.app}>
-			<div className={styles.appFlex}>
-				<Banner />
-				<About />
-				<Backstory />
-				<Map />
-				<ProjectsContainer />
-			</div>
-		</div>
+		// <div className={styles.app}>
+		// 	<div className={styles.appFlex}>
+		// 		<Banner />
+		// 		<About />
+		// 		<Backstory />
+		// 		<Map />
+		// 		<ProjectsContainer />
+		// 	</div>
+		// </div>
+		<VerticalTabs />
+
 		// <Projects />
 		// <TabsRSWC />
 	);
