@@ -1,10 +1,11 @@
 import React from 'react';
 import styles from './App.module.css';
 
-import banner from './sections/banner/banner';
-import about from './sections/about/about';
-import backstory from './sections/backstory/backstory';
-import map from './sections/map/map';
+import Banner from './sections/banner/banner';
+import About from './sections/about/about';
+import Backstory from './sections/backstory/backstory';
+import Map from './sections/map/map';
+import Projects from './sections/projects/projects';
 
 // import aboutTEST from './Test/about/aboutTEST';
 
@@ -12,10 +13,10 @@ function App() {
 	return (
 		<div className={styles.app}>
 			<div className={styles.appFlex}>
-				{banner}
-				{about()}
-				{backstory()}
-				{map()}
+				<Banner />
+				<About />
+				<Backstory />
+				<Map />
 
 				{/* {aboutTEST} */}
 
@@ -23,6 +24,7 @@ function App() {
 				{/* <div>3</div> */}
 				{/* <div>4</div> */}
 			</div>
+			<Projects />
 		</div>
 	);
 }
