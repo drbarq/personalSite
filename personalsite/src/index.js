@@ -18,6 +18,7 @@ const theme = createMuiTheme({
 		// type: 'dark'
 	},
 	typography: {
+		fontSize: 'calc(14px + 0.5vw)',
 		fontFamily: 'Avenir Next'
 	}
 });

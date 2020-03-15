@@ -42,14 +42,10 @@ function a11yProps(index) {
 const useStyles = makeStyles(theme => ({
 	root: {
 		flexGrow: 1,
-		// backgroundColor: theme.palette.background.paper,
 		display: 'flex',
-		// height: 224,
 		alignSelf: 'flex-start',
 		padding: '1.5rem 1.5rem 3rem 1.5rem',
 		width: '100%'
-
-		// flexDirection: 'column'
 	},
 	tabs: {
 		borderRight: `1px solid ${theme.palette.divider}`
@@ -76,7 +72,7 @@ export default function VerticalTabs() {
 					// variant="scrollable"
 					value={value}
 					onChange={handleChange}
-					aria-label="Vertical tabs example"
+					// aria-label="Vertical tabs example"
 					className={classes.tabs}
 				>
 					<Tab label="Lost-Found" {...a11yProps(0)} />
