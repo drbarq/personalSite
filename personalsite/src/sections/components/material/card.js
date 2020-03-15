@@ -99,7 +99,7 @@ export default function SimpleCard() {
 				<div className={styles.linksContainer}>
 					<a href="https://vimeo.com/351468041" target="_blank">
 						<div className={styles.linkLabel}>
-							<FontAwesomeIcon icon={faVimeoV} className={classes.icons} />
+							<FontAwesomeIcon icon={faVimeoV} className={styles.icons} />
 							<Typography
 								className={classes.link}
 								variant="body2"
@@ -115,7 +115,7 @@ export default function SimpleCard() {
 						target="_blank"
 					>
 						<div className={styles.linkLabel}>
-							<FontAwesomeIcon icon={faGithub} className={classes.icons} />
+							<FontAwesomeIcon icon={faGithub} className={styles.icons} />
 							<Typography
 								className={classes.link}
 								variant="body2"
@@ -131,7 +131,7 @@ export default function SimpleCard() {
 						target="_blank"
 					>
 						<div className={styles.linkLabel}>
-							<FontAwesomeIcon icon={faGithub} className={classes.icons} />
+							<FontAwesomeIcon icon={faGithub} className={styles.icons} />
 							<Typography
 								className={classes.link}
 								variant="body2"
