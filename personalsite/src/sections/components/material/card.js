@@ -7,6 +7,14 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 import YouTubeIcon from '@material-ui/icons/YouTube';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faCheckSquare, faCoffee } from '@fortawesome/fontawesome-free-solid';
+import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
+import {
+	faVimeoSquare,
+	faVimeoV,
+	faGithub
+} from '@fortawesome/fontawesome-free-brands';
 
 import styles from './card.module.css';
 
@@ -40,7 +48,7 @@ const useStyles = makeStyles({
 		padding: '0px'
 	},
 	icons: {
-		fontSize: '4rem'
+		fontSize: '3.5rem'
 	}
 });
 
@@ -82,22 +90,58 @@ export default function SimpleCard() {
 				</Typography>
 				<div className={styles.linksContainer}>
 					<div className={styles.linkLabel}>
-						<YouTubeIcon className={classes.icons} />
-						<Typography className={classes.text} variant="body2" component="p">
-							YouTube
-						</Typography>
+						<a href="https://vimeo.com/351468041" target="_blank">
+							<FontAwesomeIcon icon={faVimeoV} className={classes.icons} />
+							<Typography
+								className={classes.text}
+								variant="body2"
+								component="p"
+							>
+								Video
+							</Typography>
+						</a>
+					</div>
+					<div className={styles.linkLabel}>
+						<a
+							href="https://github.com/drbarq/lost-and-found-frontEnd"
+							target="_blank"
+						>
+							<FontAwesomeIcon icon={faGithub} className={classes.icons} />
+							<Typography
+								className={classes.text}
+								variant="body2"
+								component="p"
+							>
+								FrontEnd
+							</Typography>
+						</a>
+					</div>
+					<div className={styles.linkLabel}>
+						<a
+							href="https://github.com/drbarq/lost-and-found-backEnd-api"
+							target="_blank"
+						>
+							<FontAwesomeIcon icon={faGithub} className={classes.icons} />
+							<Typography
+								className={classes.text}
+								variant="body2"
+								component="p"
+							>
+								BackEnd
+							</Typography>
+						</a>
 					</div>
 				</div>
 
-				<Typography variant="body2" component="p">
+				{/* <Typography variant="body2" component="p">
 					well meaning and kindly.
 					<br />
 					{'"a benevolent smile"'}
 				</Typography>
-			</CardContent>
 			<CardActions>
 				<Button size="small">Learn More</Button>
-			</CardActions>
+			</CardActions> */}
+			</CardContent>
 		</Card>
 	);
 }

@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'font-awesome/css/font-awesome.min.css';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core';
 import { red, amber } from '@material-ui/core/colors';
 
