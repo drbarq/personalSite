@@ -26,9 +26,10 @@ const Projects = props => {
 		<div className={styles.mediaDisplayContainer}>
 			<div className={styles.navBarTabs}>
 				{/* <Nav tabs className={styles.navBarTabs}> */}
-				<Nav tabs>
+				<Nav>
 					<NavItem>
 						<NavLink
+							// hidden={false}
 							className={classnames({ active: activeTab === '1' })}
 							onClick={() => {
 								toggle('1');
