@@ -3,8 +3,11 @@ import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
+// import TabPanel from '@material-ui/core/TabPanel';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+
+import SimpleCard from './card';
 
 import SectionHeader from '../../../sections/components/sectionHeader/sectionHeader';
 import styles from './mUITabs.module.css';
@@ -49,6 +52,8 @@ const useStyles = makeStyles(theme => ({
 	},
 	tabs: {
 		borderRight: `1px solid ${theme.palette.divider}`
+		// height: '100%',
+		// justifyContent: 'space-evenly'
 	}
 }));
 
@@ -80,18 +85,20 @@ export default function VerticalTabs() {
 					<Tab label="Scooter Sleuth v2" {...a11yProps(2)} />
 					<Tab label="Millennial Translation Service" {...a11yProps(3)} />
 				</Tabs>
-				<TabPanel value={value} index={0}>
-					Item One
-				</TabPanel>
-				<TabPanel value={value} index={1}>
-					Item Two
-				</TabPanel>
-				<TabPanel value={value} index={2}>
-					Item Three
-				</TabPanel>
-				<TabPanel value={value} index={3}>
-					Item Four
-				</TabPanel>
+				<div className={styles.tabPanels}>
+					<TabPanel value={value} index={0}>
+						<SimpleCard />
+					</TabPanel>
+					<TabPanel value={value} index={1}>
+						Item Two
+					</TabPanel>
+					<TabPanel value={value} index={2}>
+						Item Three
+					</TabPanel>
+					<TabPanel value={value} index={3}>
+						Item Four
+					</TabPanel>
+				</div>
 			</div>
 		</div>
 	);
