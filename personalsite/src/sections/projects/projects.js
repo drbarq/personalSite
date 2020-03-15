@@ -23,49 +23,53 @@ const Projects = props => {
 	};
 
 	return (
-		<div>
-			<Nav tabs className={styles.navBarTabs}>
-				<NavItem>
-					<NavLink
-						className={classnames({ active: activeTab === '1' })}
-						onClick={() => {
-							toggle('1');
-						}}
-					>
-						Lost-Found
-					</NavLink>
-				</NavItem>
-				<NavItem>
-					<NavLink
-						className={classnames({ active: activeTab === '2' })}
-						onClick={() => {
-							toggle('2');
-						}}
-					>
-						Scooter Sleuth
-					</NavLink>
-				</NavItem>
-				<NavItem>
-					<NavLink
-						className={classnames({ active: activeTab === '3' })}
-						onClick={() => {
-							toggle('3');
-						}}
-					>
-						Scooter Sleuth v2
-					</NavLink>
-				</NavItem>
-				<NavItem>
-					<NavLink
-						className={classnames({ active: activeTab === '4' })}
-						onClick={() => {
-							toggle('4');
-						}}
-					>
-						Millennial Translation Service
-					</NavLink>
-				</NavItem>
-			</Nav>
+		<div className={styles.mediaDisplayContainer}>
+			<div className={styles.navBarTabs}>
+				{/* <Nav tabs className={styles.navBarTabs}> */}
+				<Nav tabs>
+					<NavItem>
+						<NavLink
+							className={classnames({ active: activeTab === '1' })}
+							onClick={() => {
+								toggle('1');
+							}}
+						>
+							Lost-Found
+						</NavLink>
+					</NavItem>
+					<NavItem>
+						<NavLink
+							className={classnames({ active: activeTab === '2' })}
+							onClick={() => {
+								toggle('2');
+							}}
+						>
+							Scooter Sleuth
+						</NavLink>
+					</NavItem>
+					<NavItem>
+						<NavLink
+							className={classnames({ active: activeTab === '3' })}
+							onClick={() => {
+								toggle('3');
+							}}
+						>
+							Scooter Sleuth v2
+						</NavLink>
+					</NavItem>
+					<NavItem>
+						<NavLink
+							className={classnames({ active: activeTab === '4' })}
+							onClick={() => {
+								toggle('4');
+							}}
+						>
+							Millennial Translation Service
+						</NavLink>
+					</NavItem>
+				</Nav>
+			</div>
+
 			<TabContent activeTab={activeTab}>
 				<TabPane tabId="1">
 					<h1>YOYOYOY</h1>
