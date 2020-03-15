@@ -15,6 +15,7 @@ import styles from './mUITabs.module.css';
 import LFCard from '../cards/lfCard';
 import ScooterCard from '../cards/scooterCard';
 import ScooterTwoCard from '../cards/scooterTwoCard';
+import MTSCard from '../cards/mtsCard';
 
 function TabPanel(props) {
 	const { children, value, index, ...other } = props;
@@ -104,7 +105,7 @@ export default function VerticalTabs() {
 						<ScooterTwoCard />
 					</TabPanel>
 					<TabPanel value={value} index={3}>
-						Item Four
+						<MTSCard />
 					</TabPanel>
 				</div>
 			</div>
