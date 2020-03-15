@@ -13,6 +13,7 @@ import {
 	Col
 } from 'reactstrap';
 import classnames from 'classnames';
+import styles from './projects.module.css';
 
 const Projects = props => {
 	const [activeTab, setActiveTab] = useState('1');
@@ -23,6 +24,7 @@ const Projects = props => {
 
 	return (
 		<div>
+			{/* <Nav tabs className={styles.navBarTabs}> */}
 			<Nav tabs>
 				<NavItem>
 					<NavLink

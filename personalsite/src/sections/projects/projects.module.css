@@ -15,3 +15,8 @@
 	font-family: 'Avenir Next';
 	color: #fff;
 }
+
+.navBarTabs {
+	display: flex;
+	flex-direction: row;
+}
