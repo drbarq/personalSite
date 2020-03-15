@@ -11,7 +11,7 @@ const useStyles = makeStyles({
 		width: '100%',
 		height: '100%',
 		boxShadow: 'none',
-		padding: 'none'
+		padding: '0px'
 	},
 	bullet: {
 		display: 'inline-block',
@@ -27,6 +27,9 @@ const useStyles = makeStyles({
 	text: {
 		paddingLeft: '.5rem',
 		paddingBottom: '.5rem'
+	},
+	cardContent: {
+		padding: '0px'
 	}
 });
 
@@ -36,7 +39,7 @@ export default function SimpleCard() {
 
 	return (
 		<Card className={classes.root}>
-			<CardContent>
+			<CardContent className={classes.cardContent}>
 				<Typography
 					className={classes.title}
 					color="textSecondary"

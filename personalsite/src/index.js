@@ -12,7 +12,6 @@ const theme = createMuiTheme({
 		primary: {
 			main: '#152e4e'
 		},
-
 		secondary: {
 			main: '#27aee8'
 			// light: amber[200],
@@ -21,7 +20,7 @@ const theme = createMuiTheme({
 		// type: 'dark'
 	},
 	typography: {
-		fontSize: 'calc(14px + 0.5vw)',
+		// fontSize: calc('14px + 0.5vw'),
 		fontFamily: 'Avenir Next'
 	}
 });
