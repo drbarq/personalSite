@@ -20,8 +20,8 @@
 	align-self: center;
 	max-width: 85%;
 	padding: 1rem 2rem 1rem 2rem;
-	background-color: white;
-	border-radius: 15px;
+	/* background-color: white; */
+	/* border-radius: 15px; */
 	/* overflow: hidden; */
 	/* align-items: center; */
 	/* justify-content: center; */
@@ -30,7 +30,8 @@
 }
 
 .textContainer p {
-	color: #152e4e;
+	/* color: #152e4e; */
+	color: #fff;
 	margin: 0;
 	margin-bottom: 0.5rem;
 }

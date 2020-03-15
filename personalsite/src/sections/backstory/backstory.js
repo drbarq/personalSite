@@ -8,7 +8,7 @@ import {
 	UncontrolledCollapse
 } from 'reactstrap';
 import styles from './backstory.module.css';
-import SectionHeader from '../components/sectionHeader./sectionHeader';
+import SectionHeader from '../components/sectionHeader/sectionHeader';
 
 // const backstory = (
 // 	<div className={styles.backstoryContainer}>
