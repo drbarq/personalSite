@@ -8,8 +8,7 @@ import Typography from '@material-ui/core/Typography';
 
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faCheckSquare, faCoffee } from '@fortawesome/fontawesome-free-solid';
-import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
+
 import {
 	faVimeoSquare,
 	faVimeoV,
@@ -25,7 +24,6 @@ const useStyles = makeStyles({
 		boxShadow: 'none',
 		display: 'flex',
 		flexDirection: 'column'
-		// padding: '0px'
 	},
 	bullet: {
 		display: 'inline-block',
@@ -33,10 +31,8 @@ const useStyles = makeStyles({
 		transform: 'scale(0.8)'
 	},
 	title: {
-		// fontSize: 14
 		fontVariant: 'small-caps',
 		letterSpacing: '2px'
-		// textTransform: 'small-caps'
 	},
 	pos: {
 		marginBottom: 12
@@ -51,6 +47,10 @@ const useStyles = makeStyles({
 	},
 	icons: {
 		fontSize: '3.5rem'
+	},
+	link: {
+		fontSize: 'small'
+		// paddingLeft: '.5rem'
 	}
 });
 
@@ -95,11 +95,11 @@ export default function SimpleCard() {
 						<a href="https://vimeo.com/351468041" target="_blank">
 							<FontAwesomeIcon icon={faVimeoV} className={classes.icons} />
 							<Typography
-								className={classes.text}
+								className={classes.link}
 								variant="body2"
 								component="p"
 							>
-								Video
+								Video Demo
 							</Typography>
 						</a>
 					</div>
@@ -110,7 +110,7 @@ export default function SimpleCard() {
 						>
 							<FontAwesomeIcon icon={faGithub} className={classes.icons} />
 							<Typography
-								className={classes.text}
+								className={classes.link}
 								variant="body2"
 								component="p"
 							>
@@ -125,7 +125,7 @@ export default function SimpleCard() {
 						>
 							<FontAwesomeIcon icon={faGithub} className={classes.icons} />
 							<Typography
-								className={classes.text}
+								className={classes.link}
 								variant="body2"
 								component="p"
 							>
