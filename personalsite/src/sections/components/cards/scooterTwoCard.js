@@ -23,8 +23,6 @@ const useStyles = makeStyles({
 		display: 'flex',
 		flexDirection: 'column',
 		overflow: 'auto'
-
-		// borderBottom: 'none'
 	},
 	bullet: {
 		display: 'inline-block',
