@@ -31,7 +31,7 @@ function TabPanel(props) {
 			{...other}
 		>
 			{value === index && (
-				<Box className={styles.tabPanel} p={3}>
+				<Box className={styles.tabPanels} p={3}>
 					{children}
 				</Box>
 			)}
@@ -60,7 +60,7 @@ const useStyles = makeStyles(theme => ({
 		// alignSelf: 'flex-start',
 		padding: '1.5rem 1.5rem 1.5rem 1.5rem',
 		width: '100%',
-		overflow: 'scroll'
+		overflow: 'auto'
 		// [theme.breakpoints.up('md')]: {
 		// 	backgroundColor: 'red'
 		// }
