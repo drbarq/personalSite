@@ -43,6 +43,7 @@
 	}
 	.tabs {
 		max-height: 6rem;
+		margin-bottom: 0.5rem;
 	}
 }
 

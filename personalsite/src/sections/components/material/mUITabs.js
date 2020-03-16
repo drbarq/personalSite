@@ -95,7 +95,6 @@ export default function VerticalTabs() {
 				titleOne={'then I went to Flatiron School'}
 				titleTwo={'Software Projects'}
 			/>
-			{/* <div className={classes.root}> */}
 			<div className={styles.root}>
 				<Tabs
 					orientation="vertical"
