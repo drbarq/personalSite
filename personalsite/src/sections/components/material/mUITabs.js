@@ -52,7 +52,7 @@ const useStyles = makeStyles(theme => ({
 		flexGrow: 1,
 		display: 'flex',
 		alignSelf: 'flex-start',
-		padding: '1.5rem 1.5rem 3rem 1.5rem',
+		padding: '1.5rem 1.5rem 1.5rem 1.5rem',
 		width: '100%'
 		// [theme.breakpoints.up('md')]: {
 		// 	backgroundColor: 'red'
