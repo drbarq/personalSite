@@ -12,7 +12,7 @@
 	background-color: #152e4e;
 	padding: 3rem 1.5rem 3rem 1.5rem;
 	color: #fff;
-	overflow: scroll;
+	/* overflow: scroll; */
 }
 
 .tabPanels {
