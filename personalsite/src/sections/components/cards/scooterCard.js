@@ -17,7 +17,7 @@ import {
 const useStyles = makeStyles({
 	root: {
 		width: '100%',
-		height: '100%',
+		height: '95%',
 		boxShadow: 'none',
 		display: 'flex',
 		flexDirection: 'column',

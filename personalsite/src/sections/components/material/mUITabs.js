@@ -17,26 +17,39 @@ import ScooterCard from '../cards/scooterCard';
 import ScooterTwoCard from '../cards/scooterTwoCard';
 import MTSCard from '../cards/mtsCard';
 
+// function TabPanel(props) {
+// 	const { children, value, index, ...other } = props;
+
+// 	return (
+// 		<Typography
+// 			className={styles.tabPanel}
+// 			component="div"
+// 			role="tabpanel"
+// 			hidden={value !== index}
+// 			id={`vertical-tabpanel-${index}`}
+// 			aria-labelledby={`vertical-tab-${index}`}
+// 			{...other}
+// 		>
+// 			{/* {value === index && (
+// 				<Box className={styles.tabPanels} p={3}>
+// 					{children}
+// 				</Box>
+// 			)} */}
+// 			{value === index && <div className={styles.tabPanels}> {children} </div>}
+// 		</Typography>
+// 	);
+// }
 function TabPanel(props) {
 	const { children, value, index, ...other } = props;
-
+	// console.log(props);
 	return (
-		<Typography
+		<div
 			className={styles.tabPanel}
-			component="div"
-			role="tabpanel"
 			hidden={value !== index}
 			id={`vertical-tabpanel-${index}`}
-			aria-labelledby={`vertical-tab-${index}`}
-			{...other}
 		>
-			{value === index && (
-				<Box className={styles.tabPanels} p={3}>
-					{children}
-				</Box>
-			)}
-			{/* {value === index && { children }} */}
-		</Typography>
+			{value === index && <div className={styles.tabPanel}> {children} </div>}
+		</div>
 	);
 }
 
@@ -102,9 +115,6 @@ export default function VerticalTabs() {
 					<Tab label="Millennial Translation Service" {...a11yProps(3)} />
 				</Tabs>
 				<div className={styles.tabPanels}>
-					{/* <div className={styles.tabPanel}> */}
-
-					{/* </div> */}
 					<TabPanel value={value} index={0}>
 						<LFCard />
 					</TabPanel>
