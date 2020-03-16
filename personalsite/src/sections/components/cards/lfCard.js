@@ -44,12 +44,12 @@ const useStyles = makeStyles({
 });
 
 export default function SimpleCard() {
-	const classes = useStyles();
+	const classes = useStyles(styles);
 	const bull = <span className={classes.bullet}>•</span>;
 
 	return (
 		<Card className={classes.root}>
-			<CardContent className={classes.cardContent}>
+			<CardContent className={styles.cardContent}>
 				<div className={styles.bannerImg}>
 					<img src={lfLogo} />
 				</div>

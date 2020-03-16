@@ -24,6 +24,15 @@
 	flex-direction: column;
 }
 
+.tabPanel {
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+}
+
 @media only screen and (max-width: 450px) {
 	.root {
 		flex-direction: column;
