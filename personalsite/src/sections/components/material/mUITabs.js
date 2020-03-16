@@ -57,7 +57,7 @@ const useStyles = makeStyles(theme => ({
 	root: {
 		flexGrow: 1,
 		display: 'flex',
-		alignSelf: 'flex-start',
+		// alignSelf: 'flex-start',
 		padding: '1.5rem 1.5rem 1.5rem 1.5rem',
 		width: '100%',
 		overflow: 'none'
