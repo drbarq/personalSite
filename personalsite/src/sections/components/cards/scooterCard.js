@@ -70,7 +70,7 @@ export default function SimpleCard() {
 						color="textPrimary"
 						gutterBottom
 					>
-						🛴🕵🏻‍♂️ Scooter Sleuth 🕵🏻‍♀️ 🛴
+						🛴🕵🏻‍♂️ Scooter Sleuth 🕵🏻‍♀️🛴
 					</Typography>
 				</div>
 				<Typography
