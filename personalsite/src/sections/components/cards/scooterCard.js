@@ -56,8 +56,10 @@ const useStyles = makeStyles({
 
 export default function SimpleCard() {
 	const classes = useStyles();
-	const bull = <span className={classes.bullet}>•</span>;
 
+	// const classes = makeStyles({ styles });
+	const bull = <span className={classes.bullet}>•</span>;
+	// console.log(classes);
 	return (
 		<Card className={classes.root}>
 			<CardContent className={classes.cardContent}>

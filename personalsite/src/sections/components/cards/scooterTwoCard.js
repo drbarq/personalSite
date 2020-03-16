@@ -32,7 +32,7 @@ const useStyles = makeStyles({
 	mainTitle: {
 		fontVariant: 'small-caps',
 		letterSpacing: '2px',
-		fontSize: 'x-large'
+		fontSize: 'large'
 	},
 	title: {
 		fontVariant: 'small-caps',
@@ -57,7 +57,7 @@ const useStyles = makeStyles({
 });
 
 export default function SimpleCard() {
-	const classes = useStyles();
+	const classes = useStyles(styles);
 	const bull = <span className={classes.bullet}>•</span>;
 
 	return (
