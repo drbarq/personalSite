@@ -45,52 +45,40 @@ const useStyles = makeStyles({
 
 export default function SimpleCard() {
 	const classes = useStyles();
-	const bull = <span className={classes.bullet}>•</span>;
+	const bull = <span className={styles.bullet}>•</span>;
 
 	return (
-		<Card className={classes.root}>
-			<CardContent className={classes.cardContent}>
+		<Card className={styles.root}>
+			<CardContent className={styles.cardContent}>
 				<div className={styles.bannerImg}>
 					<img src={lfLogo} />
 				</div>
 
-				<Typography
-					className={classes.title}
-					color="textSecondary"
-					gutterBottom
-				>
+				<Typography className={styles.title} color="textSecondary" gutterBottom>
 					about:
 				</Typography>
-				<Typography className={classes.text} variant="body2" component="p">
+				<Typography className={styles.text} variant="body2" component="p">
 					Lost and Found is an application that connects people through their
 					lost items. Users of Lost and Found are able to register their items
 					and generate custom QR Codes which they can then place on their items,
 					similar to a name tag.
 				</Typography>
 
-				<Typography
-					className={classes.title}
-					color="textSecondary"
-					gutterBottom
-				>
+				<Typography className={styles.title} color="textSecondary" gutterBottom>
 					skills:
 				</Typography>
-				<Typography className={classes.text} variant="body2" component="p">
+				<Typography className={styles.text} variant="body2" component="p">
 					React {bull} Ruby on Rails {bull} firebase {bull} SQL {bull} QR Codes{' '}
 					{bull} Flex {bull} Twilio {bull} SMS {bull} Heroku
 				</Typography>
-				<Typography className={classes.title} color="textSecondary">
+				<Typography className={styles.title} color="textSecondary">
 					links:
 				</Typography>
 				<div className={styles.linksContainer}>
 					<a href="https://vimeo.com/351468041" target="_blank">
 						<div className={styles.linkLabel}>
 							<FontAwesomeIcon icon={faVimeoV} className={styles.icons} />
-							<Typography
-								className={classes.link}
-								variant="body2"
-								component="p"
-							>
+							<Typography className={styles.link} variant="body2" component="p">
 								Video Demo
 							</Typography>
 						</div>
@@ -102,11 +90,7 @@ export default function SimpleCard() {
 					>
 						<div className={styles.linkLabel}>
 							<FontAwesomeIcon icon={faGithub} className={styles.icons} />
-							<Typography
-								className={classes.link}
-								variant="body2"
-								component="p"
-							>
+							<Typography className={styles.link} variant="body2" component="p">
 								FrontEnd
 							</Typography>
 						</div>
@@ -118,11 +102,7 @@ export default function SimpleCard() {
 					>
 						<div className={styles.linkLabel}>
 							<FontAwesomeIcon icon={faGithub} className={styles.icons} />
-							<Typography
-								className={classes.link}
-								variant="body2"
-								component="p"
-							>
+							<Typography className={styles.link} variant="body2" component="p">
 								BackEnd
 							</Typography>
 						</div>
