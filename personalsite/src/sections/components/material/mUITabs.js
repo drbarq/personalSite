@@ -60,7 +60,7 @@ const useStyles = makeStyles(theme => ({
 		// alignSelf: 'flex-start',
 		padding: '1.5rem 1.5rem 1.5rem 1.5rem',
 		width: '100%',
-		overflow: 'none'
+		overflow: 'scroll'
 		// [theme.breakpoints.up('md')]: {
 		// 	backgroundColor: 'red'
 		// }
