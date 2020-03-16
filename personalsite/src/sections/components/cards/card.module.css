@@ -1,20 +1,27 @@
 @media only screen and (max-width: 450px) {
-	.icons {
+	.icons svg {
 		font-size: 2rem;
 	}
 	.titleContainer p {
 		font-size: 1rem;
 	}
-	.mainTitle {
+	/* .mainTitle {
 		font-size: 1rem;
-	}
+	} */
 }
 
 @media (min-width: 451px) {
-	.mainTitle {
+	/* .mainTitle {
 		font-variant: small-caps;
 		letter-spacing: 2px;
 		font-size: 2rem;
+	} */
+	.titleContainer p {
+		font-size: 2rem;
+	}
+	.icons svg {
+		font-size: 3.5rem;
+		align-self: center;
 	}
 }
 
@@ -55,9 +62,9 @@
 	max-height: 4rem;
 }
 
-.titleContainer p {
+/* .titleContainer p {
 	font-size: 2rem;
-}
+} */
 
 /* material UI Styles */
 .root {
