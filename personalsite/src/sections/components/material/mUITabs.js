@@ -22,7 +22,7 @@ function TabPanel(props) {
 
 	return (
 		<Typography
-			className={styles.tabPanel}
+			// className={styles.tabPanel}
 			component="div"
 			role="tabpanel"
 			hidden={value !== index}
@@ -54,7 +54,8 @@ const useStyles = makeStyles(theme => ({
 		display: 'flex',
 		alignSelf: 'flex-start',
 		padding: '1.5rem 1.5rem 1.5rem 1.5rem',
-		width: '100%'
+		width: '100%',
+		overflow: 'none'
 		// [theme.breakpoints.up('md')]: {
 		// 	backgroundColor: 'red'
 		// }
