@@ -68,8 +68,9 @@ function a11yProps(index) {
 
 const useStyles = makeStyles(theme => ({
 	root: {
-		flexGrow: 1,
+		// flexGrow: 1,
 		display: 'flex',
+		alignItems: 'center',
 		// alignSelf: 'flex-start',
 		padding: '1.5rem 1.5rem 1.5rem 1.5rem',
 		width: '100%',
