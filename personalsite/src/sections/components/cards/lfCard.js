@@ -9,50 +9,50 @@ import lfLogo from '../../../images/lflogo.svg';
 import styles from './card.module.css';
 import { faVimeoV, faGithub } from '@fortawesome/fontawesome-free-brands';
 
-const useStyles = makeStyles({
-	root: {
-		width: '100%',
-		height: '95%',
-		boxShadow: 'none',
-		display: 'flex',
-		flexDirection: 'column',
-		overflow: 'auto'
-	},
-	bullet: {
-		display: 'inline-block',
-		margin: '0 2px',
-		transform: 'scale(0.8)'
-	},
-	title: {
-		fontVariant: 'small-caps',
-		letterSpacing: '2px'
-	},
-	pos: {
-		marginBottom: 12
-	},
-	text: {
-		paddingLeft: '.5rem',
-		paddingBottom: '.5rem',
-		fontSize: 'medium'
-	},
-	cardContent: {
-		padding: '0px'
-	},
-	link: {
-		fontSize: 'small',
-		alignSelf: 'center'
-	}
-});
+// const useStyles = makeStyles({
+// 	root: {
+// 		width: '100%',
+// 		height: '95%',
+// 		boxShadow: 'none',
+// 		display: 'flex',
+// 		flexDirection: 'column',
+// 		overflow: 'auto'
+// 	},
+// 	bullet: {
+// 		display: 'inline-block',
+// 		margin: '0 2px',
+// 		transform: 'scale(0.8)'
+// 	},
+// 	title: {
+// 		fontVariant: 'small-caps',
+// 		letterSpacing: '2px'
+// 	},
+// 	pos: {
+// 		marginBottom: 12
+// 	},
+// 	text: {
+// 		paddingLeft: '.5rem',
+// 		paddingBottom: '.5rem',
+// 		fontSize: 'medium'
+// 	},
+// 	cardContent: {
+// 		padding: '0px'
+// 	},
+// 	link: {
+// 		fontSize: 'small',
+// 		alignSelf: 'center'
+// 	}
+// });
 
 export default function SimpleCard() {
 	// const classes = useStyles(styles);
-	const classes = useStyles();
+	// const classes = useStyles();
 	const bull = <span className={styles.bullet}>•</span>;
 
 	return (
 		<Card className={styles.root}>
 			<CardContent className={styles.cardContent}>
-				<div className={styles.bannerImg}>
+				<div className={styles.titleContainer}>
 					<img src={lfLogo} />
 				</div>
 
