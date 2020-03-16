@@ -5,12 +5,14 @@
 	}
 	.titleContainer p {
 		font-size: 1rem;
+		font-variant: small-caps;
 	}
 }
 
 @media (min-width: 451px) {
 	.titleContainer p {
 		font-size: 2rem;
+		font-variant: small-caps;
 	}
 	.icons {
 		font-size: 3.5rem;

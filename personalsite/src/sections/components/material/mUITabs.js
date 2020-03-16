@@ -120,9 +120,9 @@ export default function VerticalTabs() {
 					<TabPanel value={value} index={2}>
 						<ScooterTwoCard />
 					</TabPanel>
-					{/* <TabPanel value={value} index={3}>
+					<TabPanel value={value} index={3}>
 						<MTSCard />
-					</TabPanel> */}
+					</TabPanel>
 				</div>
 			</div>
 		</div>
