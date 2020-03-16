@@ -22,6 +22,7 @@ function TabPanel(props) {
 
 	return (
 		<Typography
+			className={styles.tabPanel}
 			component="div"
 			role="tabpanel"
 			hidden={value !== index}
