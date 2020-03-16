@@ -21,7 +21,7 @@ import styles from './card.module.css';
 const useStyles = makeStyles({
 	root: {
 		width: '100%',
-		height: '100%',
+		// height: '100%',
 		boxShadow: 'none',
 		display: 'flex',
 		flexDirection: 'column'

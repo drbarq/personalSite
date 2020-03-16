@@ -12,7 +12,7 @@ import { faVimeoV, faGithub } from '@fortawesome/fontawesome-free-brands';
 const useStyles = makeStyles({
 	root: {
 		width: '100%',
-		height: '100%',
+		// height: '100%',
 		boxShadow: 'none',
 		display: 'flex',
 		flexDirection: 'column'
