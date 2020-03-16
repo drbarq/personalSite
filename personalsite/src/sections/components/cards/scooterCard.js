@@ -62,14 +62,11 @@ export default function SimpleCard() {
 
 	// const classes = makeStyles({ styles });
 	const bull = <span className={styles.bullet}>•</span>;
-	console.log(styles.linksContainer);
+	// console.log(styles.linksContainer);
 	return (
 		<Card className={styles.root}>
 			<CardContent className={styles.cardContent}>
 				<div className={styles.titleContainer}>
-					{/* <div className={styles.mainTitle} color="textPrimary" gutterBottom>
-						🛴🕵🏻‍♂️ Scooter Sleuth 🕵🏻‍♀️🛴
-					</div> */}
 					<Typography
 						className={styles.mainTitle}
 						color="textPrimary"

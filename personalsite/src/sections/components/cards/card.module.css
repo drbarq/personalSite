@@ -1,25 +1,18 @@
 @media only screen and (max-width: 450px) {
-	.icons svg {
+	.icons {
 		font-size: 2rem;
+		align-self: center;
 	}
 	.titleContainer p {
 		font-size: 1rem;
 	}
-	/* .mainTitle {
-		font-size: 1rem;
-	} */
 }
 
 @media (min-width: 451px) {
-	/* .mainTitle {
-		font-variant: small-caps;
-		letter-spacing: 2px;
-		font-size: 2rem;
-	} */
 	.titleContainer p {
 		font-size: 2rem;
 	}
-	.icons svg {
+	.icons {
 		font-size: 3.5rem;
 		align-self: center;
 	}
@@ -38,11 +31,6 @@
 	flex-direction: column;
 	justify-content: center;
 	align-content: center;
-}
-
-.icons {
-	font-size: 3.5rem;
-	align-self: center;
 }
 
 /* .mainTitle {
@@ -101,11 +89,6 @@
 	padding: 0px;
 	height: 100%;
 	overflow: scroll;
-}
-
-.icons {
-	font-size: 3.5rem;
-	align-self: center;
 }
 
 .link {
