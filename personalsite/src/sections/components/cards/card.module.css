@@ -22,7 +22,17 @@
 	.icons {
 		font-size: 2rem;
 	}
+	.mainTitle {
+		font-size: large;
+	}
 }
+
+.mainTitle {
+	font-variant: small-caps;
+	letter-spacing: 2px;
+	font-size: x-large;
+}
+
 .bannerImg {
 	display: flex;
 	flex-direction: row;
@@ -32,4 +42,52 @@
 
 .bannerImg img {
 	max-height: 4rem;
+}
+
+/* material UI Styles */
+.root {
+	width: 100%;
+	height: 100%;
+	box-shadow: none;
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+}
+
+.bullet {
+	display: inline-block;
+	margin: 0 2px;
+	transform: scale(0.8);
+}
+
+.title {
+	font-variant: small-caps;
+	letter-spacing: 2px;
+}
+
+.pos {
+	margin-bottom: 12;
+}
+
+.text {
+	padding-left: 0.5rem;
+	padding-bottom: 0.5rem;
+	font-size: small;
+}
+
+.cardContent {
+	padding: 0px;
+	height: 100%;
+	overflow: scroll;
+}
+
+.icons {
+	font-size: 3.5rem;
+	align-self: center;
+}
+
+.link {
+	font-size: small;
+	align-self: center;
+	/* // pasddingLeft: '.5rem' */
 }

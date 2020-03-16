@@ -50,7 +50,7 @@ export default function SimpleCard() {
 	const bull = <span className={classes.bullet}>•</span>;
 
 	return (
-		<Card className={classes.root}>
+		<Card className={styles.root}>
 			<CardContent className={classes.cardContent}>
 				<div className={styles.bannerImg}>
 					<img src={lfLogo} />
