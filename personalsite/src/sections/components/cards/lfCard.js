@@ -32,7 +32,7 @@ const useStyles = makeStyles({
 	text: {
 		paddingLeft: '.5rem',
 		paddingBottom: '.5rem',
-		fontSize: 'small'
+		fontSize: 'medium'
 	},
 	cardContent: {
 		padding: '0px'
