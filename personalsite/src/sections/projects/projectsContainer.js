@@ -8,8 +8,8 @@ function ProjectsContainer() {
 	return (
 		<div className={styles.projectsContainer}>
 			<SectionHeader
-				titleOne={'then I went to school'}
-				titleTwo={'Flatiron School Projects'}
+				titleOne={'then I went to Flatiron School'}
+				titleTwo={'Software Projects'}
 			/>
 			<Projects />
 		</div>
