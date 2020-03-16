@@ -18,10 +18,12 @@ import {
 const useStyles = makeStyles({
 	root: {
 		width: '100%',
-		// height: '100%',
+		height: '100%',
 		boxShadow: 'none',
 		display: 'flex',
-		flexDirection: 'column'
+		flexDirection: 'column',
+		overflow: 'auto'
+
 		// borderBottom: 'none'
 	},
 	bullet: {
