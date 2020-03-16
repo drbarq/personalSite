@@ -70,14 +70,14 @@ const useStyles = makeStyles(theme => ({
 	root: {
 		// flexGrow: 1,
 		display: 'flex',
-		alignItems: 'center',
 		// alignSelf: 'flex-start',
 		padding: '1.5rem 1.5rem 1.5rem 1.5rem',
 		width: '100%',
 		overflow: 'auto'
 	},
 	tabs: {
-		borderRight: `1px solid ${theme.palette.divider}`
+		borderRight: `1px solid ${theme.palette.divider}`,
+		alignItems: 'center'
 	}
 }));
 
