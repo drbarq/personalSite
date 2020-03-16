@@ -76,8 +76,8 @@ export default function VerticalTabs() {
 	return (
 		<div className={styles.sectionContainer}>
 			<SectionHeader
-				titleOne={'then I went to school'}
-				titleTwo={'Flatiron School Projects'}
+				titleOne={'then I went to Flatiron School'}
+				titleTwo={'Software Projects'}
 			/>
 			{/* <div className={classes.root}> */}
 			<div className={styles.root}>
