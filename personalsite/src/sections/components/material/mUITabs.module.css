@@ -41,6 +41,9 @@
 		flex-direction: column;
 		padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 	}
+	.tabs {
+		max-height: 6rem;
+	}
 }
 
 .root {
