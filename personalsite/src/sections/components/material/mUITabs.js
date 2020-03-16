@@ -103,7 +103,7 @@ export default function VerticalTabs() {
 					value={value}
 					onChange={handleChange}
 					// aria-label="Vertical tabs example"
-					className={classes.tabs}
+					className={styles.tabs}
 				>
 					<Tab label="Lost-Found" {...a11yProps(0)} />
 					<Tab label="Scooter Sleuth" {...a11yProps(1)} />
