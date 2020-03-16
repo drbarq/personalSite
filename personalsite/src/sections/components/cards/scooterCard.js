@@ -65,7 +65,8 @@ export default function SimpleCard() {
 	// console.log(styles.linksContainer);
 	return (
 		<Card className={styles.root}>
-			<CardContent className={styles.cardContent}>
+			<div className={styles.cardContent}>
+				{/* <CardContent className={styles.cardContent}> */}
 				<div className={styles.titleContainer}>
 					<Typography
 						className={styles.mainTitle}
@@ -117,7 +118,8 @@ export default function SimpleCard() {
 						</div>
 					</a>
 				</div>
-			</CardContent>
+			</div>
+			{/* </CardContent> */}
 		</Card>
 	);
 }
