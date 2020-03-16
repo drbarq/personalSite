@@ -66,23 +66,23 @@ function a11yProps(index) {
 	};
 }
 
-const useStyles = makeStyles(theme => ({
-	root: {
-		// flexGrow: 1,
-		display: 'flex',
-		// alignSelf: 'flex-start',
-		padding: '1.5rem 1.5rem 1.5rem 1.5rem',
-		width: '100%',
-		overflow: 'auto'
-	},
-	tabs: {
-		borderRight: `1px solid ${theme.palette.divider}`,
-		alignItems: 'center'
-	}
-}));
+// const useStyles = makeStyles(theme => ({
+// 	root: {
+// 		// flexGrow: 1,
+// 		display: 'flex',
+// 		// alignSelf: 'flex-start',
+// 		padding: '1.5rem 1.5rem 1.5rem 1.5rem',
+// 		width: '100%',
+// 		overflow: 'auto'
+// 	},
+// 	tabs: {
+// 		borderRight: `1px solid ${theme.palette.divider}`,
+// 		alignItems: 'center'
+// 	}
+// }));
 
 export default function VerticalTabs() {
-	const classes = useStyles();
+	// const classes = useStyles();
 	const [value, setValue] = React.useState(0);
 
 	const handleChange = (event, newValue) => {
