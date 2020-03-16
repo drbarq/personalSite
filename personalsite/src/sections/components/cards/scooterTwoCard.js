@@ -22,6 +22,7 @@ const useStyles = makeStyles({
 		boxShadow: 'none',
 		display: 'flex',
 		flexDirection: 'column'
+		// borderBottom: 'none'
 	},
 	bullet: {
 		display: 'inline-block',
