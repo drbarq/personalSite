@@ -30,7 +30,12 @@ function TabPanel(props) {
 			aria-labelledby={`vertical-tab-${index}`}
 			{...other}
 		>
-			{value === index && <Box p={3}>{children}</Box>}
+			{value === index && (
+				<Box className={styles.tabPanel} p={3}>
+					{children}
+				</Box>
+			)}
+			{/* {value === index && { children }} */}
 		</Typography>
 	);
 }
@@ -97,6 +102,9 @@ export default function VerticalTabs() {
 					<Tab label="Millennial Translation Service" {...a11yProps(3)} />
 				</Tabs>
 				<div className={styles.tabPanels}>
+					{/* <div className={styles.tabPanel}> */}
+
+					{/* </div> */}
 					<TabPanel value={value} index={0}>
 						<LFCard />
 					</TabPanel>
