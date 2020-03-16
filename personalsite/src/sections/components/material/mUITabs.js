@@ -41,7 +41,7 @@ import MTSCard from '../cards/mtsCard';
 // }
 function TabPanel(props) {
 	const { children, value, index, ...other } = props;
-	// console.log(props);
+	console.log('value', value, index);
 	return (
 		<div
 			className={styles.tabPanel}
@@ -74,14 +74,9 @@ const useStyles = makeStyles(theme => ({
 		padding: '1.5rem 1.5rem 1.5rem 1.5rem',
 		width: '100%',
 		overflow: 'auto'
-		// [theme.breakpoints.up('md')]: {
-		// 	backgroundColor: 'red'
-		// }
 	},
 	tabs: {
 		borderRight: `1px solid ${theme.palette.divider}`
-		// height: '100%',
-		// justifyContent: 'space-evenly'
 	}
 }));
 
@@ -114,11 +109,24 @@ export default function VerticalTabs() {
 					<Tab label="Scooter Sleuth v2" {...a11yProps(2)} />
 					<Tab label="Millennial Translation Service" {...a11yProps(3)} />
 				</Tabs>
+				{/* 
+				<div className={styles.tabPanels}>
+					<div className={styles.tabPanel}>
+						<LFCard value={value} index={0} />
+					</div>
+				</div> */}
 				<div className={styles.tabPanels}>
 					<TabPanel value={value} index={0}>
 						<LFCard />
 					</TabPanel>
-					<TabPanel value={value} index={1}>
+				</div>
+			</div>
+		</div>
+	);
+}
+
+{
+	/* <TabPanel value={value} index={1}>
 						<ScooterCard />
 					</TabPanel>
 					<TabPanel value={value} index={2}>
@@ -126,9 +134,5 @@ export default function VerticalTabs() {
 					</TabPanel>
 					<TabPanel value={value} index={3}>
 						<MTSCard />
-					</TabPanel>
-				</div>
-			</div>
-		</div>
-	);
+					</TabPanel> */
 }
