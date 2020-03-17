@@ -9,8 +9,8 @@ import lfLogo from '../../images/lflogo.svg';
 import SectionHeader from '../components/sectionHeader/sectionHeader';
 
 // hoc cards
-import ProjectCard from './cards/hocCards/projectCard';
-import ProjectCardImg from './cards/hocCards/projectCardImg';
+import ProjectCard from './cards/projectCard';
+import ProjectCardImg from './cards/projectCardImg';
 
 function TabPanel(props) {
 	const { children, value, index, ...other } = props;
