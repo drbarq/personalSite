@@ -69,12 +69,15 @@ export default function ProjectSection() {
 						<ProjectCard
 							mainTitle="🛴🕵🏻‍♂️ Scooter Sleuth 🕵🏻‍♀️🛴"
 							aboutText="We put a man on the moon but still need to switch between apps to find the closest electric scooter. Not anymore!! Scooter Sleuth aggregates scooter share apps into one map rendered based on the users location and available scooters."
-							// skills={"Ruby on Rails", 'JavaScript', 'Bootstrap', 'Heroku'},
 							skills={['Ruby on Rails', 'JavaScript', 'Bootstrap', 'Heroku']}
 							links={{
 								youTube: {
 									link: 'https://www.youtube.com/watch?v=PwzsgzlYaZY',
 									title: 'Video Demo'
+								},
+								gitHub: {
+									link: 'https://github.com/drbarq/scootersleuth-mod-2',
+									title: 'Repo'
 								}
 							}}
 						/>

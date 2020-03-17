@@ -40,21 +40,41 @@ export default function ProjectCard(props) {
 	};
 
 	function linkIconGenerator(links) {
-		console.log(links);
+		console.log(links.gitHub);
 		let linksList = [];
 
-		if (links.youTube) {
-			linksList.push(
-				<a href={links.youTube.link} target="_blank">
-					<div className={styles.linkLabel}>
-						<FontAwesomeIcon icon={faYoutube} className={styles.icons} />
-						<Typography className={styles.link} variant="body2" component="p">
-							{links.youTube.title}
-						</Typography>
-					</div>
-				</a>
-			);
-		}
+		Object.keys(links).map((link, index) => {
+			console.log('links', links);
+			console.log('link', link, 'index', index);
+		});
+
+		// links.map((link, index) => {
+		// 	console.log(link, index);
+		// });
+
+		// if (links.youTube) {
+		// 	linksList.push(
+		// 		<a href={links.youTube.link} target="_blank" key={linksList.length}>
+		// 			<div className={styles.linkLabel}>
+		// 				<FontAwesomeIcon icon={faYoutube} className={styles.icons} />
+		// 				<Typography className={styles.link} variant="body2" component="p">
+		// 					{links.youTube.title}
+		// 				</Typography>
+		// 			</div>
+		// 		</a>
+		// 	);
+		// } else if (links.gitHub) {
+		// 	linksList.push(
+		// 		<a href={links.gitHub.link} target="_blank" key={linksList.length}>
+		// 			<div className={styles.linkLabel}>
+		// 				<FontAwesomeIcon icon={faGithub} className={styles.icons} />
+		// 				<Typography className={styles.link} variant="body2" component="p">
+		// 					{links.gitHub.title}
+		// 				</Typography>
+		// 			</div>
+		// 		</a>
+		// 	);
+		// }
 
 		// links.forEach(link => {
 		// 	console.log(link);
