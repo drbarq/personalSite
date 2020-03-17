@@ -8,6 +8,7 @@ import SectionHeader from '../../components/sectionHeader/sectionHeader';
 import bredkrumTrace from '../../images/bredkrumTrace.png';
 
 import About from './cards/about';
+import Links from './cards/links';
 
 function TabPanel(props) {
 	const { children, value, index, ...other } = props;
@@ -65,11 +66,27 @@ export default function Bredkrum() {
 							height="100%"
 							frameborder="0"
 							// allow="autoplay; fullscreen"
-							// allowfullscreen
+							allowfullscreen
 						></iframe>
 					</TabPanel>
 					<TabPanel value={value} index={2}>
-						<div>Link more info</div>
+						<Links
+							links={{
+								vimeo: {
+									link: 'https://vimeo.com/369643267',
+									title: 'Pitch Video'
+								},
+								gitHub: {
+									link: 'https://github.com/drbarq/bredkrum',
+									title: 'GitHub Repo'
+								},
+								medium: {
+									link:
+										'https://medium.com/@j.tustin/https-medium-com-j-tustin-lost-found-the-next-adventure-81b2e1df55c2',
+									title: 'Blog Posts'
+								}
+							}}
+						/>
 					</TabPanel>
 				</div>
 			</div>
