@@ -4,9 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'font-awesome/css/font-awesome.min.css';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core';
-import { red, amber } from '@material-ui/core/colors';
 
 const theme = createMuiTheme({
 	palette: {
@@ -15,18 +13,13 @@ const theme = createMuiTheme({
 		},
 		secondary: {
 			main: '#27aee8'
-			// light: amber[200],
-			// dark: amber[700]
 		}
-		// type: 'dark'
 	},
 	typography: {
-		// fontSize: calc('14px + 0.5vw'),
 		fontFamily: 'Avenir Next'
 	}
 });
-console.log(theme);
-// console.log(theme.palette.divider);
+
 ReactDOM.render(
 	<MuiThemeProvider theme={theme}>
 		<App />

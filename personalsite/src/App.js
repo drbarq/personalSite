@@ -7,11 +7,6 @@ import Backstory from './sections/backstory/backstory';
 import Map from './sections/map/map';
 import ProjectsSection from './sections/projects/projectSection';
 
-import TabsRSWC from './sections/test/tabsRSWC';
-import VerticalTabs from './sections/components/material/mUITabs';
-
-// import aboutTEST from './Test/about/aboutTEST';
-
 function App() {
 	return (
 		<div className={styles.app}>
