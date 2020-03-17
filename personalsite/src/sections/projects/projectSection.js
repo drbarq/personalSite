@@ -6,10 +6,13 @@ import Tab from '@material-ui/core/Tab';
 import styles from './projectSection.module.css';
 
 import SectionHeader from '../components/sectionHeader/sectionHeader';
-import LFCard from '../components/cards/lfCard';
-import ScooterCard from '../components/cards/scooterCard';
-import ScooterTwoCard from '../components/cards/scooterTwoCard';
-import MTSCard from '../components/cards/mtsCard';
+import LFCard from './cards/lfCard';
+import ScooterCard from './cards/scooterCard';
+import ScooterTwoCard from './cards/scooterTwoCard';
+import MTSCard from './cards/mtsCard';
+
+// hoc cards
+import ProjectCard from './cards/hocCards/projectCard';
 
 function TabPanel(props) {
 	const { children, value, index, ...other } = props;
@@ -62,7 +65,13 @@ export default function ProjectSection() {
 						<LFCard />
 					</TabPanel>
 					<TabPanel value={value} index={1}>
-						<ScooterCard />
+						{/* <ScooterCard /> */}
+						<ProjectCard
+							mainTitle="🛴🕵🏻‍♂️ Scooter Sleuth 🕵🏻‍♀️🛴"
+							aboutText="We put a man on the moon but still need to switch between apps to find the closest electric scooter. Not anymore!! Scooter Sleuth aggregates scooter share apps into one map rendered based on the users location and available scooters."
+							// skills={"Ruby on Rails", 'JavaScript', 'Bootstrap', 'Heroku'},
+							skills={['Ruby on Rails', 'JavaScript', 'Bootstrap', 'Heroku']}
+						/>
 					</TabPanel>
 					<TabPanel value={value} index={2}>
 						<ScooterTwoCard />
