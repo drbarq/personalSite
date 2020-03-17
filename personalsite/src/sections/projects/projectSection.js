@@ -4,15 +4,13 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 
 import styles from './projectSection.module.css';
+import lfLogo from '../../images/lflogo.svg';
 
 import SectionHeader from '../components/sectionHeader/sectionHeader';
-import LFCard from './cards/lfCard';
-import ScooterCard from './cards/scooterCard';
-import ScooterTwoCard from './cards/scooterTwoCard';
-import MTSCard from './cards/mtsCard';
 
 // hoc cards
 import ProjectCard from './cards/hocCards/projectCard';
+import ProjectCardImg from './cards/hocCards/projectCardImg';
 
 function TabPanel(props) {
 	const { children, value, index, ...other } = props;
@@ -62,10 +60,38 @@ export default function ProjectSection() {
 
 				<div className={styles.tabPanels}>
 					<TabPanel value={value} index={0}>
-						<LFCard />
+						<ProjectCardImg
+							logo={lfLogo}
+							aboutText="Lost and Found is an application that connects people through their lost items. Users of Lost and Found are able to register their items and generate custom QR Codes which they can then place on their items, similar to a name tag."
+							skills={[
+								'React',
+								'JavaScript',
+								'Ruby on Rails',
+								'firebase',
+								'SQL',
+								'FLEX',
+								'QR Codes',
+								'Twilio',
+								'SMS',
+								'Heroku'
+							]}
+							links={{
+								vimeo: {
+									link: 'https://vimeo.com/351468041',
+									title: 'Video Demo'
+								},
+								gitHubF: {
+									link: 'https://github.com/drbarq/lost-and-found-backEnd-api',
+									title: 'BackEnd Repo'
+								},
+								gitHubB: {
+									link: 'https://github.com/drbarq/lost-and-found-frontEnd',
+									title: 'FrontEnd Repo'
+								}
+							}}
+						/>
 					</TabPanel>
 					<TabPanel value={value} index={1}>
-						{/* <ScooterCard /> */}
 						<ProjectCard
 							mainTitle="🛴🕵🏻‍♂️ Scooter Sleuth 🕵🏻‍♀️ 🛴"
 							aboutText="We put a man on the moon but still need to switch between apps to find the closest electric scooter. Not anymore!! Scooter Sleuth aggregates scooter share apps into one map rendered based on the users location and available scooters."
@@ -83,10 +109,53 @@ export default function ProjectSection() {
 						/>
 					</TabPanel>
 					<TabPanel value={value} index={2}>
-						<ScooterTwoCard />
+						<ProjectCard
+							mainTitle="🛴🕵🏻‍♂️ Scooter Sleuth v2 🕵🏻‍♀️ 🛴"
+							aboutText="Scooter Sleuth v2 builds upon the initial version adding additional data sources and public accessibility."
+							skills={[
+								'JavaScript',
+								'Heroku',
+								'firebase',
+								'SQL',
+								'CSS',
+								'Flex',
+								'REST API'
+							]}
+							links={{
+								web: {
+									link: 'https://scootersleuth.firebaseapp.com/',
+									title: 'Firebase Demo'
+								},
+								gitHub: {
+									link: 'https://github.com/drbarq/Scooter-Sleuth-v2',
+									title: 'Repo'
+								}
+							}}
+						/>
 					</TabPanel>
 					<TabPanel value={value} index={3}>
-						<MTSCard />
+						<ProjectCard
+							mainTitle="MILLENNIAL TRANSLATION SERVICE"
+							aboutText="The Millennial Translation Service is a Command Line Interface (CLI) application that translates and defines millennial slang so that you can keep up with the young’uns."
+							skills={[
+								'Ruby on Rails',
+								'Paired Programing',
+								'Heroku',
+								'SQL',
+								'REST API'
+							]}
+							links={{
+								youTube: {
+									link: 'https://www.youtube.com/watch?v=xtSkpgMU4Ww',
+									title: 'Video Demo'
+								},
+								gitHub: {
+									link:
+										'https://github.com/drbarq/MILLENNIAL-TRANSLATION-SERVICE',
+									title: 'Repo'
+								}
+							}}
+						/>
 					</TabPanel>
 				</div>
 			</div>

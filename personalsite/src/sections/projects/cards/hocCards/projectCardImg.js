@@ -123,13 +123,7 @@ export default function ProjectCard(props) {
 		<Card className={styles.root}>
 			<div className={styles.cardContent}>
 				<div className={styles.titleContainer}>
-					<Typography
-						className={styles.mainTitle}
-						color="textPrimary"
-						gutterBottom
-					>
-						{props.mainTitle}
-					</Typography>
+					<img src={props.logo} />
 				</div>
 				<Typography className={styles.title} color="textSecondary" gutterBottom>
 					about:
