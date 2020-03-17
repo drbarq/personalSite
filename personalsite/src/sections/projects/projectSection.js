@@ -6,7 +6,7 @@ import Tab from '@material-ui/core/Tab';
 import styles from './projectSection.module.css';
 import lfLogo from '../../images/lflogo.svg';
 
-import SectionHeader from '../components/sectionHeader/sectionHeader';
+import SectionHeader from '../../components/sectionHeader/sectionHeader';
 
 // hoc cards
 import ProjectCard from './cards/projectCard';

@@ -8,8 +8,8 @@ import {
 } from 'google-maps-react';
 import styles from './map.module.css';
 
-import gMapData from '../../Data/gMapData';
-import polylineData from '../../Data/polylineData';
+import gMapData from '../../gpsData/gMapData';
+import polylineData from '../../gpsData/polylineData';
 
 const config = {
 	gMapsApi: process.env.REACT_APP_GOOGLE_MAP_API
@@ -33,7 +33,6 @@ export class MapContainer extends Component {
 	};
 
 	render() {
-		console.log(polylineData[0].lat);
 		return (
 			<Map
 				google={this.props.google}
@@ -46,7 +45,6 @@ export class MapContainer extends Component {
 					strokeOpacity={0.8}
 					strokeWeight={2}
 				/>
-				{/* {this.displayMarkers()} */}
 			</Map>
 		);
 	}
@@ -55,19 +53,3 @@ export class MapContainer extends Component {
 export default GoogleApiWrapper({
 	apiKey: config.gMapsApi
 })(MapContainer);
-
-// export class MapContainer extends Component {
-// 	render() {
-// 		return (
-// 			<Map google={this.props.google} zoom={14}>
-// 				<Marker onClick={this.onMarkerClick} name={'Current location'} />
-
-// 				<InfoWindow onClose={this.onInfoWindowClose}>
-// 					<div>
-// 						<h1>HELLO</h1>
-// 					</div>
-// 				</InfoWindow>
-// 			</Map>
-// 		);
-// 	}
-// }

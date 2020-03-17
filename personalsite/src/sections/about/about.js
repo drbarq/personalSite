@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './about.module.css';
 
-import SectionHeader from '../components/sectionHeader/sectionHeader';
+import SectionHeader from '../../components/sectionHeader/sectionHeader';
 
 function about() {
 	return (
