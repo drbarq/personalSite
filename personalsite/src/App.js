@@ -5,7 +5,7 @@ import Banner from './sections/banner/banner';
 import About from './sections/about/about';
 import Backstory from './sections/backstory/backstory';
 import Map from './sections/map/map';
-import ProjectsContainer from './sections/projects/projectsContainer';
+import ProjectsSection from './sections/projects/projectSection';
 
 import TabsRSWC from './sections/test/tabsRSWC';
 import VerticalTabs from './sections/components/material/mUITabs';
@@ -20,13 +20,9 @@ function App() {
 				<About />
 				<Backstory />
 				<Map />
-				{/* <ProjectsContainer /> */}
-				<VerticalTabs />
+				<ProjectsSection />
 			</div>
 		</div>
-
-		// <Projects />
-		// <TabsRSWC />
 	);
 }
 

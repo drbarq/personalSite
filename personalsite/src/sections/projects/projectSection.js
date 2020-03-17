@@ -1,25 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-// import TabPanel from '@material-ui/core/TabPanel';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
 
-import SimpleCard from './card';
+import styles from './projectSection.module.css';
 
-import SectionHeader from '../../../sections/components/sectionHeader/sectionHeader';
-import styles from './mUITabs.module.css';
-
-import LFCard from '../cards/lfCard';
-import ScooterCard from '../cards/scooterCard';
-import ScooterTwoCard from '../cards/scooterTwoCard';
-import MTSCard from '../cards/mtsCard';
+import SectionHeader from '../components/sectionHeader/sectionHeader';
+import LFCard from '../components/cards/lfCard';
+import ScooterCard from '../components/cards/scooterCard';
+import ScooterTwoCard from '../components/cards/scooterTwoCard';
+import MTSCard from '../components/cards/mtsCard';
 
 function TabPanel(props) {
 	const { children, value, index, ...other } = props;
-	console.log('value', value, index);
 	return (
 		<div
 			className={styles.tabPanel}
@@ -38,7 +31,7 @@ TabPanel.propTypes = {
 };
 
 export default function ProjectSection() {
-	const [value, setValue] = React.useState(0);
+	const [value, setValue] = useState(0);
 
 	const handleChange = (event, newValue) => {
 		setValue(newValue);
