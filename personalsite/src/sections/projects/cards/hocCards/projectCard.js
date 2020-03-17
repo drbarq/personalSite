@@ -39,15 +39,61 @@ export default function ProjectCard(props) {
 		}
 	};
 
+	function youTubeLink(link, title, key) {
+		return (
+			<a href={link} target="_blank" key={key}>
+				<div className={styles.linkLabel}>
+					<FontAwesomeIcon icon={faYoutube} className={styles.icons} />
+					<Typography className={styles.link} variant="body2" component="p">
+						{title}
+					</Typography>
+				</div>
+			</a>
+		);
+	}
+
+	function gitHubLink(link, title, key) {
+		return (
+			<a href={link} target="_blank" key={key}>
+				<div className={styles.linkLabel}>
+					<FontAwesomeIcon icon={faGithub} className={styles.icons} />
+					<Typography className={styles.link} variant="body2" component="p">
+						{title}
+					</Typography>
+				</div>
+			</a>
+		);
+	}
+
+	function vimeoLink(link, title, key) {
+		return (
+			<a href={link} target="_blank" key={key}>
+				<div className={styles.linkLabel}>
+					<FontAwesomeIcon icon={faVimeoV} className={styles.icons} />
+					<Typography className={styles.link} variant="body2" component="p">
+						{title}
+					</Typography>
+				</div>
+			</a>
+		);
+	}
+
 	function linkIconGenerator(links) {
-		console.log(links.gitHub);
 		let linksList = [];
 
-		Object.keys(links).map((link, index) => {
-			console.log('links', links);
-			console.log('link', link, 'index', index);
+		Object.keys(links).map((linkName, index) => {
+			if (linkName === 'youTube') {
+				linksList.push(
+					youTubeLink(links[linkName].link, links[linkName].title, index)
+				);
+			} else if (linkName === 'gitHub') {
+				linksList.push(
+					gitHubLink(links[linkName].link, links[linkName].title, index)
+				);
+			}
 		});
 
+		return linksList;
 		// links.map((link, index) => {
 		// 	console.log(link, index);
 		// });
@@ -106,7 +152,7 @@ export default function ProjectCard(props) {
 		// </a>
 
 		// console.log(linksList);
-		return linksList;
+		// return linksList;
 	}
 
 	function skillsBulletPoints(skills) {
