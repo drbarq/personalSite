@@ -31,12 +31,18 @@
 	margin-bottom: 0.5rem;
 }
 
-.bannerImg {
-	padding: 0.75rem 1rem 0.75rem 1rem;
+@media only screen and (max-width: 450px) {
+	.bannerImg {
+		padding: 0.75rem 0rem 0.75rem 0rem;
+	}
+}
+
+@media (min-width: 451px) {
+	.bannerImg {
+		padding: 0.75rem 1rem 0.75rem 1rem;
+	}
 }
 
 .bannerImg img {
-	/* background-color: white; */
-	border-radius: 10px;
-	align-self: center;
+	max-width: 20rem;
 }
