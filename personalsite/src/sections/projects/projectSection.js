@@ -67,7 +67,7 @@ export default function ProjectSection() {
 					<TabPanel value={value} index={1}>
 						{/* <ScooterCard /> */}
 						<ProjectCard
-							mainTitle="🛴🕵🏻‍♂️ Scooter Sleuth 🕵🏻‍♀️🛴"
+							mainTitle="🛴🕵🏻‍♂️ Scooter Sleuth 🕵🏻‍♀️ 🛴"
 							aboutText="We put a man on the moon but still need to switch between apps to find the closest electric scooter. Not anymore!! Scooter Sleuth aggregates scooter share apps into one map rendered based on the users location and available scooters."
 							skills={['Ruby on Rails', 'JavaScript', 'Bootstrap', 'Heroku']}
 							links={{

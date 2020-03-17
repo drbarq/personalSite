@@ -104,6 +104,14 @@ export default function ProjectCard(props) {
 				linksList.push(
 					gitHubLink(links[linkName].link, links[linkName].title, index)
 				);
+			} else if (linkName === 'vimeo') {
+				linksList.push(
+					vimeoLink(links[linkName].link, links[linkName].title, index)
+				);
+			} else if (linkName === 'web') {
+				linksList.push(
+					webLink(links[linkName].link, links[linkName].title, index)
+				);
 			}
 		});
 
@@ -209,7 +217,6 @@ export default function ProjectCard(props) {
 				<Typography className={styles.text} variant="body2" component="p">
 					{props.aboutText}
 				</Typography>
-
 				<Typography className={styles.title} color="textSecondary" gutterBottom>
 					skills:
 				</Typography>
@@ -219,30 +226,8 @@ export default function ProjectCard(props) {
 				<Typography className={styles.title} color="textSecondary">
 					links:
 				</Typography>
-
 				<div className={styles.linksContainer}>
 					{linkIconGenerator(props.links)}
-
-					<a href="https://www.youtube.com/watch?v=PwzsgzlYaZY" target="_blank">
-						<div className={styles.linkLabel}>
-							<FontAwesomeIcon icon={faYoutube} className={styles.icons} />
-							<Typography className={styles.link} variant="body2" component="p">
-								Video Demo
-							</Typography>
-						</div>
-					</a>
-
-					<a
-						href="https://github.com/drbarq/scootersleuth-mod-2"
-						target="_blank"
-					>
-						<div className={styles.linkLabel}>
-							<FontAwesomeIcon icon={faGithub} className={styles.icons} />
-							<Typography className={styles.link} variant="body2" component="p">
-								Repo
-							</Typography>
-						</div>
-					</a>
 				</div>
 			</div>
 		</Card>
