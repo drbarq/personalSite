@@ -11,7 +11,8 @@ import styles from './projectCard.module.css';
 import {
 	faVimeoV,
 	faGithub,
-	faYoutube
+	faYoutube,
+	faFirefox
 } from '@fortawesome/fontawesome-free-brands';
 
 export default function ProjectCard(props) {
@@ -70,6 +71,19 @@ export default function ProjectCard(props) {
 			<a href={link} target="_blank" key={key}>
 				<div className={styles.linkLabel}>
 					<FontAwesomeIcon icon={faVimeoV} className={styles.icons} />
+					<Typography className={styles.link} variant="body2" component="p">
+						{title}
+					</Typography>
+				</div>
+			</a>
+		);
+	}
+
+	function webLink(link, title, key) {
+		return (
+			<a href={link} target="_blank" key={key}>
+				<div className={styles.linkLabel}>
+					<FontAwesomeIcon icon={faFirefox} className={styles.icons} />
 					<Typography className={styles.link} variant="body2" component="p">
 						{title}
 					</Typography>
