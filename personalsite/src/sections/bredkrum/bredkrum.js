@@ -5,6 +5,9 @@ import Tab from '@material-ui/core/Tab';
 import styles from './bredkrum.module.css';
 import SectionHeader from '../../components/sectionHeader/sectionHeader';
 
+import bredkrumLogo from '../../images/bredkrum.svg';
+import bredkrumDieCut from '../../images/bredkrumDieCut.png';
+
 function TabPanel(props) {
 	const { children, value, index, ...other } = props;
 	return (
@@ -34,8 +37,9 @@ export default function Bredkrum() {
 	return (
 		<div className={styles.sectionContainer}>
 			<SectionHeader
-				titleOne={'Then I started a business'}
-				titleTwo={'bredkrum'}
+				titleOne={'after graduating, I started a business'}
+				image={bredkrumDieCut}
+				// image={bredkrumLogo}
 			/>
 			<div className={styles.root}>
 				<Tabs
@@ -57,11 +61,11 @@ export default function Bredkrum() {
 					<TabPanel value={value} index={1}>
 						<iframe
 							src="https://player.vimeo.com/video/369643267"
-							width="640"
-							height="360"
+							width="100%"
+							height="100%"
 							frameborder="0"
-							allow="autoplay; fullscreen"
-							allowfullscreen
+							// allow="autoplay; fullscreen"
+							// allowfullscreen
 						></iframe>
 					</TabPanel>
 					<TabPanel value={value} index={2}>
