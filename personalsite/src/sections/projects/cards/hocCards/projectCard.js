@@ -39,20 +39,40 @@ export default function ProjectCard(props) {
 		}
 	};
 
-	function skillsBulletPoints(skills) {
-		const bullet = <span className={styles.bullet}>•</span>;
-		let bulletList = [];
+	function linkIconGenerator(links) {
+		console.log(links);
 
-		skills.forEach(skill => {
-			// return skill + bullet;
-			bulletList.push(skill, bullet);
-		});
-		return bulletList;
-		// console.log(bulletList);
+		// 	<a href="https://www.youtube.com/watch?v=PwzsgzlYaZY" target="_blank">
+		// 	<div className={styles.linkLabel}>
+		// 		<FontAwesomeIcon icon={faYoutube} className={styles.icons} />
+		// 		<Typography className={styles.link} variant="body2" component="p">
+		// 			Video Demo
+		// 		</Typography>
+		// 	</div>
+		// </a>
 	}
 
-	// console.log(props.skills);
-	const bullet = <span className={styles.bullet}>•</span>;
+	function skillsBulletPoints(skills) {
+		let skillsLength = skills.length - 1;
+		let bulletList = [];
+
+		skills.map((skill, index) => {
+			const bullet = (
+				<span key={index} className={styles.bullet}>
+					•
+				</span>
+			);
+
+			bulletList.push(skill);
+			if (index < skillsLength) {
+				bulletList.push(bullet);
+			}
+		});
+
+		return bulletList;
+	}
+
+	// const bullet = <span className={styles.bullet}>•</span>;
 
 	return (
 		<Card className={styles.root}>
@@ -78,13 +98,14 @@ export default function ProjectCard(props) {
 				</Typography>
 				<Typography className={styles.text} variant="body2" component="p">
 					{skillsBulletPoints(props.skills)}
-					{/* Ruby on Rails {bull} JavaScript {bull} Bootstrap {bull} Heroku {bull}
-					Paired Programming */}
 				</Typography>
 				<Typography className={styles.title} color="textSecondary">
 					links:
 				</Typography>
+
 				<div className={styles.linksContainer}>
+					{/* {linkIconGenerator(props.links)} */}
+
 					<a href="https://www.youtube.com/watch?v=PwzsgzlYaZY" target="_blank">
 						<div className={styles.linkLabel}>
 							<FontAwesomeIcon icon={faYoutube} className={styles.icons} />
