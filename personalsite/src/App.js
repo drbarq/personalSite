@@ -6,6 +6,7 @@ import About from './sections/about/about';
 import Backstory from './sections/backstory/backstory';
 import Map from './sections/map/map';
 import ProjectsSection from './sections/projects/projectSection';
+import Bredkrum from './sections/bredkrum/bredkrum';
 
 function App() {
 	return (
@@ -16,6 +17,7 @@ function App() {
 				<Backstory />
 				<Map />
 				<ProjectsSection />
+				<Bredkrum />
 			</div>
 		</div>
 	);
