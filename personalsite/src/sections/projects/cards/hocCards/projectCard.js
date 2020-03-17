@@ -41,6 +41,40 @@ export default function ProjectCard(props) {
 
 	function linkIconGenerator(links) {
 		console.log(links);
+		let linksList = [];
+
+		if (links.youTube) {
+			linksList.push(
+				<a href={links.youTube.link} target="_blank">
+					<div className={styles.linkLabel}>
+						<FontAwesomeIcon icon={faYoutube} className={styles.icons} />
+						<Typography className={styles.link} variant="body2" component="p">
+							{links.youTube.title}
+						</Typography>
+					</div>
+				</a>
+			);
+		}
+
+		// links.forEach(link => {
+		// 	console.log(link);
+		// });
+
+		// links.map((link, index) => {
+		// 	if (link.youTube.exists()) {
+		// 		linksList.push(
+		// 			<a href={link.link} target="_blank" key={index}>
+		// 				<div className={styles.linkLabel}>
+		// 					<FontAwesomeIcon icon={faYoutube} className={styles.icons} />
+		// 					<Typography className={styles.link} variant="body2" component="p">
+		// 						{link.title}
+		// 					</Typography>
+		// 				</div>
+		// 			</a>
+		// 		);
+		// 	}
+		// 	// console.log(link);
+		// });
 
 		// 	<a href="https://www.youtube.com/watch?v=PwzsgzlYaZY" target="_blank">
 		// 	<div className={styles.linkLabel}>
@@ -50,6 +84,9 @@ export default function ProjectCard(props) {
 		// 		</Typography>
 		// 	</div>
 		// </a>
+
+		// console.log(linksList);
+		return linksList;
 	}
 
 	function skillsBulletPoints(skills) {
@@ -104,7 +141,7 @@ export default function ProjectCard(props) {
 				</Typography>
 
 				<div className={styles.linksContainer}>
-					{/* {linkIconGenerator(props.links)} */}
+					{linkIconGenerator(props.links)}
 
 					<a href="https://www.youtube.com/watch?v=PwzsgzlYaZY" target="_blank">
 						<div className={styles.linkLabel}>
