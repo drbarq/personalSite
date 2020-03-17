@@ -10,7 +10,6 @@ import {
 	faGithub,
 	faYoutube,
 	faFirefox,
-	faSafari,
 	faMediumM
 } from '@fortawesome/fontawesome-free-brands';
 
