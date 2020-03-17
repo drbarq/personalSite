@@ -44,6 +44,7 @@
 	.tabs {
 		height: 6rem;
 		margin-bottom: 0.5rem;
+		/* max-width: 100%; */
 	}
 }
 
@@ -61,4 +62,5 @@
 .tabs {
 	/* border-right: 1px solid #27aee8; */
 	align-items: center;
+	/* max-width: 10vh; */
 }
