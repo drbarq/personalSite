@@ -65,7 +65,6 @@ export default function Bredkrum() {
 							width="100%"
 							height="100%"
 							frameborder="0"
-							// allow="autoplay; fullscreen"
 							allowfullscreen
 						></iframe>
 					</TabPanel>
