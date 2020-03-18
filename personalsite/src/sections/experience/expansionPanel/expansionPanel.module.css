@@ -4,3 +4,19 @@
 	/* align-self: center; */
 	width: 80%;
 }
+
+.jobTitle {
+	font-family: 'Avenir Next';
+	font-weight: 700;
+	opacity: 0.8;
+	font-size: 1em;
+	font-size: 0.85em;
+}
+
+.businessOrg {
+	font-size: 0.7em;
+	font-weight: 600;
+	color: #485a75;
+	align-self: baseline;
+	padding-top: 8px;
+}

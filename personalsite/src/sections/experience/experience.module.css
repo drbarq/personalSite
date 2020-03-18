@@ -22,6 +22,76 @@
 	height: 80%;
 }
 
+.experienceContainer {
+	/* background-color: #152e4e; */
+	/* padding: 0 1.5rem 1.75rem 1.5rem; */
+	display: flex;
+	flex-direction: column;
+	font-family: 'Avenir Next';
+	color: #fff;
+	width: 90%;
+}
+
+.companyContainer {
+}
+
+.companyNameContainer {
+	padding: 1rem 0.5rem 1rem 0.5rem;
+}
+
+.companyName {
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 1.2rem;
+	/* text-transform: uppercase; */
+	/* text-align: end; */
+	color: #ffffff;
+	z-index: 1;
+	line-height: 1em;
+	font-weight: 700;
+	/* font-style: italic; */
+	/* padding: 0 0 0.5em 0; */
+}
+
+.jobTitleContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.jobTitle {
+	font-family: 'Avenir Next';
+	font-weight: 700;
+	opacity: 0.8;
+	font-size: 1em;
+	font-size: 0.85em;
+}
+
+.businessOrg {
+	font-size: 0.7em;
+	font-weight: 600;
+	color: #485a75;
+	align-self: baseline;
+	padding-top: 8px;
+}
+
+.additionalInfoContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-bottom: 0.5rem;
+	padding-left: 0.5rem;
+	border-bottom: 1px solid #2a3c57;
+}
+
+.additionalInfo {
+	font-weight: 500;
+	color: #6b7f9c;
+	font-size: 0.85em;
+	padding-top: 0.5em;
+	font-size: 0.75em;
+	max-width: 55%;
+}
+
 /* remove the styles I dont need from backstory */
 
 .educationContainer {
@@ -53,29 +123,6 @@
 	font-style: italic;
 }
 
-.lineOne {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	padding-top: 1rem;
-}
-
-.educationSubline {
-	font-family: 'Avenir Next';
-	font-weight: 700;
-	opacity: 0.8;
-	font-size: 1em;
-	font-size: 0.85em;
-}
-
-.educationDate {
-	font-size: 0.7em;
-	font-weight: 600;
-	color: #485a75;
-	align-self: baseline;
-	padding-top: 8px;
-}
-
 .lineTwo {
 	display: flex;
 	flex-direction: row;
@@ -92,28 +139,6 @@
 	padding-top: 0.5em;
 	font-size: 0.75em;
 	max-width: 55%;
-}
-
-.experienceContainer {
-	background-color: #152e4e;
-	/* padding: 0 1.5rem 1.75rem 1.5rem; */
-	display: flex;
-	flex-direction: column;
-	font-family: 'Avenir Next';
-	color: #fff;
-}
-
-.experienceTitle {
-	font-family: 'Libre Franklin', sans-serif;
-	font-size: 1.2rem;
-	text-transform: uppercase;
-	/* text-align: end; */
-	color: #ffffff;
-	z-index: 1;
-	line-height: 1em;
-	font-weight: 700;
-	font-style: italic;
-	/* padding: 0 0 0.5em 0; */
 }
 
 .experienceSubline {

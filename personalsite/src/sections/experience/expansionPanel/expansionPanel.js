@@ -58,7 +58,7 @@ export default function CustomExpansionPanel() {
 	return (
 		<div className={styles.expansionPanelContainer}>
 			<ExpansionPanel
-				square
+				// square
 				expanded={expanded === 'panel1'}
 				onChange={handleChange('panel1')}
 			>
@@ -66,7 +66,10 @@ export default function CustomExpansionPanel() {
 					aria-controls="panel1d-content"
 					id="panel1d-header"
 				>
-					<Typography>Collapsible Group Item #1</Typography>
+					<div className={styles.jobTitle}>Enterprise Account Manager II</div>
+					<div className={styles.businessOrg}>Premier Client Group</div>
+					{/* <Typography>Enterprise Account Manager II</Typography> */}
+					{/* <Typography>April 2011 - Feb 2016</Typography> */}
 				</ExpansionPanelSummary>
 				<ExpansionPanelDetails>
 					<Typography>
@@ -77,7 +80,14 @@ export default function CustomExpansionPanel() {
 					</Typography>
 				</ExpansionPanelDetails>
 			</ExpansionPanel>
-			<ExpansionPanel
+
+			{/* </ExpansionPanel> */}
+		</div>
+	);
+}
+
+{
+	/* <ExpansionPanel
 				square
 				expanded={expanded === 'panel2'}
 				onChange={handleChange('panel2')}
@@ -115,8 +125,5 @@ export default function CustomExpansionPanel() {
 						dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada
 						lacus ex, sit amet blandit leo lobortis eget.
 					</Typography>
-				</ExpansionPanelDetails>
-			</ExpansionPanel>
-		</div>
-	);
+				</ExpansionPanelDetails> */
 }
