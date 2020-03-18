@@ -75,9 +75,26 @@ export default function CustomExpansionPanel() {
 						Aug 2011 – Feb 2016: Denver, CO
 					</div>
 				</ExpansionPanelSummary>
-				{/* <ExpansionPanelDetails> */}
 				<AttCard />
-				{/* </ExpansionPanelDetails> */}
+			</ExpansionPanel>
+
+			<ExpansionPanel
+				// square
+				expanded={expanded === 'panel2'}
+				onChange={handleChange('panel2')}
+			>
+				<ExpansionPanelSummary
+					aria-controls="panel1d-content"
+					id="panel1d-header"
+				>
+					<div className={styles.jobTitle}>
+						Business Sales Leadership Development Program
+					</div>
+					<div className={styles.dateRange}>
+						April 2011 – August 2011: Atlanta, GA
+					</div>
+				</ExpansionPanelSummary>
+				<AttCard />
 			</ExpansionPanel>
 		</div>
 	);

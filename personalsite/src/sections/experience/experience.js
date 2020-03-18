@@ -4,7 +4,7 @@ import styles from './experience.module.css';
 
 import SectionHeader from '../../components/sectionHeader/sectionHeader';
 
-import ExpansionPanel from './expansionPanel/expansionPanel';
+import ExpansionPanelATT from './expansionPanel/expansionPanelATT';
 
 const experienceContainer = (
 	<div className={styles.companyContainer}>
@@ -12,13 +12,8 @@ const experienceContainer = (
 			<div className={styles.companyName}>AT&T</div>
 		</div>
 
-		{/* <div className={styles.jobTitleContainer}>
-			<div className={styles.jobTitle}>Enterprise Account Manager II</div>
-			<div className={styles.businessOrg}>Premier Client Group</div>
-		</div> */}
 		<div className={styles.additionalInfoContainer}>
-			{/* <div className={styles.additionalInfo}>Put Expansion panel here</div> */}
-			<ExpansionPanel />
+			<ExpansionPanelATT />
 		</div>
 	</div>
 );
