@@ -6,6 +6,7 @@ import MuiExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
 
 import styles from './expansionPanel.module.css';
+import AttCard from '../cards/attCard';
 
 const ExpansionPanel = withStyles({
 	root: {
@@ -46,7 +47,8 @@ const ExpansionPanelSummary = withStyles({
 
 const ExpansionPanelDetails = withStyles(theme => ({
 	root: {
-		padding: theme.spacing(2)
+		padding: theme.spacing(2),
+		boxShadow: 'none'
 	}
 }))(MuiExpansionPanelDetails);
 
@@ -73,14 +75,9 @@ export default function CustomExpansionPanel() {
 						Aug 2011 – Feb 2016: Denver, CO
 					</div>
 				</ExpansionPanelSummary>
-				<ExpansionPanelDetails>
-					<Typography>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-						malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum
-						dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada
-						lacus ex, sit amet blandit leo lobortis eget.
-					</Typography>
-				</ExpansionPanelDetails>
+				{/* <ExpansionPanelDetails> */}
+				<AttCard />
+				{/* </ExpansionPanelDetails> */}
 			</ExpansionPanel>
 		</div>
 	);
