@@ -4,11 +4,6 @@ import styles from './experience.module.css';
 
 import SectionHeader from '../../components/sectionHeader/sectionHeader';
 
-import ExpansionPanelATT from './expansionPanel/expansionPanelATT';
-import ExpansionPanelSG from './expansionPanel/expansionPanelSG';
-// import CustomExpansionPanel from './expansionPanel/expansionPanelATT';
-import CustomExpansionPanel from './expansionPanel/expansionPanel';
-
 import SGCard from './cards/sgCard';
 import ATTCard from './cards/attCard';
 
@@ -45,7 +40,6 @@ export default function Experience() {
 							}
 						]}
 					/>
-					{/* {experienceContainerATT} */}
 				</div>
 			</div>
 		</div>
