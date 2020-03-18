@@ -42,10 +42,8 @@
 }
 
 .companyName {
-	font-family: 'Libre Franklin', sans-serif;
+	font-family: 'Avenir Next';
 	font-size: 1.2rem;
-	/* text-transform: uppercase; */
-	/* text-align: end; */
 	color: #ffffff;
 	z-index: 1;
 	line-height: 1em;
