@@ -2,7 +2,7 @@
 	/* display: flex; */
 	/* flex-direction: column; */
 	/* align-self: center; */
-	width: 80%;
+	width: 100%;
 }
 
 .jobTitle {
@@ -13,7 +13,7 @@
 	font-size: 0.85em;
 }
 
-.businessOrg {
+.dateRange {
 	font-size: 0.7em;
 	font-weight: 600;
 	color: #485a75;

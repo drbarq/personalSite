@@ -35,6 +35,8 @@ const ExpansionPanelSummary = withStyles({
 		}
 	},
 	content: {
+		justifyContent: 'space-between',
+		alignItems: 'baseline',
 		'&$expanded': {
 			margin: '12px 0'
 		}
@@ -67,9 +69,9 @@ export default function CustomExpansionPanel() {
 					id="panel1d-header"
 				>
 					<div className={styles.jobTitle}>Enterprise Account Manager II</div>
-					<div className={styles.businessOrg}>Premier Client Group</div>
-					{/* <Typography>Enterprise Account Manager II</Typography> */}
-					{/* <Typography>April 2011 - Feb 2016</Typography> */}
+					<div className={styles.dateRange}>
+						Aug 2011 – Feb 2016: Denver, CO
+					</div>
 				</ExpansionPanelSummary>
 				<ExpansionPanelDetails>
 					<Typography>
@@ -80,8 +82,6 @@ export default function CustomExpansionPanel() {
 					</Typography>
 				</ExpansionPanelDetails>
 			</ExpansionPanel>
-
-			{/* </ExpansionPanel> */}
 		</div>
 	);
 }

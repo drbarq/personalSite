@@ -12,10 +12,10 @@ const experienceContainer = (
 			<div className={styles.companyName}>AT&T</div>
 		</div>
 
-		<div className={styles.jobTitleContainer}>
+		{/* <div className={styles.jobTitleContainer}>
 			<div className={styles.jobTitle}>Enterprise Account Manager II</div>
 			<div className={styles.businessOrg}>Premier Client Group</div>
-		</div>
+		</div> */}
 		<div className={styles.additionalInfoContainer}>
 			{/* <div className={styles.additionalInfo}>Put Expansion panel here</div> */}
 			<ExpansionPanel />
@@ -26,7 +26,7 @@ const experienceContainer = (
 export default function Experience() {
 	return (
 		<div className={styles.sectionContainer}>
-			<SectionHeader titleOne="always be closing" titleTwo="Expereince" />
+			<SectionHeader titleOne="always be closing" titleTwo="Experience" />
 			<div className={styles.contentContainer}>
 				<div className={styles.experienceContainer}>{experienceContainer}</div>
 
