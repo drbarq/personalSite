@@ -78,17 +78,3 @@ export default function CustomExpansionPanel(props) {
 		</div>
 	);
 }
-
-// <ExpansionPanel
-// expanded={expanded === 'panel1'}
-// onChange={handleChange('panel1')}
-// >
-// <ExpansionPanelSummary
-//   aria-controls="panel1d-content"
-//   id="panel1d-header"
-// >
-//   <div className={styles.jobTitle}>{props.jobTitle}</div>
-//   <div className={styles.dateRange}>{props.dateRange}</div>
-// </ExpansionPanelSummary>
-// {props.jobCard}
-// </ExpansionPanel>
