@@ -50,15 +50,12 @@ export default function CustomExpansionPanel(props) {
 
 	function createExpansionPanels(jobs) {
 		let jobList = [];
-		// let jobLength = jobs.length - 1;
 
 		jobs.map((job, index) => {
-			console.log(job);
-
 			jobList.push(
 				<ExpansionPanel
-					expanded={expanded === 'panel1'}
-					onChange={handleChange('panel1')}
+					expanded={expanded === `panel${index + 1}`}
+					onChange={handleChange(`panel${index + 1}`)}
 				>
 					<ExpansionPanelSummary
 						aria-controls="panel1d-content"
@@ -70,21 +67,9 @@ export default function CustomExpansionPanel(props) {
 					{job.jobCard}
 				</ExpansionPanel>
 			);
-
-			// jobList.push(
-			//   <CustomExpansionPanel
-			//     jobTitle={job.jobTitle}
-			//     dateRange={job.dateRange}
-			//     jobCard={job.jobCard}
-			//   />
-			// );
 		});
 
-		console.log(jobList);
 		return jobList;
-
-		console.log(jobs);
-		// return()
 	}
 
 	return (
