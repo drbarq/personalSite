@@ -5,7 +5,9 @@ import styles from './experience.module.css';
 
 export default function ExperienceComponent(props) {
 	function createJobInfo(jobs) {
-		console.log(jobs);
+		let jobList = [];
+		// let jobLength =
+		console.log(jobs.length);
 	}
 
 	// console.log(props);
