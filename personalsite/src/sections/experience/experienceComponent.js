@@ -6,8 +6,22 @@ import styles from './experience.module.css';
 export default function ExperienceComponent(props) {
 	function createJobInfo(jobs) {
 		let jobList = [];
-		// let jobLength =
-		console.log(jobs.length);
+		// let jobLength = jobs.length - 1;
+
+		jobs.map((job, index) => {
+			console.log(job);
+
+			jobList.push(
+				<CustomExpansionPanel
+					jobTitle={job.jobTitle}
+					dateRange={job.dateRange}
+					jobCard={job.jobCard}
+				/>
+			);
+		});
+
+		console.log(jobList);
+		return jobList;
 	}
 
 	// console.log(props);
@@ -18,12 +32,8 @@ export default function ExperienceComponent(props) {
 			</div>
 
 			<div className={styles.additionalInfoContainer}>
-				{createJobInfo(props.jobs)}
-				<CustomExpansionPanel
-					jobTitle={props.jobTitle}
-					dateRange={props.dateRange}
-					jobCard={props.jobCard}
-				/>
+				<CustomExpansionPanel jobs={props.jobs} />
+				{/* {createJobInfo(props.jobs)} */}
 			</div>
 		</div>
 	);

@@ -48,21 +48,62 @@ export default function CustomExpansionPanel(props) {
 		setExpanded(newExpanded ? panel : false);
 	};
 
+	function createExpansionPanels(jobs) {
+		let jobList = [];
+		// let jobLength = jobs.length - 1;
+
+		jobs.map((job, index) => {
+			console.log(job);
+
+			jobList.push(
+				<ExpansionPanel
+					expanded={expanded === 'panel1'}
+					onChange={handleChange('panel1')}
+				>
+					<ExpansionPanelSummary
+						aria-controls="panel1d-content"
+						id="panel1d-header"
+					>
+						<div className={styles.jobTitle}>{job.jobTitle}</div>
+						<div className={styles.dateRange}>{job.dateRange}</div>
+					</ExpansionPanelSummary>
+					{job.jobCard}
+				</ExpansionPanel>
+			);
+
+			// jobList.push(
+			//   <CustomExpansionPanel
+			//     jobTitle={job.jobTitle}
+			//     dateRange={job.dateRange}
+			//     jobCard={job.jobCard}
+			//   />
+			// );
+		});
+
+		console.log(jobList);
+		return jobList;
+
+		console.log(jobs);
+		// return()
+	}
+
 	return (
 		<div className={styles.expansionPanelContainer}>
-			<ExpansionPanel
-				expanded={expanded === 'panel1'}
-				onChange={handleChange('panel1')}
-			>
-				<ExpansionPanelSummary
-					aria-controls="panel1d-content"
-					id="panel1d-header"
-				>
-					<div className={styles.jobTitle}>{props.jobTitle}</div>
-					<div className={styles.dateRange}>{props.dateRange}</div>
-				</ExpansionPanelSummary>
-				{props.jobCard}
-			</ExpansionPanel>
+			{createExpansionPanels(props.jobs)}
 		</div>
 	);
 }
+
+// <ExpansionPanel
+// expanded={expanded === 'panel1'}
+// onChange={handleChange('panel1')}
+// >
+// <ExpansionPanelSummary
+//   aria-controls="panel1d-content"
+//   id="panel1d-header"
+// >
+//   <div className={styles.jobTitle}>{props.jobTitle}</div>
+//   <div className={styles.dateRange}>{props.dateRange}</div>
+// </ExpansionPanelSummary>
+// {props.jobCard}
+// </ExpansionPanel>

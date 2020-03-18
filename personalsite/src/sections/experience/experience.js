@@ -48,12 +48,12 @@ export default function Experience() {
 			<SectionHeader titleOne="always be closing" titleTwo="Experience" />
 			<div className={styles.contentContainer}>
 				<div className={styles.experienceContainer}>
-					<ExperienceComponent
+					{/* <ExperienceComponent
 						companyName="SendGrid"
 						jobTitle="Sr Account Executive"
 						dateRange="Feb 2016 - October 2017: Denver, CO"
 						jobCard={<SGCard />}
-					/>
+					/> */}
 					<ExperienceComponent
 						companyName="AT&T"
 						jobs={[
