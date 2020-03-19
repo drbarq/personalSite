@@ -17,7 +17,7 @@ function App() {
 				<Banner />
 				<About />
 				<Education />
-				<Backstory />
+				{/* <Backstory /> */}
 				<Experience />
 				<Map />
 				<ProjectsSection />
