@@ -107,6 +107,9 @@
 .contactLinksContainer {
 	display: flex;
 	flex-direction: row;
+	align-self: center;
+	width: 75%;
+	justify-content: space-evenly;
 }
 
 /* links */
@@ -142,6 +145,6 @@
 	.icons {
 		font-size: 3.5rem;
 		align-self: center;
-		/* color: white; */
+		color: white;
 	}
 }
