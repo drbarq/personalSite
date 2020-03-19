@@ -9,6 +9,7 @@ import ProjectsSection from './sections/projects/projectSection';
 import Bredkrum from './sections/bredkrum/bredkrum';
 import Experience from './sections/experience/experience';
 import Education from './sections/education/education';
+import Contact from './sections/contact/contact';
 
 function App() {
 	return (
@@ -22,6 +23,7 @@ function App() {
 				<Map />
 				<ProjectsSection />
 				<Bredkrum />
+				<Contact />
 			</div>
 		</div>
 	);

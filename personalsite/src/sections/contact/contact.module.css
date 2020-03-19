@@ -1,0 +1,86 @@
+.sectionContainer {
+	height: 100vh;
+	width: 100%;
+	max-width: 50rem;
+	scroll-snap-align: start;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	background-color: #152e4e;
+	padding: 3rem 1.5rem 3rem 1.5rem;
+	color: #fff;
+}
+
+.contentContainer {
+	display: flex;
+	justify-content: center;
+	/* align-self: flex-start; */
+	width: 100%;
+	height: 85%;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Avenir Next';
+	color: #fff;
+	width: 90%;
+	overflow: auto;
+	justify-content: space-evenly;
+}
+
+.statmentContainer {
+	/* background-color: #152e4e; */
+	/* padding: 0 1.5rem 1.75rem 1.5rem; */
+	display: flex;
+	flex-direction: column;
+	font-family: 'Avenir Next';
+	color: #fff;
+	width: 90%;
+	overflow: auto;
+	border-bottom: 1px solid #2a3c57;
+	margin-bottom: 1rem;
+}
+
+.statusContainer {
+	padding: 0rem 0.5rem 1rem 0.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.status {
+	font-family: 'Avenir Next';
+	font-size: 1.2rem;
+	color: #ffffff;
+	z-index: 1;
+	line-height: 1em;
+	font-weight: 700;
+	/* font-style: italic; */
+	/* padding: 0 0 0.5em 0; */
+}
+
+.postDate {
+	font-size: 0.7em;
+	font-weight: 600;
+	color: #6b7f9c;
+	align-self: baseline;
+	padding-top: 8px;
+}
+.statement {
+	font-weight: 600;
+	color: #6b7f9c;
+	font-size: 0.85em;
+	padding-top: 0.5em;
+	font-size: 0.75em;
+}
+
+.additionalInfoContainer {
+	padding: 0rem 0.5rem 1rem 0.5rem;
+	margin-left: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	/* border-bottom: 1px solid #2a3c57; */
+}
