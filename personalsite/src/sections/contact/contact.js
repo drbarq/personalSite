@@ -1,7 +1,7 @@
 import React from 'react';
-import SectionHeader from '../../components/sectionHeader/sectionHeader';
+
 import styles from './contact.module.css';
-import ContactLink from './cards/contactLink';
+import SectionHeader from '../../components/sectionHeader/sectionHeader';
 import StatusCard from './cards/statusCard';
 import ContactContainer from './cards/contactContainer';
 

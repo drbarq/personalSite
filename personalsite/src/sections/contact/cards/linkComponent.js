@@ -1,8 +1,5 @@
 import React from 'react';
-
 import styles from '../contact.module.css';
-
-import { faAt } from '@fortawesome/free-solid-svg-icons';
 import Typography from '@material-ui/core/Typography';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
