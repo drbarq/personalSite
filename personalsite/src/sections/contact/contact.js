@@ -11,7 +11,7 @@ export default function Contact() {
 				<div className={styles.statementContainer}>
 					<div className={styles.statusContainer}>
 						<div className={styles.status}>
-							Current Status: Looking for work!
+							Current Status: Open to Opportunities!
 						</div>
 						<div className={styles.postDate}>3.20.2020</div>
 					</div>
@@ -23,6 +23,7 @@ export default function Contact() {
 						</div>
 					</div>
 				</div>
+				{/* <div>Hello</div> */}
 			</div>
 		</div>
 	);
