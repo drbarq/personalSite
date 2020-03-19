@@ -3,11 +3,9 @@
 	width: 100%;
 	max-width: 50rem;
 	scroll-snap-align: start;
-
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
 	background-color: #152e4e;
 	padding: 3rem 1.5rem 3rem 1.5rem;
 	color: #fff;
@@ -48,8 +46,6 @@
 	z-index: 1;
 	line-height: 1em;
 	font-weight: 500;
-	/* font-style: italic; */
-	/* padding: 0 0 0.5em 0; */
 }
 
 .postDate {
@@ -78,7 +74,6 @@
 .contactContainer {
 	display: flex;
 	flex-direction: column;
-	/* align-self: center; */
 	font-family: 'Avenir Next';
 	color: #fff;
 	width: 90%;
@@ -95,13 +90,12 @@
 
 .title {
 	font-family: 'Avenir Next';
+	font-variant: small-caps;
 	font-size: 1.2rem;
 	color: #ffffff;
 	z-index: 1;
 	line-height: 1em;
 	font-weight: 500;
-	/* font-style: italic; */
-	/* padding: 0 0 0.5em 0; */
 }
 
 .contactLinksContainer {
@@ -113,8 +107,6 @@
 	flex-wrap: wrap;
 	padding-top: 1rem;
 }
-
-/* links */
 
 .linkLabel {
 	display: flex;
@@ -135,17 +127,9 @@
 		align-self: center;
 		color: white;
 	}
-	.titleContainer p {
-		font-size: 1rem;
-		font-variant: small-caps;
-	}
 }
 
 @media (min-width: 451px) {
-	.titleContainer p {
-		font-size: 2rem;
-		font-variant: small-caps;
-	}
 	.icons {
 		font-size: 3.5rem;
 		align-self: center;
