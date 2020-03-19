@@ -20,7 +20,7 @@
 	color: #fff;
 	width: 90%;
 	overflow: auto;
-	justify-content: space-evenly;
+	justify-content: flex-start;
 }
 
 .contentContainer {
@@ -32,8 +32,6 @@
 }
 
 .schoolContainer {
-	/* background-color: #152e4e; */
-	/* padding: 0 1.5rem 1.75rem 1.5rem; */
 	display: flex;
 	flex-direction: column;
 	font-family: 'Avenir Next';
@@ -41,7 +39,7 @@
 	width: 90%;
 	overflow: auto;
 	border-bottom: 1px solid #2a3c57;
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 }
 
 .schoolNameContainer {
