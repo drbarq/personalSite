@@ -103,3 +103,45 @@
 	/* font-style: italic; */
 	/* padding: 0 0 0.5em 0; */
 }
+
+.contactLinksContainer {
+	display: flex;
+	flex-direction: row;
+}
+
+/* links */
+
+.linkLabel {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+
+.link {
+	font-size: small;
+	align-self: center;
+}
+
+@media only screen and (max-width: 450px) {
+	.icons {
+		font-size: 2rem;
+		align-self: center;
+	}
+	.titleContainer p {
+		font-size: 1rem;
+		font-variant: small-caps;
+	}
+}
+
+@media (min-width: 451px) {
+	.titleContainer p {
+		font-size: 2rem;
+		font-variant: small-caps;
+	}
+	.icons {
+		font-size: 3.5rem;
+		align-self: center;
+		/* color: white; */
+	}
+}
