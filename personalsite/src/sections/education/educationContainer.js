@@ -2,16 +2,21 @@ import React from 'react';
 
 import styles from './education.module.css';
 
-export default function EducationContainer() {
+export default function EducationContainer({
+	schoolName,
+	educationDate,
+	degree,
+	location
+}) {
 	return (
 		<div className={styles.schoolContainer}>
 			<div className={styles.schoolNameContainer}>
-				<div className={styles.schoolName}>University of Pennsylvania</div>
-				<div className={styles.educationDate}>Sept 2006 - Dec 2010</div>
+				<div className={styles.schoolName}>{schoolName}</div>
+				<div className={styles.educationDate}>{educationDate}</div>
 			</div>
 			<div className={styles.additionalInfoContainer}>
-				<div className={styles.degree}>Bachelor of Science: Finance</div>
-				<div className={styles.degree}>State College, PA</div>
+				<div className={styles.degree}>{degree}</div>
+				<div className={styles.location}>{location}</div>
 			</div>
 		</div>
 	);

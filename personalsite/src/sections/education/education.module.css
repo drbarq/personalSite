@@ -73,8 +73,9 @@
 	align-self: baseline;
 	padding-top: 8px;
 }
-.degree {
-	font-weight: 500;
+.degree,
+.location {
+	font-weight: 600;
 	color: #6b7f9c;
 	font-size: 0.85em;
 	padding-top: 0.5em;
@@ -84,12 +85,11 @@
 
 .additionalInfoContainer {
 	padding: 0rem 0.5rem 1rem 0.5rem;
-
+	margin-left: 1rem;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	/* padding-bottom: 0.5rem;
-	padding-left: 0.5rem; */
+
 	border-bottom: 1px solid #2a3c57;
 }
 

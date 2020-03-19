@@ -10,7 +10,18 @@ export default function Education() {
 			<SectionHeader titleOne="Never Stop Learning" titleTwo="Education" />
 			<div className={styles.contentContainer}>
 				<div className={styles.experienceContainer}>
-					<EducationContainer />
+					<EducationContainer
+						schoolName="University of Pennsylvania"
+						educationDate="Sept 2006 - Dec 2010"
+						degree="Bachelor of Science: Finance"
+						location="State College, PA"
+					/>
+					<EducationContainer
+						schoolName="Flatiron School"
+						educationDate="April 2019 - Aug 2019"
+						degree="Software Engineering Bootcamp"
+						location="Denver, CO"
+					/>
 				</div>
 			</div>
 		</div>
