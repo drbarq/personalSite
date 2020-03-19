@@ -2,11 +2,17 @@ import React from 'react';
 import styles from '../contact.module.css';
 import LinkComponent from './linkComponent';
 
-import { faEnvelopeSquare, faFilePdf } from '@fortawesome/free-solid-svg-icons';
+import {
+	faEnvelope,
+	faFilePdf,
+	faMotorcycle
+} from '@fortawesome/free-solid-svg-icons';
 
 import {
 	faLinkedin,
-	faGithubSquare
+	faGithub,
+	faInstagram,
+	faMediumM
 } from '@fortawesome/fontawesome-free-brands';
 
 export default function ContactContainer() {
@@ -19,17 +25,32 @@ export default function ContactContainer() {
 				<LinkComponent
 					link="mailto:J.Tustin@gmail.com?subject=Job Offer: $500K Salary"
 					title="Email Me"
-					icon={faEnvelopeSquare}
+					icon={faEnvelope}
 				/>
 				<LinkComponent
-					link="https://www.linkedin.com/in/joetustin/"
+					link="https://www.linkedin.com/in/joetustin"
 					title="Linkedin"
 					icon={faLinkedin}
 				/>
 				<LinkComponent
 					link="https://www.github.com/drbarq"
 					title="Github"
-					icon={faGithubSquare}
+					icon={faGithub}
+				/>
+				<LinkComponent
+					link="https://medium.com/@j.tustin"
+					title="Medium"
+					icon={faMediumM}
+				/>
+				<LinkComponent
+					link="https://www.instagram.com/drbarq"
+					title="Instagram"
+					icon={faInstagram}
+				/>
+				<LinkComponent
+					link="https://www.qr646.com"
+					title="Travel Blog"
+					icon={faMotorcycle}
 				/>
 				<LinkComponent
 					link="https://pdfhost.io/v/2GzYb7scD_Joe_TustinSoftware_Engineerpdf.pdf"

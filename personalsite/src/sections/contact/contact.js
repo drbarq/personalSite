@@ -18,8 +18,6 @@ export default function Contact() {
 					reach out if you think I might be a fit for your team!"
 				/>
 				<ContactContainer />
-				<ContactLink />
-				{/* <div>Hello</div> */}
 			</div>
 		</div>
 	);
