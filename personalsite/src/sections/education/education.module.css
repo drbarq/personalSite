@@ -1,0 +1,155 @@
+.sectionContainer {
+	height: 100vh;
+	width: 100%;
+	max-width: 50rem;
+	scroll-snap-align: start;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	background-color: #152e4e;
+	padding: 3rem 1.5rem 3rem 1.5rem;
+	color: #fff;
+}
+
+.experienceContainer {
+	/* background-color: #152e4e; */
+	/* padding: 0 1.5rem 1.75rem 1.5rem; */
+	display: flex;
+	flex-direction: column;
+	font-family: 'Avenir Next';
+	color: #fff;
+	width: 90%;
+	overflow: auto;
+}
+
+.contentContainer {
+	display: flex;
+	justify-content: center;
+	/* align-self: flex-start; */
+	width: 100%;
+	height: 85%;
+}
+
+.schoolContainer {
+	/* background-color: #152e4e; */
+	/* padding: 0 1.5rem 1.75rem 1.5rem; */
+	display: flex;
+	flex-direction: column;
+	font-family: 'Avenir Next';
+	color: #fff;
+	width: 90%;
+	overflow: auto;
+}
+
+.schoolContainer {
+	padding-bottom: 1rem;
+}
+
+.schoolNameContainer {
+	padding: 0rem 0.5rem 1rem 0.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.schoolName {
+	font-family: 'Avenir Next';
+	font-size: 1.2rem;
+	color: #ffffff;
+	z-index: 1;
+	line-height: 1em;
+	font-weight: 700;
+	/* font-style: italic; */
+	/* padding: 0 0 0.5em 0; */
+}
+
+.educationDate {
+	font-size: 0.7em;
+	font-weight: 600;
+	color: #6b7f9c;
+	align-self: baseline;
+	padding-top: 8px;
+}
+.degree {
+	font-weight: 500;
+	color: #6b7f9c;
+	font-size: 0.85em;
+	padding-top: 0.5em;
+	font-size: 0.75em;
+	max-width: 55%;
+}
+
+.additionalInfoContainer {
+	padding: 0rem 0.5rem 1rem 0.5rem;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	/* padding-bottom: 0.5rem;
+	padding-left: 0.5rem; */
+	border-bottom: 1px solid #2a3c57;
+}
+
+/* from experience style sheet */
+
+.companyContainer {
+	padding-bottom: 1rem;
+}
+
+.companyNameContainer {
+	padding: 0rem 0.5rem 1rem 0.5rem;
+}
+
+.companyName {
+	font-family: 'Avenir Next';
+	font-size: 1.2rem;
+	color: #ffffff;
+	z-index: 1;
+	line-height: 1em;
+	font-weight: 700;
+	/* font-style: italic; */
+	/* padding: 0 0 0.5em 0; */
+}
+
+.jobTitleContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.jobTitle {
+	font-family: 'Avenir Next';
+	font-weight: 700;
+	opacity: 0.8;
+	font-size: 1em;
+	font-size: 0.85em;
+}
+
+.businessOrg {
+	font-size: 0.7em;
+	font-weight: 600;
+	color: #485a75;
+	align-self: baseline;
+	padding-top: 8px;
+}
+
+.additionalInfoContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-bottom: 0.5rem;
+	padding-left: 0.5rem;
+	border-bottom: 1px solid #2a3c57;
+}
+
+.additionalInfo {
+	font-weight: 500;
+	color: #6b7f9c;
+	font-size: 0.85em;
+	padding-top: 0.5em;
+	font-size: 0.75em;
+	max-width: 55%;
+}

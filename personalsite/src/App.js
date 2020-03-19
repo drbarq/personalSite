@@ -8,6 +8,7 @@ import Map from './sections/map/map';
 import ProjectsSection from './sections/projects/projectSection';
 import Bredkrum from './sections/bredkrum/bredkrum';
 import Experience from './sections/experience/experience';
+import Education from './sections/education/education';
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 			<div className={styles.appFlex}>
 				<Banner />
 				<About />
+				<Education />
 				<Backstory />
 				<Experience />
 				<Map />
