@@ -8,11 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function LinkComponent({ link, title, icon }) {
 	return (
-		<a
-			// href="mailto:J.Tustin@gmail.com?subject=Job Offer: $500K Salary"
-			href={link}
-			target="_blank"
-		>
+		<a href={link} target="_blank">
 			<div className={styles.linkLabel}>
 				<FontAwesomeIcon icon={icon} className={styles.icons} />
 				<Typography className={styles.link} variant="body2" component="p">

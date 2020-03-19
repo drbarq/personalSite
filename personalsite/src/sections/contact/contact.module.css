@@ -110,6 +110,8 @@
 	align-self: center;
 	width: 85%;
 	justify-content: space-evenly;
+	flex-wrap: wrap;
+	padding-top: 1rem;
 }
 
 /* links */
@@ -119,6 +121,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-content: center;
+	padding-bottom: 1rem;
 }
 
 .link {
@@ -130,6 +133,7 @@
 	.icons {
 		font-size: 2rem;
 		align-self: center;
+		color: white;
 	}
 	.titleContainer p {
 		font-size: 1rem;
