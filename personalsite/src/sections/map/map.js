@@ -6,13 +6,15 @@ import MapContainer from './gMapContainer';
 
 function map() {
 	return (
-		<div id="map" className={styles.mapContainer}>
+		<div id="map" className={styles.sectionContainer}>
 			<SectionHeader
-				titleOne={`in Oct '17 I went out to see the world`}
+				titleOne={`in Oct 2017 I went out to see the world`}
 				titleTwo={'neat places'}
 			/>
-			<div className={styles.gMapContainer}>
-				<MapContainer />
+			<div className={styles.contentContainer}>
+				<div className={styles.gMapContainer}>
+					<MapContainer />
+				</div>
 			</div>
 		</div>
 	);
