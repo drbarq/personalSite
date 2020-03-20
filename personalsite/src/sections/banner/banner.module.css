@@ -55,3 +55,5 @@ h2 {
 	padding: 10px;
 	/* z-index: 1; */
 }
+
+/* parent element needs to have position: relative and child element needs to have position: absolute relative to that closest parent element  */
