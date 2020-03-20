@@ -1,5 +1,5 @@
 import React from 'react';
-import joeBanner from '../../images/joeBanner.jpg';
+import joeBanner from '../../images/joeBanner.JPG';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 
 import Breadcrumb from './breadcrumbs/breadcrumb';
