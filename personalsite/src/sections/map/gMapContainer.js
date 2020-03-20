@@ -8,6 +8,7 @@ import {
 } from 'google-maps-react';
 import styles from './map.module.css';
 
+import mapMarkers from '../../gpsData/mapMarkers';
 import gMapData from '../../gpsData/gMapData';
 import polylineData from '../../gpsData/polylineData';
 
@@ -70,16 +71,32 @@ export class MapContainer extends Component {
 					// blogInfo={[{ post: 'one' }]}
 				/>
 				<Marker
-					position={{ lat: 39.75843, lng: -104.97705 }}
-					name={'Blog Post'}
+					position={{ lat: 27.9981, lng: 86.84742 }}
 					onClick={this.onMarkerClick}
-					// blogInfo={[{ post: 'two' }]}
+					name={'Everest Base Camp, Nepal'}
+					title={
+						'If you can avoid fighting with monkey and dog, you might be okay'
+					}
+					blogPost={
+						'https://www.qr646.com/single-post/2017/11/18/If-you-can-avoid-fighting-with-monkey-and-dog-you-might-be-okay'
+					}
+					picture={
+						'https://static.wixstatic.com/media/7fcb35_8943ad51b00e44338421b9f7687ed7f2~mv2_d_1502_1502_s_2.jpg/v1/fill/w_1502,h_1502,al_c,q_90/7fcb35_8943ad51b00e44338421b9f7687ed7f2~mv2_d_1502_1502_s_2.webp'
+					}
 				/>
 				<InfoWindow
 					marker={this.state.activeMarker}
 					visible={this.state.showingInfoWindow}
 				>
-					<h1>{this.state.selectedPlace.name}</h1>
+					<div className={styles.infoWindow}>
+						<div className={styles.title}>{this.state.selectedPlace.name}</div>
+						<a href={this.state.selectedPlace.blogPost} target="_blank">
+							{this.state.selectedPlace.title}
+						</a>
+						<div className={styles.infoPicture}>
+							<img src={this.state.selectedPlace.picture} />
+						</div>
+					</div>
 				</InfoWindow>
 				<Polyline
 					path={polylineData}

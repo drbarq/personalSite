@@ -26,3 +26,13 @@
 	width: 90%;
 	position: sticky;
 }
+
+.infoWindow {
+	max-width: 35vh;
+	overflow: scroll;
+}
+
+.infoPicture {
+	display: flex;
+	width: 90%;
+}
