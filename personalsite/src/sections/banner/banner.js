@@ -8,7 +8,7 @@ import styles from './banner.module.css';
 
 function Banner() {
 	return (
-		<div className={styles.sectionContainer}>
+		<div id="banner" className={styles.sectionContainer}>
 			<div className={styles.bannerContainer}>
 				<div className={styles.imgContainer}>
 					<img className={styles.bannerImg} src={joeBanner} />
