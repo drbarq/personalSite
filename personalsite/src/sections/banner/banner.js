@@ -17,9 +17,10 @@ function Banner() {
 					<div className={styles.name}>Joe</div>
 					<div className={styles.name}>Tustin</div>
 				</div>
+				<div className={styles.breadcrumbLinks}>
+					<Breadcrumb />
+				</div>
 			</div>
-
-			{/* <Breadcrumb /> */}
 		</div>
 	);
 }

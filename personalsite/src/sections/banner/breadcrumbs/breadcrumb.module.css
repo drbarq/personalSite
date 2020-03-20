@@ -1,0 +1,23 @@
+.breadcrumbContainer a {
+	color: #fff;
+	font-variant: small-caps;
+	text-decoration: underline #27aee8;
+}
+
+@media only screen and (max-width: 450px) {
+	.breadcrumbContainer {
+		font-size: 1.5rem;
+	}
+}
+
+@media (min-width: 451px) {
+	.breadcrumbContainer {
+		font-size: 2.5rem;
+	}
+}
+
+.bullet {
+	display: inline-block;
+	margin: 0 2px;
+	transform: scale(0.6);
+}
