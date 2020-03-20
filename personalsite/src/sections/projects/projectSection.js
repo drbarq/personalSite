@@ -39,7 +39,7 @@ export default function ProjectSection() {
 	};
 
 	return (
-		<div className={styles.sectionContainer}>
+		<div id="projects" className={styles.sectionContainer}>
 			<SectionHeader
 				titleOne={'then I went to Flatiron School'}
 				titleTwo={'Software Projects'}

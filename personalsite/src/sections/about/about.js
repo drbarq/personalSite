@@ -5,7 +5,7 @@ import SectionHeader from '../../components/sectionHeader/sectionHeader';
 
 function about() {
 	return (
-		<div className={styles.aboutContainer}>
+		<div id="about" className={styles.sectionContainer}>
 			<SectionHeader
 				titleOne={`What a long strange trip it's been`}
 				titleTwo={'About Me'}

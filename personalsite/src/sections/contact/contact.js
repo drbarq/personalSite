@@ -7,7 +7,7 @@ import ContactContainer from './cards/contactContainer';
 
 export default function Contact() {
 	return (
-		<div className={styles.sectionContainer}>
+		<div id="contact" className={styles.sectionContainer}>
 			<SectionHeader titleOne="1-800-Joe-Tustin" titleTwo="Contact" />
 			<div className={styles.contentContainer}>
 				<StatusCard

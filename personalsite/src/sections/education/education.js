@@ -6,7 +6,7 @@ import EducationContainer from './educationContainer';
 
 export default function Education() {
 	return (
-		<div className={styles.sectionContainer}>
+		<div id="education" className={styles.sectionContainer}>
 			<SectionHeader titleOne="Never Stop Learning" titleTwo="Education" />
 			<div className={styles.contentContainer}>
 				<div className={styles.experienceContainer}>

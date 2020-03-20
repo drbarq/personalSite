@@ -11,7 +11,7 @@ import ExperienceComponent from './experienceComponent';
 
 export default function Experience() {
 	return (
-		<div className={styles.sectionContainer}>
+		<div id="experience" className={styles.sectionContainer}>
 			<SectionHeader titleOne="always be closing" titleTwo="Experience" />
 			<div className={styles.contentContainer}>
 				<div className={styles.experienceContainer}>

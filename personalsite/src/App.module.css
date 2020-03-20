@@ -30,6 +30,7 @@ body {
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
 	height: 100vh;
+	background-color: #152e4e;
 }
 
 .appFlex {

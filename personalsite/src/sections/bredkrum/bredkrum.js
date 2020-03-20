@@ -37,7 +37,7 @@ export default function Bredkrum() {
 	};
 
 	return (
-		<div className={styles.sectionContainer}>
+		<div id="bredkrum" className={styles.sectionContainer}>
 			<SectionHeader
 				titleOne={'after graduating, I started a business'}
 				image={bredkrumTrace}

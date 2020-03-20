@@ -6,7 +6,7 @@ import MapContainer from './gMapContainer';
 
 function map() {
 	return (
-		<div className={styles.mapContainer}>
+		<div id="map" className={styles.mapContainer}>
 			<SectionHeader
 				titleOne={`in Oct '17 I went out to see the world`}
 				titleTwo={'neat places'}
