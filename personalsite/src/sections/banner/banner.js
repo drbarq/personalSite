@@ -13,7 +13,8 @@ function Banner() {
 				{/* <h2>Joe</h2> */}
 				<img className={styles.bannerImg} src={joeBanner} />
 				<div className={styles.nameContainer}>
-					<h2>JoeEE</h2>
+					<h2>Joe</h2>
+					{/* <h2>Tustin</h2> */}
 				</div>
 			</div>
 
