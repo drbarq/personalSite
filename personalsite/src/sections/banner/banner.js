@@ -10,12 +10,13 @@ function Banner() {
 	return (
 		<div className={styles.sectionContainer}>
 			<div className={styles.bannerContainer}>
+				{/* <h2>Joe</h2> */}
 				<img className={styles.bannerImg} src={joeBanner} />
+				<div className={styles.nameContainer}>
+					<h2>JoeEE</h2>
+				</div>
 			</div>
-			<div className={nameContainer}>
-				<div>Joe</div>
-				<div>Tustin</div>
-			</div>
+
 			{/* <Breadcrumb /> */}
 		</div>
 	);
