@@ -70,6 +70,7 @@ export class MapContainer extends Component {
 				zoom={1}
 				initialCenter={{ lat: 0, lng: 0 }}
 				onClick={this.onMapClicked}
+				disableDefaultUI={true}
 			>
 				{this.displayMarkers()}
 

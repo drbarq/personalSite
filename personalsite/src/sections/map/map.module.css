@@ -29,14 +29,17 @@
 
 .infoWindow {
 	max-width: 35vh;
+	max-height: 25vh;
 	overflow: scroll;
 }
 
 .infoPicture {
 	display: flex;
 	width: 90%;
+	height: 90%;
 }
 
 img {
-	width: 7rem;
+	max-height: 100%;
+	max-width: 100%;
 }
