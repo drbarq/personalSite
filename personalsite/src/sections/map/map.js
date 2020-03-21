@@ -3,13 +3,15 @@ import styles from './map.module.css';
 import SectionHeader from '../../components/sectionHeader/sectionHeader';
 
 import MapContainer from './gMapContainer';
+import QR646 from '../../images/QR646.png';
 
 function map() {
 	return (
 		<div id="map" className={styles.sectionContainer}>
 			<SectionHeader
 				titleOne={`in Oct 2017 I went out to see the world`}
-				titleTwo={'neat places'}
+				titleTwo={'QR646.com'}
+				// image={QR646}
 			/>
 			<div className={styles.contentContainer}>
 				<div className={styles.gMapContainer}>
