@@ -18,6 +18,10 @@ function about() {
 					I am passionate about technology and love the creative opportunites
 					software development provides.
 				</p>
+				<p>
+					I believe that by understanding the 'why' before the 'how,' we can
+					create genuinely impactful and transformational solutions.
+				</p>
 				<p>My path to SWE is unique and invite you to explore my story</p>
 			</div>
 		</div>

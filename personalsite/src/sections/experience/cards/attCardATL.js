@@ -29,16 +29,23 @@ export default function attCard() {
 		<Card className={styles.root}>
 			<div className={styles.cardContent}>
 				<Typography className={styles.title} color="textSecondary" gutterBottom>
-					skills:
+					Leadership Development
 				</Typography>
 				<Typography className={styles.text} variant="body2" component="p">
-					the best stuff really good stuff
-				</Typography>
-				<Typography className={styles.title} color="textSecondary" gutterBottom>
-					about:
+					5 month competitive leadership development program created by AT&T to
+					learn selling strategies, the telecommunications industry, and B2B
+					commerce.
 				</Typography>
 				<Typography className={styles.text} variant="body2" component="p">
-					HWELLO IT WAS REALLY COOL
+					Learned consultative selling coupled with in-depth technology
+					training.
+				</Typography>
+				<Typography className={styles.text} variant="body2" component="p">
+					Ranked top of the class each month based on results and other
+					extracurricular activities.
+				</Typography>
+				<Typography className={styles.text} variant="body2" component="p">
+					Executive Leadership Circle: June 2011.
 				</Typography>
 			</div>
 		</Card>

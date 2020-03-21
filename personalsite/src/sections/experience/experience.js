@@ -5,7 +5,8 @@ import styles from './experience.module.css';
 import SectionHeader from '../../components/sectionHeader/sectionHeader';
 
 import SGCard from './cards/sgCard';
-import ATTCard from './cards/attCard';
+import ATTCardDEN from './cards/attCardDEN';
+import ATTCardATL from './cards/attCardATL';
 
 import ExperienceComponent from './experienceComponent';
 
@@ -31,12 +32,12 @@ export default function Experience() {
 							{
 								jobTitle: 'Enterprise Account Manager II',
 								dateRange: 'Aug 2011 – Feb 2016: Denver, CO',
-								jobCard: <ATTCard />
+								jobCard: <ATTCardDEN />
 							},
 							{
 								jobTitle: 'Business Sales Leadership Development Program',
 								dateRange: 'April 2011 – August 2011: Atlanta, GA',
-								jobCard: <ATTCard />
+								jobCard: <ATTCardATL />
 							}
 						]}
 					/>
