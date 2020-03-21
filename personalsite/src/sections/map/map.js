@@ -10,7 +10,7 @@ function map() {
 		<div id="map" className={styles.sectionContainer}>
 			<SectionHeader
 				titleOne={`in Oct 2017 I went out to see the world`}
-				titleTwo={'QR646.com'}
+				titleTwo={'22,500 miles / 18 Countries'}
 				// image={QR646}
 			/>
 			<div className={styles.contentContainer}>
