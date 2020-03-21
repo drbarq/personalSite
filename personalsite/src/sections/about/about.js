@@ -25,8 +25,7 @@ function about() {
 					create genuinely impactful and transformational solutions.
 				</p>
 				<p>
-					I invite you to explore my story of how I became a software engineer
-					below.
+					Scroll down to explore my story of how I became a software engineer.
 				</p>
 			</div>
 		</div>
