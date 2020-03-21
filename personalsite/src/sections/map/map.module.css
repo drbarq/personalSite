@@ -36,3 +36,7 @@
 	display: flex;
 	width: 90%;
 }
+
+img {
+	width: 7rem;
+}
