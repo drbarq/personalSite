@@ -25,10 +25,9 @@ function about() {
 					create genuinely impactful and transformational solutions.
 				</p>
 				<p>
-					My path to software developer is unique and invite you to explore my
-					story
+					I invite you to explore my story of how I became a software engineer
+					below.
 				</p>
-				{/* <div>{{ faChevronDown }}</div> */}
 			</div>
 		</div>
 	);
