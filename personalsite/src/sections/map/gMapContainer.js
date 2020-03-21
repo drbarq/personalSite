@@ -84,7 +84,10 @@ export class MapContainer extends Component {
 							{this.state.selectedPlace.title}
 						</a>
 						<div className={styles.infoPicture}>
-							<img src={this.state.selectedPlace.picture} />
+							<img
+								// className={styles.infoPicture}
+								src={this.state.selectedPlace.picture}
+							/>
 						</div>
 					</div>
 				</InfoWindow>

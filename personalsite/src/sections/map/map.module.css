@@ -28,18 +28,18 @@
 }
 
 .infoWindow {
-	max-width: 35vh;
-	max-height: 25vh;
-	overflow: scroll;
+	width: 20vh;
+	height: 25vh;
+	overflow: none;
 }
 
 .infoPicture {
-	display: flex;
+	/* display: flex; */
 	width: 90%;
 	height: 90%;
 }
 
-img {
+.infoPicture img {
 	max-height: 100%;
 	max-width: 100%;
 }
