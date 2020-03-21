@@ -8,6 +8,10 @@ import {
 } from 'google-maps-react';
 import styles from './map.module.css';
 
+import { faDotCircle } from '@fortawesome/free-solid-svg-icons';
+
+import marker from '../../icons/marker.svg';
+
 import mapMarkers from '../../gpsData/mapMarkers';
 import gMapData from '../../gpsData/gMapData';
 import polylineData from '../../gpsData/polylineData';
@@ -40,16 +44,19 @@ export class MapContainer extends Component {
 	};
 
 	displayMarkers = () => {
-		return gMapData.map((point, index) => {
+		const markPoint = marker;
+		return mapMarkers.map((point, index) => {
 			return (
 				<Marker
 					key={index}
 					id={index}
-					position={{
-						lat: point.LATITUDE,
-						lng: point.LONGITUDE
-					}}
-					onClick={() => console.log(`what else is here: ${point}`)}
+					position={{ lat: point.LATITUDE, lng: point.LONGITUDE }}
+					onClick={this.onMarkerClick}
+					icon={{ path: this.props.google.maps.SymbolPath.CIRCLE, scale: 4 }}
+					name={point.Location}
+					title={point.title}
+					blogPost={point.blogPost}
+					picture={point.picture}
 				/>
 			);
 		});
@@ -63,27 +70,8 @@ export class MapContainer extends Component {
 				initialCenter={{ lat: 0, lng: 0 }}
 				onClick={this.onMapClicked}
 			>
-				{/* {this.displayMarkers()} */}
-				<Marker
-					position={{ lat: 29.75843, lng: -104.97705 }}
-					name={'Blog Post2'}
-					onClick={this.onMarkerClick}
-					// blogInfo={[{ post: 'one' }]}
-				/>
-				<Marker
-					position={{ lat: 27.9981, lng: 86.84742 }}
-					onClick={this.onMarkerClick}
-					name={'Everest Base Camp, Nepal'}
-					title={
-						'If you can avoid fighting with monkey and dog, you might be okay'
-					}
-					blogPost={
-						'https://www.qr646.com/single-post/2017/11/18/If-you-can-avoid-fighting-with-monkey-and-dog-you-might-be-okay'
-					}
-					picture={
-						'https://static.wixstatic.com/media/7fcb35_8943ad51b00e44338421b9f7687ed7f2~mv2_d_1502_1502_s_2.jpg/v1/fill/w_1502,h_1502,al_c,q_90/7fcb35_8943ad51b00e44338421b9f7687ed7f2~mv2_d_1502_1502_s_2.webp'
-					}
-				/>
+				{this.displayMarkers()}
+
 				<InfoWindow
 					marker={this.state.activeMarker}
 					visible={this.state.showingInfoWindow}
@@ -112,3 +100,26 @@ export class MapContainer extends Component {
 export default GoogleApiWrapper({
 	apiKey: config.gMapsApi
 })(MapContainer);
+
+{
+	/* <Marker
+					position={{ lat: 29.75843, lng: -104.97705 }}
+					name={'Blog Post2'}
+					onClick={this.onMarkerClick}
+					// blogInfo={[{ post: 'one' }]}
+				/>
+				<Marker
+					position={{ lat: 27.9981, lng: 86.84742 }}
+					onClick={this.onMarkerClick}
+					name={'Everest Base Camp, Nepal'}
+					title={
+						'If you can avoid fighting with monkey and dog, you might be okay'
+					}
+					blogPost={
+						'https://www.qr646.com/single-post/2017/11/18/If-you-can-avoid-fighting-with-monkey-and-dog-you-might-be-okay'
+					}
+					picture={
+						'https://static.wixstatic.com/media/7fcb35_8943ad51b00e44338421b9f7687ed7f2~mv2_d_1502_1502_s_2.jpg/v1/fill/w_1502,h_1502,al_c,q_90/7fcb35_8943ad51b00e44338421b9f7687ed7f2~mv2_d_1502_1502_s_2.webp'
+					}
+				/> */
+}
