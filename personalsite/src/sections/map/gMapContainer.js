@@ -10,7 +10,7 @@ import styles from './map.module.css';
 
 import { faDotCircle } from '@fortawesome/free-solid-svg-icons';
 
-import marker from '../../icons/marker.svg';
+import markerFA from '../../icons/marker.svg';
 
 import mapMarkers from '../../gpsData/mapMarkers';
 import gMapData from '../../gpsData/gMapData';
@@ -44,7 +44,7 @@ export class MapContainer extends Component {
 	};
 
 	displayMarkers = () => {
-		const markPoint = marker;
+		const markPoint = markerFA;
 		return mapMarkers.map((point, index) => {
 			return (
 				<Marker
@@ -52,7 +52,8 @@ export class MapContainer extends Component {
 					id={index}
 					position={{ lat: point.LATITUDE, lng: point.LONGITUDE }}
 					onClick={this.onMarkerClick}
-					icon={{ path: this.props.google.maps.SymbolPath.CIRCLE, scale: 4 }}
+					icon={{ path: this.props.google.maps.SymbolPath.CIRCLE, scale: 5 }}
+					// icon={{ path: this.markerFA, scale: 5 }}
 					name={point.Location}
 					title={point.title}
 					blogPost={point.blogPost}
