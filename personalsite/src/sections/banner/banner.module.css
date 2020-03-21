@@ -19,8 +19,10 @@
 @media only screen and (max-width: 450px) {
 	.nameContainer {
 		position: absolute;
-		top: 140px;
-		left: 55px;
+		/* top: 140px;
+		left: 55px; */
+		top: 30%;
+		left: 15%;
 	}
 	.bannerContainer {
 		/* properties for snap scrolling */
@@ -44,8 +46,10 @@
 	}
 	.breadcrumbLinks {
 		position: absolute;
-		top: 550px;
-		left: 25px;
+		top: 85%;
+		left: 5%;
+		/* top: 550px;
+		left: 25px; */
 		display: flex;
 		flex-direction: row;
 		width: 90%;
@@ -55,8 +59,10 @@
 @media (min-width: 451px) {
 	.nameContainer {
 		position: absolute;
-		top: 80px;
-		left: 275px;
+		/* top: 80px;
+		left: 275px; */
+		top: 20%;
+		left: 20%;
 	}
 
 	.bannerContainer {
@@ -81,8 +87,10 @@
 	}
 	.breadcrumbLinks {
 		position: absolute;
-		top: 550px;
-		left: 175px;
+		top: 85%;
+		left: 15%;
+		/* top: 550px;
+		left: 175px; */
 		display: flex;
 		flex-direction: row;
 		width: 90%;
@@ -90,8 +98,10 @@
 }
 
 .bannerImg {
-	position: relative;
-	top: -140px;
+	/* position: relative; */
+	/* top: -140px; */
+	/* width: 100%; */
+	height: 100%;
 }
 
 .imgContainer {
