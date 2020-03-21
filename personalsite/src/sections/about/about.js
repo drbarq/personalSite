@@ -3,6 +3,8 @@ import styles from './about.module.css';
 
 import SectionHeader from '../../components/sectionHeader/sectionHeader';
 
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+
 function about() {
 	return (
 		<div id="about" className={styles.sectionContainer}>
@@ -22,7 +24,11 @@ function about() {
 					I believe that by understanding the 'why' before the 'how,' we can
 					create genuinely impactful and transformational solutions.
 				</p>
-				<p>My path to SWE is unique and invite you to explore my story</p>
+				<p>
+					My path to software developer is unique and invite you to explore my
+					story
+				</p>
+				{/* <div>{{ faChevronDown }}</div> */}
 			</div>
 		</div>
 	);
