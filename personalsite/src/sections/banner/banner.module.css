@@ -106,7 +106,7 @@
 
 .imgContainer {
 	height: 100%;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 /* parent element needs to have position: relative and child element needs to have position: absolute relative to that closest parent element  */

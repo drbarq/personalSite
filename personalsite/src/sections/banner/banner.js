@@ -1,11 +1,7 @@
 import React from 'react';
-import joeBanner from '../../images/joeBanner.jpg';
-import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 
-import JoeImageBig from '../../images/DSC08263.JPG';
-
+import bannerCompressed from '../../images/bannerCompressed.jpg';
 import Breadcrumb from './breadcrumbs/breadcrumb';
-
 import styles from './banner.module.css';
 
 function Banner() {
@@ -13,8 +9,7 @@ function Banner() {
 		<div id="banner" className={styles.sectionContainer}>
 			<div className={styles.bannerContainer}>
 				<div className={styles.imgContainer}>
-					{/* <img className={styles.bannerImg} src={joeBanner} /> */}
-					<img className={styles.bannerImg} src={JoeImageBig} />
+					<img className={styles.bannerImg} src={bannerCompressed} />
 				</div>
 				<div className={styles.nameContainer}>
 					<div className={styles.name}>Joe</div>
