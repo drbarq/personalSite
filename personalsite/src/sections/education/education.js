@@ -11,7 +11,7 @@ export default function Education() {
 			<div className={styles.contentContainer}>
 				<div className={styles.experienceContainer}>
 					<EducationContainer
-						schoolName="University of Pennsylvania"
+						schoolName="Pennsylvania State University"
 						educationDate="Sept 2006 - Dec 2010"
 						degree="Bachelor of Science: Finance"
 						location="State College, PA"
