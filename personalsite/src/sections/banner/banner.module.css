@@ -21,7 +21,7 @@
 		position: absolute;
 		/* top: 140px;
 		left: 55px; */
-		top: 30%;
+		top: 25%;
 		left: 15%;
 	}
 	.bannerContainer {
@@ -72,7 +72,7 @@
 		position: absolute;
 		/* top: 80px;
 		left: 275px; */
-		top: 20%;
+		top: 10%;
 		left: 20%;
 	}
 
@@ -108,17 +108,17 @@
 	}
 
 	.bannerImg {
-		align-self: center;
+		/* align-self: center; */
 		/* position: relative; */
 		/* top: -40%; */
 		/* width: 100%; */
-		/* height: 100%; */
+		height: 100%;
 	}
 
 	.imgContainer {
-		display: flex;
+		/* display: flex; */
 		height: 100%;
-		overflow: hidden;
+		/* overflow: hidden; */
 	}
 }
 
