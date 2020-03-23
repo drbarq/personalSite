@@ -43,7 +43,7 @@ const ExpansionPanelSummary = withStyles({
 })(MuiExpansionPanelSummary);
 
 export default function CustomExpansionPanel(props) {
-	const [expanded, setExpanded] = React.useState('');
+	const [expanded, setExpanded] = React.useState('panel1');
 
 	const handleChange = panel => (event, newExpanded) => {
 		setExpanded(newExpanded ? panel : false);
