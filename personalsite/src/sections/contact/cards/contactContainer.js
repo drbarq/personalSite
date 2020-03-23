@@ -53,7 +53,7 @@ export default function ContactContainer() {
 					icon={faMotorcycle}
 				/>
 				<LinkComponent
-					link="https://pdfhost.io/v/2GzYb7scD_Joe_TustinSoftware_Engineerpdf.pdf"
+					link="https://pdfhost.io/v/K1bT~r0bn_Joe_Tustin_Software_Engineerpdf.pdf"
 					title="Resume"
 					icon={faFilePdf}
 				/>
