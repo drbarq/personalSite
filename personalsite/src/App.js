@@ -17,11 +17,11 @@ function App() {
 			<div className={styles.appFlex}>
 				<Banner />
 				<About />
-				<Education />
-				<Experience />
 				<Map />
 				<Projects />
 				<Bredkrum />
+				<Education />
+				<Experience />
 				<Contact />
 			</div>
 		</div>
