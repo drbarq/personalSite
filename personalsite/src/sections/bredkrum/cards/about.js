@@ -1,29 +1,10 @@
 import React from 'react';
 import Card from '@material-ui/core/Card';
 import Typography from '@material-ui/core/Typography';
-
+import BulletPoints from '../../../components/bulletPoints/bulletPoints';
 import styles from './about.module.css';
 
 export default function About() {
-	function skillsBulletPoints(skills) {
-		let skillsLength = skills.length - 1;
-		let bulletList = [];
-
-		skills.forEach((skill, index) => {
-			const bullet = (
-				<span key={index} className={styles.bullet}>
-					•
-				</span>
-			);
-
-			bulletList.push(' ', skill, ' ');
-			if (index < skillsLength) {
-				return bulletList.push(bullet);
-			}
-		});
-
-		return bulletList;
-	}
 	return (
 		<Card className={styles.root}>
 			<div className={styles.cardContent}>
@@ -31,21 +12,23 @@ export default function About() {
 					skills:
 				</Typography>
 				<Typography className={styles.text} variant="body2" component="p">
-					{skillsBulletPoints([
-						'React',
-						'PWA',
-						'Serverless',
-						'firebase',
-						'NoSQL',
-						'Google Cloud Functions',
-						'CSS',
-						'QR Code',
-						'Variable Data Printing',
-						'Mobile Responsive Design',
-						'Flex',
-						'Twilio',
-						'SMS'
-					])}
+					<BulletPoints
+						skills={[
+							'React',
+							'PWA',
+							'Serverless',
+							'firebase',
+							'NoSQL',
+							'Google Cloud Functions',
+							'CSS',
+							'QR Code',
+							'Variable Data Printing',
+							'Mobile Responsive Design',
+							'Flex',
+							'Twilio',
+							'SMS'
+						]}
+					/>
 				</Typography>
 				<Typography className={styles.title} color="textSecondary" gutterBottom>
 					about:

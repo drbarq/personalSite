@@ -81,19 +81,3 @@
 	font-size: small;
 	align-self: center;
 }
-
-/* .contactLinksContainer {
-	display: flex;
-	flex-direction: row;
-	align-self: center;
-	width: 85%;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	padding-top: 1rem;
-} */
-
-/* .bullet {
-	display: inline-block;
-	margin: 0 2px;
-	transform: scale(0.8);
-} */

@@ -1,10 +1,8 @@
 import React from 'react';
 import Card from '@material-ui/core/Card';
 import Typography from '@material-ui/core/Typography';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import LinkComponentGenerator from '../../../components/linkComponent/linkComponentGenerator';
 import BulletPoints from '../../../components/bulletPoints/bulletPoints';
-
 import styles from './projectCard.module.css';
 
 export default function ProjectCard(props) {
@@ -24,7 +22,6 @@ export default function ProjectCard(props) {
 					skills:
 				</Typography>
 				<Typography className={styles.text} variant="body2" component="p">
-					{/* {skillsBulletPoints(props.skills)} */}
 					<BulletPoints skills={props.skills} />
 				</Typography>
 				<Typography className={styles.title} color="textSecondary">
