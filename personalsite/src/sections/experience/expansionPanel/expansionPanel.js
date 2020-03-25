@@ -57,6 +57,7 @@ export default function CustomExpansionPanel(props) {
 				<ExpansionPanel
 					expanded={expanded === `panel${index + 1}`}
 					onChange={handleChange(`panel${index + 1}`)}
+					key={index}
 				>
 					<ExpansionPanelSummary
 						aria-controls="panel1d-content"
