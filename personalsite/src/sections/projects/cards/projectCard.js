@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import styles from './projectCard.module.css';
 
+import LinkComponent from '../../../components/linkComponent/linkComponent';
+
 import {
 	faVimeoV,
 	faGithub,

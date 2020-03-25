@@ -83,7 +83,6 @@ export default function Links(props) {
 		let linksList = [];
 
 		Object.keys(links).map((linkName, index) => {
-			console.log('made it here');
 			if (linkName === 'youTube') {
 				linksList.push(
 					youTubeLink(links[linkName].link, links[linkName].title, index)

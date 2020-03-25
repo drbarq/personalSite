@@ -12,6 +12,13 @@ import SectionHeader from '../../components/sectionHeader/sectionHeader';
 import ProjectCard from './cards/projectCard';
 import ProjectCardImg from './cards/projectCardImg';
 
+import {
+	faLinkedin,
+	faGithub,
+	faInstagram,
+	faMediumM
+} from '@fortawesome/fontawesome-free-brands';
+
 function TabPanel(props) {
 	const { children, value, index } = props;
 	return (
@@ -107,6 +114,21 @@ export default function ProjectSection() {
 								}
 							}}
 						/>
+						{/* <ProjectCard
+							mainTitle="🛴🕵🏻‍♂️ Scooter Sleuth 🕵🏻‍♀️ 🛴"
+							aboutText="We put a man on the moon but still need to switch between apps to find the closest electric scooter. Not anymore!! Scooter Sleuth aggregates scooter share apps into one map rendered based on the users location and available scooters."
+							skills={['Ruby on Rails', 'JavaScript', 'Bootstrap', 'Heroku']}
+							links={{
+								youTube: {
+									link: 'https://www.youtube.com/watch?v=PwzsgzlYaZY',
+									title: 'Video Demo'
+								},
+								gitHub: {
+									link: 'https://github.com/drbarq/scootersleuth-mod-2',
+									title: 'Repo'
+								}
+							}}
+						/> */}
 					</TabPanel>
 					<TabPanel value={value} index={2}>
 						<ProjectCard
