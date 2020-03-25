@@ -10,7 +10,7 @@ export default function ProjectCard(props) {
 		<Card className={styles.root}>
 			<div className={styles.cardContent}>
 				<div className={styles.titleContainer}>
-					<img src={props.logo} />
+					<img src={props.logo} alt="project logo" />
 				</div>
 				<Typography className={styles.title} color="textSecondary" gutterBottom>
 					about:
