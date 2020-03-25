@@ -8,7 +8,7 @@ function SectionHeader({ titleOne, titleTwo, image }) {
 			{titleTwo ? <div className={styles.titleTwo}>{titleTwo}</div> : null}
 			{image ? (
 				<div className={styles.bannerImg}>
-					<img src={image} />{' '}
+					<img alt="subheading banner" src={image} />{' '}
 				</div>
 			) : null}
 		</div>
