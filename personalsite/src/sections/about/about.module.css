@@ -3,13 +3,10 @@
 	width: 100%;
 	max-width: 50rem;
 	scroll-snap-align: start;
-	/* position: relative; */
 	display: flex;
 	flex-direction: column;
-
 	background-color: #152e4e;
 	padding: 3rem 1.5rem 3rem 1.5rem;
-
 	font-family: 'Avenir Next';
 	color: #fff;
 }
@@ -20,17 +17,9 @@
 	align-self: center;
 	max-width: 85%;
 	padding: 1rem 2rem 1rem 2rem;
-	/* background-color: white; */
-	/* border-radius: 15px; */
-	/* overflow: hidden; */
-	/* align-items: center; */
-	/* justify-content: center; */
-	/* overflow: hidden; */
-	/* max-width: 65vh; */
 }
 
 .textContainer p {
-	/* color: #152e4e; */
 	color: #fff;
 	margin: 0;
 	margin-bottom: 0.5rem;
