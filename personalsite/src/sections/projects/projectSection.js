@@ -13,7 +13,7 @@ import ProjectCard from './cards/projectCard';
 import ProjectCardImg from './cards/projectCardImg';
 
 function TabPanel(props) {
-	const { children, value, index, ...other } = props;
+	const { children, value, index } = props;
 	return (
 		<div
 			className={styles.tabPanel}
