@@ -7,8 +7,6 @@ import {
 	GoogleApiWrapper
 } from 'google-maps-react';
 import styles from './map.module.css';
-
-import markerFA from '../../icons/marker.svg';
 import mapMarkers from '../../gpsData/mapMarkers';
 import polylineData from '../../gpsData/polylineData';
 

@@ -11,7 +11,6 @@ function map() {
 			<SectionHeader
 				titleOne={`in Oct 2017 I went out to see the world`}
 				titleTwo={'22,500 miles / 18 Countries'}
-				// image={QR646}
 			/>
 			<div className={styles.contentContainer}>
 				<div className={styles.gMapContainer}>
