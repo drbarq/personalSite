@@ -18,7 +18,8 @@ import {
 	faGithub,
 	faInstagram,
 	faMediumM,
-	faYoutube
+	faYoutube,
+	faChrome
 } from '@fortawesome/fontawesome-free-brands';
 
 function TabPanel(props) {
@@ -117,50 +118,7 @@ export default function ProjectSection() {
 									icon: faGithub
 								}
 							]}
-							// 	((
-							// 		<LinkComponent
-							// 			link="https://www.youtube.com/watch?v=PwzsgzlYaZY"
-							// 			title="Video Demo"
-							// 			icon={faYoutube}
-							// 		/>
-							// 	),
-							// 	(
-							// 		<LinkComponent
-							// 			link="https://github.com/drbarq/scootersleuth-mod-2"
-							// 			title="Repo"
-							// 			icon={faGithub}
-							// 		/>
-							// 	))
-							// }
-
-							// 	{
-							// 	youTube: {
-							// 		link: 'https://www.youtube.com/watch?v=PwzsgzlYaZY',
-							// 		title: 'Video Demo'
-							// 	},
-							// 	gitHub: {
-							// 		link: 'https://github.com/drbarq/scootersleuth-mod-2',
-							// 		title: 'Repo'
-							// 	}
-							// }
-							// }
 						/>
-						{/* {console.log(faGithub)} */}
-						{/* <ProjectCard
-							mainTitle="🛴🕵🏻‍♂️ Scooter Sleuth 🕵🏻‍♀️ 🛴"
-							aboutText="We put a man on the moon but still need to switch between apps to find the closest electric scooter. Not anymore!! Scooter Sleuth aggregates scooter share apps into one map rendered based on the users location and available scooters."
-							skills={['Ruby on Rails', 'JavaScript', 'Bootstrap', 'Heroku']}
-							links={{
-								youTube: {
-									link: 'https://www.youtube.com/watch?v=PwzsgzlYaZY',
-									title: 'Video Demo'
-								},
-								gitHub: {
-									link: 'https://github.com/drbarq/scootersleuth-mod-2',
-									title: 'Repo'
-								}
-							}}
-						/> */}
 					</TabPanel>
 					<TabPanel value={value} index={2}>
 						<ProjectCard
@@ -175,16 +133,18 @@ export default function ProjectSection() {
 								'Flex',
 								'REST API'
 							]}
-							links={{
-								web: {
+							links={[
+								{
 									link: 'https://scootersleuth.firebaseapp.com/',
-									title: 'Firebase Demo'
+									title: 'Firebase Demo',
+									icon: faChrome
 								},
-								gitHub: {
+								{
 									link: 'https://github.com/drbarq/Scooter-Sleuth-v2',
-									title: 'Repo'
+									title: 'Repo',
+									icon: faGithub
 								}
-							}}
+							]}
 						/>
 					</TabPanel>
 					<TabPanel value={value} index={3}>
