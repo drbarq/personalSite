@@ -1,9 +1,7 @@
 import React from 'react';
 import styles from './map.module.css';
 import SectionHeader from '../../components/sectionHeader/sectionHeader';
-
 import MapContainer from './gMapContainer';
-import QR646 from '../../images/QR646.png';
 
 function map() {
 	return (

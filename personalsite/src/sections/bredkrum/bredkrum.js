@@ -66,6 +66,7 @@ export default function Bredkrum() {
 							height="100%"
 							frameborder="0"
 							allowfullscreen
+							title="bredkrum pitch video"
 						></iframe>
 					</TabPanel>
 					<TabPanel value={value} index={2}>
