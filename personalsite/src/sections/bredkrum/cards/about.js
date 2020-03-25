@@ -9,7 +9,7 @@ export default function About() {
 		let skillsLength = skills.length - 1;
 		let bulletList = [];
 
-		skills.map((skill, index) => {
+		skills.forEach((skill, index) => {
 			const bullet = (
 				<span key={index} className={styles.bullet}>
 					•
@@ -18,13 +18,12 @@ export default function About() {
 
 			bulletList.push(' ', skill, ' ');
 			if (index < skillsLength) {
-				bulletList.push(bullet);
+				return bulletList.push(bullet);
 			}
 		});
 
 		return bulletList;
 	}
-
 	return (
 		<Card className={styles.root}>
 			<div className={styles.cardContent}>
