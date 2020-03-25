@@ -40,7 +40,6 @@ export class MapContainer extends Component {
 	};
 
 	displayMarkers = () => {
-		const markPoint = markerFA;
 		return mapMarkers.map((point, index) => {
 			return (
 				<Marker
@@ -49,7 +48,6 @@ export class MapContainer extends Component {
 					position={{ lat: point.LATITUDE, lng: point.LONGITUDE }}
 					onClick={this.onMarkerClick}
 					icon={{ path: this.props.google.maps.SymbolPath.CIRCLE, scale: 5 }}
-					// icon={{ path: this.markerFA, scale: 5 }}
 					name={point.Location}
 					title={point.title}
 					blogPost={point.blogPost}
