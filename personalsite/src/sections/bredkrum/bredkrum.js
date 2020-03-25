@@ -10,6 +10,12 @@ import bredkrumTrace from '../../images/bredkrumTrace.png';
 import About from './cards/about';
 import Links from './cards/links';
 
+import {
+	faVimeoV,
+	faGithub,
+	faMediumM
+} from '@fortawesome/fontawesome-free-brands';
+
 function TabPanel(props) {
 	const { children, value, index } = props;
 	return (
@@ -71,21 +77,24 @@ export default function Bredkrum() {
 					</TabPanel>
 					<TabPanel value={value} index={2}>
 						<Links
-							links={{
-								vimeo: {
+							links={[
+								{
 									link: 'https://vimeo.com/369643267',
-									title: 'Pitch Video'
+									title: 'Pitch Video',
+									icon: faVimeoV
 								},
-								gitHub: {
+								{
 									link: 'https://github.com/drbarq/bredkrum',
-									title: 'GitHub Repo'
+									title: 'Repo',
+									icon: faGithub
 								},
-								medium: {
+								{
 									link:
 										'https://medium.com/@j.tustin/https-medium-com-j-tustin-lost-found-the-next-adventure-81b2e1df55c2',
-									title: 'Blog Posts'
+									title: 'Blog Posts',
+									icon: faMediumM
 								}
-							}}
+							]}
 						/>
 					</TabPanel>
 				</div>

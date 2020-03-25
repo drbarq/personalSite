@@ -4,7 +4,6 @@ import Typography from '@material-ui/core/Typography';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function LinkComponent({ link, title, icon }) {
-	console.log(icon, 'what does it look lik ehere?');
 	return (
 		<a href={link} target="_blank" rel="noopener noreferrer">
 			<div className={styles.linkLabel}>
