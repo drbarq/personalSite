@@ -1,13 +1,9 @@
 import React from 'react';
-
 import styles from './experience.module.css';
-
 import SectionHeader from '../../components/sectionHeader/sectionHeader';
-
 import SGCard from './cards/sgCard';
 import ATTCardDEN from './cards/attCardDEN';
 import ATTCardATL from './cards/attCardATL';
-
 import ExperienceComponent from './experienceComponent';
 
 export default function Experience() {
