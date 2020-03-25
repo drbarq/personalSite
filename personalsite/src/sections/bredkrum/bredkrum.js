@@ -11,7 +11,7 @@ import About from './cards/about';
 import Links from './cards/links';
 
 function TabPanel(props) {
-	const { children, value, index, ...other } = props;
+	const { children, value, index } = props;
 	return (
 		<div
 			className={styles.tabPanel}
