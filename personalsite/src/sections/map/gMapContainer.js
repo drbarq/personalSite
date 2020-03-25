@@ -63,6 +63,7 @@ export class MapContainer extends Component {
 				initialCenter={{ lat: 6, lng: -38 }}
 				onClick={this.onMapClicked}
 				disableDefaultUI={true}
+				gestureHandling={'cooperative'}
 			>
 				{this.displayMarkers()}
 
