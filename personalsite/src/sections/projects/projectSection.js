@@ -7,6 +7,7 @@ import styles from './projectSection.module.css';
 import lfLogo from '../../images/lflogo.svg';
 
 import SectionHeader from '../../components/sectionHeader/sectionHeader';
+import LinkComponent from '../../components/linkComponent/linkComponent';
 
 // hoc cards
 import ProjectCard from './cards/projectCard';
@@ -16,7 +17,8 @@ import {
 	faLinkedin,
 	faGithub,
 	faInstagram,
-	faMediumM
+	faMediumM,
+	faYoutube
 } from '@fortawesome/fontawesome-free-brands';
 
 function TabPanel(props) {
@@ -103,17 +105,47 @@ export default function ProjectSection() {
 							mainTitle="🛴🕵🏻‍♂️ Scooter Sleuth 🕵🏻‍♀️ 🛴"
 							aboutText="We put a man on the moon but still need to switch between apps to find the closest electric scooter. Not anymore!! Scooter Sleuth aggregates scooter share apps into one map rendered based on the users location and available scooters."
 							skills={['Ruby on Rails', 'JavaScript', 'Bootstrap', 'Heroku']}
-							links={{
-								youTube: {
+							links={[
+								{
 									link: 'https://www.youtube.com/watch?v=PwzsgzlYaZY',
-									title: 'Video Demo'
+									title: 'Video Demo',
+									icon: faYoutube
 								},
-								gitHub: {
+								{
 									link: 'https://github.com/drbarq/scootersleuth-mod-2',
-									title: 'Repo'
+									title: 'Repo',
+									icon: faGithub
 								}
-							}}
+							]}
+							// 	((
+							// 		<LinkComponent
+							// 			link="https://www.youtube.com/watch?v=PwzsgzlYaZY"
+							// 			title="Video Demo"
+							// 			icon={faYoutube}
+							// 		/>
+							// 	),
+							// 	(
+							// 		<LinkComponent
+							// 			link="https://github.com/drbarq/scootersleuth-mod-2"
+							// 			title="Repo"
+							// 			icon={faGithub}
+							// 		/>
+							// 	))
+							// }
+
+							// 	{
+							// 	youTube: {
+							// 		link: 'https://www.youtube.com/watch?v=PwzsgzlYaZY',
+							// 		title: 'Video Demo'
+							// 	},
+							// 	gitHub: {
+							// 		link: 'https://github.com/drbarq/scootersleuth-mod-2',
+							// 		title: 'Repo'
+							// 	}
+							// }
+							// }
 						/>
+						{/* {console.log(faGithub)} */}
 						{/* <ProjectCard
 							mainTitle="🛴🕵🏻‍♂️ Scooter Sleuth 🕵🏻‍♀️ 🛴"
 							aboutText="We put a man on the moon but still need to switch between apps to find the closest electric scooter. Not anymore!! Scooter Sleuth aggregates scooter share apps into one map rendered based on the users location and available scooters."

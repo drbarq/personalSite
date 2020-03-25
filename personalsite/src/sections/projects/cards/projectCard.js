@@ -6,6 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './projectCard.module.css';
 
 import LinkComponent from '../../../components/linkComponent/linkComponent';
+import LinkComponentGenerator from '../../../components/linkComponent/linkComponentGenerator';
+import linkComponentGenerator from '../../../components/linkComponent/linkComponentGenerator';
 
 import {
 	faVimeoV,
@@ -69,36 +71,46 @@ export default function ProjectCard(props) {
 
 	function linkIconGenerator(links) {
 		let linksList = [];
-
-		Object.keys(links).map((linkName, index) => {
-			if (linkName === 'youTube') {
-				linksList.push(
-					youTubeLink(links[linkName].link, links[linkName].title, index)
-				);
-			} else if (linkName === 'gitHub') {
-				linksList.push(
-					gitHubLink(links[linkName].link, links[linkName].title, index)
-				);
-			} else if (linkName === 'gitHubF') {
-				linksList.push(
-					gitHubLink(links[linkName].link, links[linkName].title, index)
-				);
-			} else if (linkName === 'gitHubB') {
-				linksList.push(
-					gitHubLink(links[linkName].link, links[linkName].title, index)
-				);
-			} else if (linkName === 'vimeo') {
-				linksList.push(
-					vimeoLink(links[linkName].link, links[linkName].title, index)
-				);
-			} else if (linkName === 'web') {
-				linksList.push(
-					webLink(links[linkName].link, links[linkName].title, index)
-				);
-			}
+		// console.log(links);
+		links.forEach((element, index) => {
+			console.log(element);
 		});
-		return linksList;
+
+		// return linksList;
 	}
+
+	// function linkIconGenerator(links) {
+	// 	let linksList = [];
+
+	// 	Object.keys(links).map((linkName, index) => {
+	// 		if (linkName === 'youTube') {
+	// 			linksList.push(
+	// 				youTubeLink(links[linkName].link, links[linkName].title, index)
+	// 			);
+	// 		} else if (linkName === 'gitHub') {
+	// 			linksList.push(
+	// 				gitHubLink(links[linkName].link, links[linkName].title, index)
+	// 			);
+	// 		} else if (linkName === 'gitHubF') {
+	// 			linksList.push(
+	// 				gitHubLink(links[linkName].link, links[linkName].title, index)
+	// 			);
+	// 		} else if (linkName === 'gitHubB') {
+	// 			linksList.push(
+	// 				gitHubLink(links[linkName].link, links[linkName].title, index)
+	// 			);
+	// 		} else if (linkName === 'vimeo') {
+	// 			linksList.push(
+	// 				vimeoLink(links[linkName].link, links[linkName].title, index)
+	// 			);
+	// 		} else if (linkName === 'web') {
+	// 			linksList.push(
+	// 				webLink(links[linkName].link, links[linkName].title, index)
+	// 			);
+	// 		}
+	// 	});
+	// 	return linksList;
+	// }
 
 	function skillsBulletPoints(skills) {
 		let skillsLength = skills.length - 1;
@@ -148,7 +160,10 @@ export default function ProjectCard(props) {
 					links:
 				</Typography>
 				<div className={styles.linksContainer}>
-					{linkIconGenerator(props.links)}
+					{/* {console.log(props.links)} */}
+					<LinkComponentGenerator links={props.links} />
+					{/* {linkComponentGenerator(props.links)} */}
+					{/* {linkIconGenerator(props.links)} */}
 				</div>
 			</div>
 		</Card>
