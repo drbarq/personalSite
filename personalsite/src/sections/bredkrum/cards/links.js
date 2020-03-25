@@ -16,7 +16,7 @@ import {
 export default function Links(props) {
 	function youTubeLink(link, title, key) {
 		return (
-			<a href={link} target="_blank" key={key}>
+			<a href={link} target="_blank" rel="noopener noreferrer" key={key}>
 				<div className={styles.linkLabel}>
 					<FontAwesomeIcon icon={faYoutube} className={styles.icons} />
 					<Typography className={styles.link} variant="body2" component="p">
@@ -29,7 +29,7 @@ export default function Links(props) {
 
 	function gitHubLink(link, title, key) {
 		return (
-			<a href={link} target="_blank" key={key}>
+			<a href={link} target="_blank" rel="noopener noreferrer" key={key}>
 				<div className={styles.linkLabel}>
 					<FontAwesomeIcon icon={faGithub} className={styles.icons} />
 					<Typography className={styles.link} variant="body2" component="p">
@@ -42,7 +42,7 @@ export default function Links(props) {
 
 	function vimeoLink(link, title, key) {
 		return (
-			<a href={link} target="_blank" key={key}>
+			<a href={link} target="_blank" rel="noopener noreferrer" key={key}>
 				<div className={styles.linkLabel}>
 					<FontAwesomeIcon icon={faVimeoV} className={styles.icons} />
 					<Typography className={styles.link} variant="body2" component="p">
@@ -55,7 +55,7 @@ export default function Links(props) {
 
 	function webLink(link, title, key) {
 		return (
-			<a href={link} target="_blank" key={key}>
+			<a href={link} target="_blank" rel="noopener noreferrer" key={key}>
 				<div className={styles.linkLabel}>
 					<FontAwesomeIcon icon={faFirefox} className={styles.icons} />
 					<Typography className={styles.link} variant="body2" component="p">
@@ -68,7 +68,7 @@ export default function Links(props) {
 
 	function mediumLink(link, title, key) {
 		return (
-			<a href={link} target="_blank" key={key}>
+			<a href={link} target="_blank" rel="noopener noreferrer" key={key}>
 				<div className={styles.linkLabel}>
 					<FontAwesomeIcon icon={faMediumM} className={styles.icons} />
 					<Typography className={styles.link} variant="body2" component="p">
