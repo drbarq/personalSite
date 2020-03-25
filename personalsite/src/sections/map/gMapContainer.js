@@ -73,11 +73,18 @@ export class MapContainer extends Component {
 				>
 					<div className={styles.infoWindow}>
 						<div className={styles.title}>{this.state.selectedPlace.name}</div>
-						<a href={this.state.selectedPlace.blogPost} target="_blank">
+						<a
+							href={this.state.selectedPlace.blogPost}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							{this.state.selectedPlace.title}
 						</a>
 						<div className={styles.infoPicture}>
-							<img src={this.state.selectedPlace.picture} />
+							<img
+								alt={this.state.selectedPlace.title}
+								src={this.state.selectedPlace.picture}
+							/>
 						</div>
 					</div>
 				</InfoWindow>
