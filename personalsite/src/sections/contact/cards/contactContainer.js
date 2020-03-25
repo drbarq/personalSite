@@ -19,7 +19,15 @@ export default function ContactContainer() {
 	return (
 		<div className={styles.contactContainer}>
 			<div className={styles.contactTitleContainer}>
-				<div className={styles.title}>📨 Contact Me 📞</div>
+				<div className={styles.title}>
+					<span role="img" aria-label="email">
+						📨
+					</span>{' '}
+					Contact Me{' '}
+					<span role="img" aria-label="phone">
+						📞
+					</span>{' '}
+				</div>
 			</div>
 			<div className={styles.contactLinksContainer}>
 				<LinkComponent
