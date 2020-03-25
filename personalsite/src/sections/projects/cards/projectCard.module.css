@@ -56,12 +56,6 @@
 	padding: 0px;
 }
 
-.bullet {
-	display: inline-block;
-	margin: 0 2px;
-	transform: scale(0.8);
-}
-
 .title {
 	font-variant: small-caps;
 	letter-spacing: 2px;
@@ -96,4 +90,10 @@
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 	padding-top: 1rem;
+} */
+
+/* .bullet {
+	display: inline-block;
+	margin: 0 2px;
+	transform: scale(0.8);
 } */
