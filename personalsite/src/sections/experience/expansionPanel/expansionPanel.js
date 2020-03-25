@@ -52,7 +52,7 @@ export default function CustomExpansionPanel(props) {
 	function createExpansionPanels(jobs) {
 		let jobList = [];
 
-		jobs.map((job, index) => {
+		jobs.forEach((job, index) => {
 			jobList.push(
 				<ExpansionPanel
 					expanded={expanded === `panel${index + 1}`}
