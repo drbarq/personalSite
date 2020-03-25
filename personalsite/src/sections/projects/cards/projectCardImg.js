@@ -14,91 +14,6 @@ import {
 } from '@fortawesome/fontawesome-free-brands';
 
 export default function ProjectCard(props) {
-	function youTubeLink(link, title, key) {
-		return (
-			<a href={link} target="_blank" rel="noopener noreferrer" key={key}>
-				<div className={styles.linkLabel}>
-					<FontAwesomeIcon icon={faYoutube} className={styles.icons} />
-					<Typography className={styles.link} variant="body2" component="p">
-						{title}
-					</Typography>
-				</div>
-			</a>
-		);
-	}
-
-	function gitHubLink(link, title, key) {
-		return (
-			<a href={link} target="_blank" rel="noopener noreferrer" key={key}>
-				<div className={styles.linkLabel}>
-					<FontAwesomeIcon icon={faGithub} className={styles.icons} />
-					<Typography className={styles.link} variant="body2" component="p">
-						{title}
-					</Typography>
-				</div>
-			</a>
-		);
-	}
-
-	function vimeoLink(link, title, key) {
-		return (
-			<a href={link} target="_blank" rel="noopener noreferrer" key={key}>
-				<div className={styles.linkLabel}>
-					<FontAwesomeIcon icon={faVimeoV} className={styles.icons} />
-					<Typography className={styles.link} variant="body2" component="p">
-						{title}
-					</Typography>
-				</div>
-			</a>
-		);
-	}
-
-	function webLink(link, title, key) {
-		return (
-			<a href={link} target="_blank" rel="noopener noreferrer" key={key}>
-				<div className={styles.linkLabel}>
-					<FontAwesomeIcon icon={faFirefox} className={styles.icons} />
-					<Typography className={styles.link} variant="body2" component="p">
-						{title}
-					</Typography>
-				</div>
-			</a>
-		);
-	}
-
-	function linkIconGenerator(links) {
-		let linksList = [];
-
-		Object.keys(links).map((linkName, index) => {
-			if (linkName === 'youTube') {
-				linksList.push(
-					youTubeLink(links[linkName].link, links[linkName].title, index)
-				);
-			} else if (linkName === 'gitHub') {
-				linksList.push(
-					gitHubLink(links[linkName].link, links[linkName].title, index)
-				);
-			} else if (linkName === 'gitHubF') {
-				linksList.push(
-					gitHubLink(links[linkName].link, links[linkName].title, index)
-				);
-			} else if (linkName === 'gitHubB') {
-				linksList.push(
-					gitHubLink(links[linkName].link, links[linkName].title, index)
-				);
-			} else if (linkName === 'vimeo') {
-				linksList.push(
-					vimeoLink(links[linkName].link, links[linkName].title, index)
-				);
-			} else if (linkName === 'web') {
-				linksList.push(
-					webLink(links[linkName].link, links[linkName].title, index)
-				);
-			}
-		});
-		return linksList;
-	}
-
 	function skillsBulletPoints(skills) {
 		let skillsLength = skills.length - 1;
 		let bulletList = [];
@@ -142,30 +57,8 @@ export default function ProjectCard(props) {
 				</Typography>
 				<div className={styles.linksContainer}>
 					<LinkComponentGenerator links={props.links} />
-					{/* {linkIconGenerator(props.links)} */}
 				</div>
 			</div>
 		</Card>
 	);
 }
-
-const inputsExample = {
-	mainTitle: '🛴🕵🏻‍♂️ Scooter Sleuth 🕵🏻‍♀️🛴',
-	aboutText:
-		'We put a man on the moon but still need to switch between apps to find the closest electric scooter. Not anymore!! Scooter Sleuth aggregates scooter share apps into one map rendered based on the users location and available scooters.',
-	skills: ['Ruby on Rails', 'JavaScript', 'Bootstrap', 'Heroku'],
-	links: {
-		youtube: {
-			link: '',
-			title: 'Video Demo'
-		},
-		github: {
-			link: '',
-			title: ''
-		},
-		vimeo: {
-			link: '',
-			title: ''
-		}
-	}
-};

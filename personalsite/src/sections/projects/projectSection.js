@@ -5,22 +5,16 @@ import Tab from '@material-ui/core/Tab';
 
 import styles from './projectSection.module.css';
 import lfLogo from '../../images/lflogo.svg';
-
 import SectionHeader from '../../components/sectionHeader/sectionHeader';
-import LinkComponent from '../../components/linkComponent/linkComponent';
 
 // hoc cards
 import ProjectCard from './cards/projectCard';
 import ProjectCardImg from './cards/projectCardImg';
 
 import {
-	faLinkedin,
 	faGithub,
-	faInstagram,
-	faMediumM,
 	faYoutube,
 	faChrome,
-	faVimeo,
 	faVimeoV
 } from '@fortawesome/fontawesome-free-brands';
 
@@ -104,20 +98,6 @@ export default function ProjectSection() {
 									icon: faGithub
 								}
 							]}
-							// links={{
-							// 	vimeo: {
-							// 		link: 'https://vimeo.com/351468041',
-							// 		title: 'Video Demo'
-							// 	},
-							// 	gitHubF: {
-							// 		link: 'https://github.com/drbarq/lost-and-found-backEnd-api',
-							// 		title: 'BackEnd Repo'
-							// 	},
-							// 	gitHubB: {
-							// 		link: 'https://github.com/drbarq/lost-and-found-frontEnd',
-							// 		title: 'FrontEnd Repo'
-							// 	}
-							// }}
 						/>
 					</TabPanel>
 					<TabPanel value={value} index={1}>
