@@ -11,7 +11,6 @@ function Banner() {
 		<div id="banner" className={styles.sectionContainer}>
 			<div className={styles.bannerContainer}>
 				<div className={styles.imgContainer}>
-					{/* <img className={styles.bannerImg} src={bannerResized} /> */}
 					<img className={styles.bannerImg} src={bannerCropped} />
 				</div>
 				<div className={styles.nameContainer}>
