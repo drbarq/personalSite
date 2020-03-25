@@ -5,26 +5,6 @@ import Typography from '@material-ui/core/Typography';
 import styles from './card.module.css';
 
 export default function attCard() {
-	function skillsBulletPoints(skills) {
-		let skillsLength = skills.length - 1;
-		let bulletList = [];
-
-		skills.map((skill, index) => {
-			const bullet = (
-				<span key={index} className={styles.bullet}>
-					•
-				</span>
-			);
-
-			bulletList.push(' ', skill, ' ');
-			if (index < skillsLength) {
-				bulletList.push(bullet);
-			}
-		});
-
-		return bulletList;
-	}
-
 	return (
 		<Card className={styles.root}>
 			<div className={styles.cardContent}>
