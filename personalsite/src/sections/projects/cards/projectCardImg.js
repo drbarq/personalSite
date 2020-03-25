@@ -2,6 +2,7 @@ import React from 'react';
 import Card from '@material-ui/core/Card';
 import Typography from '@material-ui/core/Typography';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import LinkComponentGenerator from '../../../components/linkComponent/linkComponentGenerator';
 
 import styles from './projectCard.module.css';
 
@@ -140,7 +141,8 @@ export default function ProjectCard(props) {
 					links:
 				</Typography>
 				<div className={styles.linksContainer}>
-					{linkIconGenerator(props.links)}
+					<LinkComponentGenerator links={props.links} />
+					{/* {linkIconGenerator(props.links)} */}
 				</div>
 			</div>
 		</Card>

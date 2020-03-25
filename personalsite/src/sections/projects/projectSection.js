@@ -19,7 +19,9 @@ import {
 	faInstagram,
 	faMediumM,
 	faYoutube,
-	faChrome
+	faChrome,
+	faVimeo,
+	faVimeoV
 } from '@fortawesome/fontawesome-free-brands';
 
 function TabPanel(props) {
@@ -85,20 +87,37 @@ export default function ProjectSection() {
 								'SMS',
 								'Heroku'
 							]}
-							links={{
-								vimeo: {
+							links={[
+								{
 									link: 'https://vimeo.com/351468041',
-									title: 'Video Demo'
+									title: 'Video Demo',
+									icon: faVimeoV
 								},
-								gitHubF: {
+								{
 									link: 'https://github.com/drbarq/lost-and-found-backEnd-api',
-									title: 'BackEnd Repo'
+									title: 'Back-End Repo',
+									icon: faGithub
 								},
-								gitHubB: {
+								{
 									link: 'https://github.com/drbarq/lost-and-found-frontEnd',
-									title: 'FrontEnd Repo'
+									title: 'Front-End Repo',
+									icon: faGithub
 								}
-							}}
+							]}
+							// links={{
+							// 	vimeo: {
+							// 		link: 'https://vimeo.com/351468041',
+							// 		title: 'Video Demo'
+							// 	},
+							// 	gitHubF: {
+							// 		link: 'https://github.com/drbarq/lost-and-found-backEnd-api',
+							// 		title: 'BackEnd Repo'
+							// 	},
+							// 	gitHubB: {
+							// 		link: 'https://github.com/drbarq/lost-and-found-frontEnd',
+							// 		title: 'FrontEnd Repo'
+							// 	}
+							// }}
 						/>
 					</TabPanel>
 					<TabPanel value={value} index={1}>
@@ -158,17 +177,19 @@ export default function ProjectSection() {
 								'SQL',
 								'REST API'
 							]}
-							links={{
-								youTube: {
+							links={[
+								{
 									link: 'https://www.youtube.com/watch?v=xtSkpgMU4Ww',
-									title: 'Video Demo'
+									title: 'Video Demo',
+									icon: faYoutube
 								},
-								gitHub: {
+								{
 									link:
 										'https://github.com/drbarq/MILLENNIAL-TRANSLATION-SERVICE',
-									title: 'Repo'
+									title: 'Repo',
+									icon: faGithub
 								}
-							}}
+							]}
 						/>
 					</TabPanel>
 				</div>
