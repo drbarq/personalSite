@@ -10,7 +10,7 @@ function Banner() {
 				<div className={styles.imgContainer}>
 					<img
 						className={styles.bannerImg}
-						alt="photo of Joe at Torres del Paine, Chile"
+						alt="Joe at Torres del Paine, Chile"
 						src={bannerCropped}
 					/>
 				</div>
