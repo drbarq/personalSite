@@ -124,6 +124,10 @@
 	padding-top: 1rem;
 }
 
+.contactLinksContainer svg {
+	color: white;
+}
+
 .linkLabel {
 	display: flex;
 	flex-direction: column;

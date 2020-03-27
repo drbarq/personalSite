@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../contact.module.css';
 import LinkComponent from './linkComponent';
+import LinkComponentGenerator from '../../../components/linkComponent/linkComponentGenerator';
 
 import {
 	faEnvelope,
@@ -15,7 +16,7 @@ import {
 	faMediumM
 } from '@fortawesome/fontawesome-free-brands';
 
-export default function ContactContainer() {
+export default function ContactContainer({ links }) {
 	return (
 		<div className={styles.contactContainer}>
 			<div className={styles.contactTitleContainer}>
@@ -30,7 +31,8 @@ export default function ContactContainer() {
 				</div>
 			</div>
 			<div className={styles.contactLinksContainer}>
-				<LinkComponent
+				<LinkComponentGenerator links={links} />
+				{/* <LinkComponent
 					link="mailto:J.Tustin@gmail.com?subject=Job Offer: $500K Salary"
 					title="Email Me"
 					icon={faEnvelope}
@@ -64,7 +66,7 @@ export default function ContactContainer() {
 					link="https://pdfhost.io/v/K1bT~r0bn_Joe_Tustin_Software_Engineerpdf.pdf"
 					title="Resume"
 					icon={faFilePdf}
-				/>
+				/> */}
 			</div>
 		</div>
 	);
